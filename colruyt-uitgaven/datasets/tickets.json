@@ -1,0 +1,18 @@
+{
+  "description": "Eén rij per digitaal kasticket uit je Hotmail: datum, winkel en betaald bedrag (incl. leeggoed). Wekelijks aangevuld door een geplande taak.",
+  "edit": {
+    "at": "2026-11-15T19:30:23Z",
+    "via": "claude"
+  },
+  "source": {
+    "format": "csv",
+    "kind": "file",
+    "name": "tickets.csv",
+    "url": "/_blob/9d5592c5fbd0222d3069e74a836170a1"
+  },
+  "title": "Kastickets Colruyt Group",
+  "updated": {
+    "at": "2026-11-15T19:30:23Z",
+    "by": "Claude"
+  }
+}

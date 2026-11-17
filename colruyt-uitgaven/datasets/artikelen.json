@@ -1,0 +1,18 @@
+{
+  "description": "Eén rij per artikellijn uit de PDF-kastickets, met automatisch toegekende categorie, bedrag, korting en netto. Wekelijks aangevuld.",
+  "edit": {
+    "at": "2026-11-15T19:30:23Z",
+    "via": "claude"
+  },
+  "source": {
+    "format": "csv",
+    "kind": "file",
+    "name": "artikelen.csv",
+    "url": "/_blob/bf10f397257cee5cc803a94c7a29fbc3"
+  },
+  "title": "Artikelen op de kastickets",
+  "updated": {
+    "at": "2026-11-15T19:30:23Z",
+    "by": "Claude"
+  }
+}

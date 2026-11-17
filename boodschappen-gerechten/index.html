@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boodschappen &amp; gerechten</title>
+<style>
+:root{
+  --bg:#f7f5f1;--panel:#fff;--ink:#1f1d1a;--muted:#6b665e;--line:#e6e1d8;
+  --accent:#c2410c;--accent-soft:#fdeee5;--ok:#2f7d4f;--ok-soft:#e7f3ec;--warn:#b45309;--warn-soft:#fdf3e1;
+  --r:12px;--font:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#171614;--panel:#211f1c;--ink:#f2efe9;--muted:#a39d93;--line:#34312c;--accent:#f97316;--accent-soft:#3a2416;--ok:#5fbf86;--ok-soft:#1d3226;--warn:#f0a43a;--warn-soft:#3a2c14}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 var(--font);-webkit-text-size-adjust:100%}
+.wrap{max-width:860px;margin:0 auto;padding:12px 14px 90px}
+header.top{display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:6px 2px 10px}
+header.top h1{font-size:20px;margin:0;font-weight:650}
+header.top .sub{color:var(--muted);font-size:13px}
+nav.tabs{position:sticky;top:0;z-index:10;background:var(--bg);display:flex;gap:4px;padding:6px 0 10px;overflow-x:auto}
+nav.tabs button{flex:1 0 auto;font:inherit;font-size:14px;font-weight:600;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:9px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}
+nav.tabs button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+nav.tabs .badge{display:inline-block;min-width:18px;padding:0 5px;margin-left:4px;border-radius:9px;background:var(--accent);color:#fff;font-size:11px;line-height:18px;text-align:center}
+section.view{display:none}section.view.on{display:block}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px;margin-bottom:12px}
+.card h2{font-size:16px;margin:0 0 4px}
+.card h3{font-size:14px;margin:12px 0 6px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.03em}
+.muted{color:var(--muted)}.small{font-size:13px}
+.row{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0}
+.row .main{flex:1;min-width:0}
+.row .name{font-weight:550;overflow-wrap:anywhere}
+.row .meta{font-size:12.5px;color:var(--muted)}
+.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.price{font-weight:600}
+.stepper{display:flex;align-items:center;gap:2px}
+.stepper button,.btn-ico{width:34px;height:34px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:600 17px var(--font);cursor:pointer;display:grid;place-items:center}
+.stepper .v{min-width:42px;text-align:center;font-variant-numeric:tabular-nums;font-weight:600}
+.btn{font:inherit;font-weight:600;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:9px 14px;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.ghost{background:transparent}
+.btn:disabled{opacity:.5;cursor:default}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.pill{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--muted);margin-right:4px}
+.pill.low{background:var(--warn-soft);color:var(--warn);border-color:transparent}
+.pill.ok{background:var(--ok-soft);color:var(--ok);border-color:transparent}
+.pill.acc{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+.bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden;margin-top:5px;max-width:220px}
+.bar i{display:block;height:100%;background:var(--ok)}
+.bar i.low{background:var(--warn)}
+.total{display:flex;justify-content:space-between;align-items:baseline;font-size:18px;font-weight:700;padding-top:10px;border-top:2px solid var(--ink);margin-top:6px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.chips button{font:inherit;font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:6px 12px;cursor:pointer}
+.chips button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.rcard{display:flex;flex-direction:column}
+.rcard .cost{display:flex;gap:14px;margin:8px 0}
+.rcard .cost div{font-size:12px;color:var(--muted)}
+.rcard .cost b{display:block;font-size:17px;color:var(--ink)}
+.ing{font-size:13.5px;margin:0;padding:0;list-style:none}
+.ing li{display:flex;justify-content:space-between;gap:8px;padding:3px 0;border-top:1px dashed var(--line)}
+.ing li:first-child{border-top:0}
+.ing .have{color:var(--ok)}.ing .need{color:var(--warn)}
+details summary{cursor:pointer;color:var(--muted);font-size:13px;margin-top:8px}
+details ol{padding-left:18px;margin:6px 0;font-size:13.5px}
+.day{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.day:first-of-type{border-top:0}
+.day .d{width:74px;flex:none;font-weight:600}
+.day .d small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.day select{flex:1;min-width:0;font:inherit;padding:8px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.notice{border-radius:10px;padding:10px 12px;background:var(--accent-soft);color:var(--ink);font-size:13.5px;margin:10px 0}
+.notice.ok{background:var(--ok-soft)}
+.search{width:100%;font:inherit;padding:9px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);margin-bottom:8px}
+.seg{display:flex;gap:6px;margin:4px 0 8px}
+.empty{color:var(--muted);font-size:14px;padding:6px 0}
+.loading{color:var(--muted);padding:30px 0;text-align:center}
+.dialog{position:fixed;inset:0;background:rgba(0,0,0,.4);display:none;align-items:flex-end;justify-content:center;z-index:50}
+.dialog.on{display:flex}
+.dialog .sheet{background:var(--panel);width:100%;max-width:520px;border-radius:16px 16px 0 0;padding:16px;max-height:85vh;overflow:auto}
+@media (min-width:640px){.dialog{align-items:center}.dialog .sheet{border-radius:16px}}
+a{color:var(--accent)}
+.toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 14px;border-radius:10px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:60}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Boodschappen & gerechten</h1>
+    <span class="sub" id="pricedAt"></span>
+  </header>
+  <nav class="tabs" id="tabs" role="tablist">
+    <button data-v="kar" class="on" id="tab-kar">Winkelkar <span class="badge" id="karBadge" hidden>0</span></button>
+    <button data-v="voorraad" id="tab-voorraad">Voorraad</button>
+    <button data-v="gerechten" id="tab-gerechten">Gerechten</button>
+    <button data-v="uitgaven" id="tab-uitgaven">Uitgaven</button>
+  </nav>
+
+  <div id="boot" class="loading">Gegevens laden…</div>
+
+  <!-- KAR -->
+  <section class="view on" id="kar">
+    <div class="card" id="karCard">
+      <h2>Winkelkar voor Collect&amp;Go</h2>
+      <p class="muted small" style="margin:0 0 6px">Producten die bijna op zijn en de ingrediënten van je geplande gerechten. Pas aantallen aan of voeg iets toe.</p>
+      <div id="karList"></div>
+      <div class="total"><span>Totaal (geschat)</span><span class="num" id="karTotal">€ 0,00</span></div>
+      <div class="btns">
+        <button class="btn primary" id="sendCart">Kar klaarzetten voor Collect&amp;Go</button>
+        <button class="btn" id="copyCart">Kopieer lijst</button>
+        <button class="btn ghost" id="addItem">+ Product</button>
+      </div>
+      <div id="sentNote"></div>
+    </div>
+    <div class="card" id="ontvangenCard">
+      <h2>Bestelling opgehaald?</h2>
+      <p class="muted small" style="margin:0">Tik hieronder als je de klaargezette bestelling hebt ontvangen. Dan tellen de producten mee in je voorraad.</p>
+      <div class="btns"><button class="btn" id="received" disabled>Bestelling ontvangen</button></div>
+    </div>
+  </section>
+
+  <!-- VOORRAAD -->
+  <section class="view" id="voorraad">
+    <div class="card">
+      <h2>Voorraad in frigo en diepvries</h2>
+      <p class="muted small" style="margin:0">Geschat uit je aankopen en hoe snel je iets opgebruikt. Klopt het niet? Zet het juiste aantal verpakkingen met − en +. Onder de grens gaat het product automatisch in je winkelkar.</p>
+      <div class="seg chips" id="locSeg" style="margin-top:10px">
+        <button data-l="frigo" class="on">Frigo</button>
+        <button data-l="diepvries">Diepvries</button>
+        <button data-l="kast">Voorraadkast</button>
+      </div>
+      <input class="search" id="stockSearch" placeholder="Zoek in voorraad…" type="search">
+      <div id="stockList"></div>
+      <details id="stockInactive"><summary>Niet meer recent gekocht</summary><div id="stockInactiveList"></div></details>
+    </div>
+  </section>
+
+  <!-- GERECHTEN -->
+  <section class="view" id="gerechten">
+    <div class="card" id="planCard">
+      <h2>Weekmenu</h2>
+      <p class="muted small" style="margin:0 0 4px">Kies per dag een gerecht. Ontbrekende ingrediënten gaan meteen in je winkelkar. Tik op ✓ als je het gekookt hebt; dan gaat het van je voorraad af.</p>
+      <div id="planList"></div>
+    </div>
+    <div class="card">
+      <h2>Gerechten voor 1 persoon</h2>
+      <div class="chips" id="filters">
+        <button data-t="snel" class="on">Snel (&lt; 30 min)</button>
+        <button data-t="budget">Budget</button>
+        <button data-t="belgisch">Belgisch</button>
+      </div>
+      <div class="seg chips" id="sortSeg">
+        <button data-s="kost" class="on">Goedkoopst</button>
+        <button data-s="tijd">Snelst</button>
+        <button data-s="voorraad">Meeste in huis</button>
+      </div>
+      <div class="btns" style="margin:0 0 12px" id="genWrap" hidden>
+        <button class="btn" id="genRecipe">✨ Nieuw gerecht laten bedenken</button>
+        <span class="muted small" id="genStatus" style="align-self:center"></span>
+      </div>
+      <div class="rgrid" id="recipeGrid"></div>
+      <p class="muted small" style="margin-top:12px">Kost per portie = wat je effectief opgebruikt. "Nu te kopen" = de volledige verpakkingen die je nog mist, met wat er volgens de schatting in huis is.</p>
+    </div>
+  </section>
+
+  <!-- UITGAVEN -->
+  <section class="view" id="uitgaven">
+    <div class="card">
+      <h2>Uitgaven</h2>
+      <p class="muted" style="margin:0 0 10px">Je uitgavendashboard met maandtotalen, categorieën en je meest gekochte producten.</p>
+      <a class="btn primary" style="display:inline-block;text-decoration:none" href="https://claude.ai/artifact/2ZtJXaA5tqUTmzCeTNR884" target="_blank" rel="noopener">Open uitgavendashboard</a>
+      <p class="muted small" id="histInfo" style="margin-top:12px"></p>
+    </div>
+  </section>
+</div>
+
+<div class="dialog" id="dlg"><div class="sheet" id="dlgBody"></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+(() => {
+"use strict";
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const eur = new Intl.NumberFormat("nl-BE", {style: "currency", currency: "EUR"});
+const n1 = new Intl.NumberFormat("nl-BE", {maximumFractionDigits: 1});
+const DAY = 864e5;
+const DOW = ["zo", "ma", "di", "wo", "do", "vr", "za"];
+const MON = ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"];
+
+let db = null, uid = null, sample = null;
+let CAT = {}, CATL = [], RECIPES = [], HIST = {}, META = {};
+let ST = {corr: {}, ev: [], plan: {}, extra: {}, qty: {}, skip: {}, mins: {}, custom: [], sent: null};
+let stLoaded = false, canWrite = true;
+const UI = {tab: "kar", loc: "frigo", tags: new Set(["snel"]), sort: "kost", q: ""};
+
+/* ---------- helpers ---------- */
+const el = (tag, attrs = {}, ...kids) => {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (v == null || v === false) continue;
+    if (k === "class") e.className = v; else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
+    else if (k === "text") e.textContent = v; else e.setAttribute(k, v === true ? "" : v);
+  }
+  for (const c of kids.flat()) if (c != null && c !== false) e.append(c.nodeType ? c : document.createTextNode(String(c)));
+  return e;
+};
+const today0 = () => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; };
+const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+const parseDay = (s) => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d, 12); };
+const toast = (msg) => { const t = $("#toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove("on"), 2200); };
+const fmtQty = (it, packs) => {
+  if (it.unit === "st" && it.pack === 1) return n1.format(packs) + " st";
+  const amt = packs * it.pack;
+  if (it.unit === "g") return amt >= 1000 ? n1.format(amt / 1000) + " kg" : Math.round(amt) + " g";
+  if (it.unit === "ml") return amt >= 1000 ? n1.format(amt / 1000) + " L" : Math.round(amt) + " ml";
+  return n1.format(amt) + " " + it.unit;
+};
+const fmtUse = (it, use) => {
+  if (it.unit === "g") return use >= 1000 ? n1.format(use / 1000) + " kg" : Math.round(use) + " g";
+  if (it.unit === "ml") return Math.round(use) + " ml";
+  if (it.unit === "st" && it.pack === 1) return use === 0.25 ? "¼ st" : use === 0.5 ? "½ st" : n1.format(use) + " st";
+  return n1.format(use) + " " + it.unit;
+};
+
+/* ---------- stock model ---------- */
+const median = (a) => { const s = [...a].sort((x, y) => x - y); const m = s.length >> 1; return s.length ? (s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2) : 0; };
+const rateCache = {};
+function rate(key) {
+  if (key in rateCache) return rateCache[key];
+  const p = (HIST[key] || []).slice().sort((a, b) => a[0] < b[0] ? -1 : 1);
+  let r = null;
+  if (p.length >= 2) {
+    const span = (parseDay(p[p.length - 1][0]) - parseDay(p[0][0])) / DAY;
+    const q = p.slice(0, -1).reduce((s, x) => s + x[1], 0);
+    if (span >= 7) r = q / span;
+  }
+  return (rateCache[key] = r);
+}
+function estimate(key, now = Date.now()) {
+  const r = rate(key) || 0;
+  const corr = ST.corr[key];
+  const t0 = corr ? corr.at : -Infinity;
+  const evs = [];
+  for (const [d, q] of HIST[key] || []) { const t = parseDay(d).getTime(); if (t > t0) evs.push([t, q]); }
+  for (const e of ST.ev) if (e.k === key && e.at > t0) evs.push([e.at, e.d]);
+  evs.sort((a, b) => a[0] - b[0]);
+  let s = corr ? corr.v : 0, t = corr ? corr.at : (evs.length ? evs[0][0] : now);
+  for (const [te, d] of evs) { s = Math.max(0, s - r * (te - t) / DAY) + d; t = te; }
+  if (now > t) s = Math.max(0, s - r * (now - t) / DAY);
+  return Math.round(s * 100) / 100;
+}
+function typicalQty(key) { const p = HIST[key] || []; return Math.max(1, Math.round(median(p.map((x) => x[1])) || 1)); }
+function minFor(key) { return ST.mins[key] ?? (rate(key) ? 0.25 : 0); }
+function isActive(key) {
+  if (ST.corr[key] || key in ST.mins || ST.ev.some((e) => e.k === key)) return true;
+  const p = HIST[key] || [];
+  if (p.length < 3) return false;
+  const last = p.reduce((m, x) => x[0] > m ? x[0] : m, "");
+  return (Date.now() - parseDay(last)) / DAY <= 120;
+}
+
+/* ---------- recipes ---------- */
+const allRecipes = () => RECIPES.concat(ST.custom || []);
+function recipeCost(r, stockMap) {
+  let portie = 0, buy = 0, have = 0;
+  const lines = r.ing.map((g) => {
+    const it = CAT[g.item]; if (!it) return null;
+    const need = g.use / it.pack;
+    const avail = stockMap ? stockMap[g.item] ?? estimate(g.item) : estimate(g.item);
+    const packs = Math.max(0, Math.ceil(need - avail - 1e-9));
+    portie += it.price * need; buy += packs * it.price; if (packs === 0) have++;
+    return {it, use: g.use, need, packs, cost: it.price * need};
+  }).filter(Boolean);
+  return {portie, buy, have, n: lines.length, lines};
+}
+
+/* ---------- cart ---------- */
+function upcomingPlan() {
+  const t = iso(today0());
+  return Object.entries(ST.plan || {}).filter(([d, rid]) => d >= t && rid).sort();
+}
+function buildCart() {
+  const lines = {};
+  const add = (key, qty, why) => {
+    if (!CAT[key] || qty <= 0) return;
+    const l = lines[key] || (lines[key] = {key, auto: 0, why: []});
+    l.auto = Math.max(l.auto, qty); if (!l.why.includes(why)) l.why.push(why);
+  };
+  const t = iso(today0());
+  for (const it of CATL) {
+    if (!isActive(it.key)) continue;
+    if (ST.skip[it.key] && ST.skip[it.key] >= t) continue;
+    const est = estimate(it.key);
+    if (est < minFor(it.key)) add(it.key, Math.max(1, Math.round(typicalQty(it.key) - est)), "bijna op");
+  }
+  const need = {};
+  const recs = Object.fromEntries(allRecipes().map((r) => [r.id, r]));
+  for (const [, rid] of upcomingPlan()) {
+    const r = recs[rid]; if (!r) continue;
+    for (const g of r.ing) { const it = CAT[g.item]; if (it) need[g.item] = (need[g.item] || 0) + g.use / it.pack; }
+  }
+  for (const [k, nd] of Object.entries(need)) {
+    const packs = Math.ceil(nd - estimate(k) - 1e-9);
+    if (packs > 0) add(k, packs, "weekmenu");
+  }
+  for (const [k, q] of Object.entries(ST.extra || {})) if (q > 0) add(k, q, "zelf toegevoegd");
+  const out = Object.values(lines).map((l) => {
+    const qty = ST.qty[l.key] ?? l.auto;
+    return {...l, qty, it: CAT[l.key], cost: qty * CAT[l.key].price};
+  }).filter((l) => l.qty > 0 || ST.qty[l.key] === 0);
+  out.sort((a, b) => a.it.loc.localeCompare(b.it.loc) || a.it.name.localeCompare(b.it.name));
+  return out;
+}
+
+/* ---------- saving ---------- */
+let saving = false, dirty = false;
+function save() {
+  if (!db || !uid || !canWrite) { renderAll(); return; }
+  dirty = true; renderAll();
+  clearTimeout(save.h); save.h = setTimeout(flush, 400);
+}
+async function flush() {
+  if (saving || !dirty) return;
+  saving = true; dirty = false;
+  if (ST.ev.length > 400) ST.ev = ST.ev.slice(-400);
+  try { await db.doc(`data/users/${uid}/state`).set(JSON.parse(JSON.stringify(ST))); }
+  catch (e) {
+    if (e && e.code === "invalid_argument") { canWrite = false; toast("Opslaan lukt niet: je kunt deze pagina enkel bekijken."); }
+    else { dirty = true; toast("Opslaan mislukt, ik probeer opnieuw…"); setTimeout(flush, 3000); }
+  }
+  saving = false;
+  if (dirty) flush();
+}
+
+/* ---------- render: kar ---------- */
+function stepper(val, onDec, onInc, label) {
+  return el("div", {class: "stepper"},
+    el("button", {"aria-label": "Minder " + label, onclick: onDec, text: "−"}),
+    el("span", {class: "v", text: val}),
+    el("button", {"aria-label": "Meer " + label, onclick: onInc, text: "+"}));
+}
+function renderKar() {
+  const cart = buildCart();
+  const box = $("#karList"); box.replaceChildren();
+  const active = cart.filter((l) => l.qty > 0);
+  $("#karBadge").hidden = !active.length; $("#karBadge").textContent = active.length;
+  if (!cart.length) box.append(el("p", {class: "empty", text: "Je kar is leeg. Alles is nog in voorraad en er staan geen gerechten gepland."}));
+  let lastLoc = null;
+  for (const l of cart) {
+    if (l.it.loc !== lastLoc) { lastLoc = l.it.loc; box.append(el("h3", {text: {frigo: "Frigo", diepvries: "Diepvries", kast: "Voorraadkast"}[lastLoc] || lastLoc})); }
+    const setQ = (q) => { ST.qty[l.key] = Math.max(0, q); save(); };
+    box.append(el("div", {class: "row", style: l.qty === 0 ? "opacity:.45" : null},
+      el("div", {class: "main"},
+        el("div", {class: "name", text: l.it.cg || l.it.name}),
+        el("div", {class: "meta"}, l.why.map((w) => el("span", {class: "pill " + (w === "bijna op" ? "low" : w === "weekmenu" ? "acc" : ""), text: w})), " ", eur.format(l.it.price) + " / verp.")),
+      stepper(l.qty, () => setQ(l.qty - 1), () => setQ(l.qty + 1), l.it.name),
+      el("div", {class: "num price", style: "width:68px;text-align:right", text: eur.format(l.cost)})));
+  }
+  const total = active.reduce((s, l) => s + l.cost, 0);
+  $("#karTotal").textContent = eur.format(total);
+  $("#sendCart").disabled = !active.length || !canWrite;
+  const sn = $("#sentNote"); sn.replaceChildren();
+  if (ST.sent && !ST.sent.done) {
+    const d = new Date(ST.sent.at);
+    sn.append(el("div", {class: "notice ok"},
+      el("b", {text: `Klaargezet op ${d.getDate()} ${MON[d.getMonth()]} om ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}: ${ST.sent.lines.length} producten, ${eur.format(ST.sent.total)}.`}),
+      el("br"), "Zeg nu in de chat met Claude: ", el("i", {text: "\"Vul mijn Collect&Go-kar\""}), ". Claude zet alles in je winkelwagen; bestellen en betalen doe je zelf."));
+  }
+  $("#received").disabled = !(ST.sent && !ST.sent.done) || !canWrite;
+}
+
+/* ---------- render: voorraad ---------- */
+function stockRow(it) {
+  const est = estimate(it.key), mn = minFor(it.key), r = rate(it.key);
+  const low = est < mn;
+  const full = Math.max(typicalQty(it.key), 1);
+  const days = r ? est / r : null;
+  const set = (v) => { ST.corr[it.key] = {v: Math.max(0, Math.round(v * 4) / 4), at: Date.now()}; delete ST.qty[it.key]; save(); };
+  const step = it.pack === 1 ? 1 : 0.25;
+  return el("div", {class: "row"},
+    el("div", {class: "main"},
+      el("div", {class: "name", text: it.name}),
+      el("div", {class: "meta"},
+        low ? el("span", {class: "pill low", text: "bijna op"}) : el("span", {class: "pill ok", text: "in huis"}),
+        " ≈ " + fmtQty(it, est) + (days != null && est > 0 ? ` · nog ± ${Math.max(1, Math.round(days))} d` : "") + (ST.corr[it.key] ? " · door jou ingesteld" : "")),
+      el("div", {class: "bar"}, el("i", {class: low ? "low" : "", style: `width:${Math.min(100, est / full * 100)}%`}))),
+    stepper(n1.format(est), () => set(est - step), () => set(est + step), it.name));
+}
+function renderVoorraad() {
+  const q = UI.q.trim().toLowerCase();
+  const items = CATL.filter((it) => it.loc === UI.loc && (!q || it.name.toLowerCase().includes(q)));
+  const act = items.filter((it) => isActive(it.key)), inact = items.filter((it) => !isActive(it.key));
+  act.sort((a, b) => (estimate(a.key) < minFor(a.key) ? 0 : 1) - (estimate(b.key) < minFor(b.key) ? 0 : 1) || a.name.localeCompare(b.name));
+  const box = $("#stockList"); box.replaceChildren(...act.map(stockRow));
+  if (!act.length) box.append(el("p", {class: "empty", text: "Geen producten die je hier geregeld koopt."}));
+  $("#stockInactiveList").replaceChildren(...inact.map(stockRow));
+  $("#stockInactive").hidden = !inact.length;
+}
+
+/* ---------- render: gerechten ---------- */
+function renderPlan() {
+  const box = $("#planList"); box.replaceChildren();
+  const recs = allRecipes().slice().sort((a, b) => a.name.localeCompare(b.name));
+  const t0 = today0();
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(t0.getTime() + i * DAY + 12 * 36e5); const key = iso(d);
+    const cur = ST.plan[key] || "";
+    const sel = el("select", {"aria-label": "Gerecht voor " + key, onchange: (e) => { if (e.target.value) ST.plan[key] = e.target.value; else delete ST.plan[key]; save(); }},
+      el("option", {value: "", text: "— geen —"}), recs.map((r) => el("option", {value: r.id, selected: r.id === cur, text: r.name})));
+    const r = recs.find((x) => x.id === cur);
+    box.append(el("div", {class: "day"},
+      el("div", {class: "d"}, i === 0 ? "Vandaag" : i === 1 ? "Morgen" : DOW[d.getDay()], el("small", {text: `${d.getDate()} ${MON[d.getMonth()]}`})),
+      sel,
+      r ? el("button", {class: "btn-ico", title: "Gekookt", "aria-label": "Gekookt: " + r.name, onclick: () => cooked(key, r), text: "✓"}) : el("span", {style: "width:34px"})));
+  }
+}
+function cooked(day, r) {
+  const at = Date.now();
+  for (const g of r.ing) { const it = CAT[g.item]; if (it) ST.ev.push({k: g.item, d: -(g.use / it.pack), at}); }
+  delete ST.plan[day];
+  save(); toast(`${r.name} afgevinkt — voorraad bijgewerkt.`);
+}
+function renderRecipes() {
+  const grid = $("#recipeGrid"); grid.replaceChildren();
+  let list = allRecipes().filter((r) => [...UI.tags].every((t) => r.tags.includes(t)));
+  const withCost = list.map((r) => ({r, c: recipeCost(r)}));
+  if (UI.sort === "kost") withCost.sort((a, b) => a.c.portie - b.c.portie);
+  else if (UI.sort === "tijd") withCost.sort((a, b) => a.r.min - b.r.min || a.c.portie - b.c.portie);
+  else withCost.sort((a, b) => b.c.have / b.c.n - a.c.have / a.c.n || a.c.buy - b.c.buy);
+  if (!withCost.length) grid.append(el("p", {class: "empty", text: "Geen gerechten met deze combinatie. Zet een filter uit."}));
+  for (const {r, c} of withCost) {
+    const planned = Object.entries(ST.plan).filter(([d, id]) => id === r.id && d >= iso(today0())).length;
+    grid.append(el("div", {class: "card rcard", id: "r-" + r.id, style: "margin:0"},
+      el("h2", {text: r.name}),
+      el("div", {}, el("span", {class: "pill", text: `⏱ ${r.min} min`}), r.tags.filter((t) => t !== "snel").map((t) => el("span", {class: "pill", text: t})), r.custom ? el("span", {class: "pill acc", text: "nieuw"}) : null),
+      el("div", {class: "cost"},
+        el("div", {}, "Kost per portie", el("b", {class: "num", text: eur.format(c.portie)})),
+        el("div", {}, "Nu te kopen", el("b", {class: "num", text: c.buy ? eur.format(c.buy) : "niets"})),
+        el("div", {}, "In huis", el("b", {class: "num", text: `${c.have}/${c.n}`}))),
+      el("ul", {class: "ing"}, c.lines.map((l) => el("li", {},
+        el("span", {}, el("span", {class: l.packs ? "need" : "have", text: l.packs ? "✗ " : "✓ "}), `${fmtUse(l.it, l.use)} ${shortName(l.it)}`),
+        el("span", {class: "num muted", text: l.packs ? `koop ${l.packs}× ${eur.format(l.it.price)}` : eur.format(l.cost)})))),
+      el("details", {}, el("summary", {text: "Bereiding"}), el("ol", {}, r.steps.map((s) => el("li", {text: s})))),
+      el("div", {class: "btns", style: "margin-top:auto;padding-top:10px"},
+        el("button", {class: "btn primary", onclick: () => planToday(r), text: planned ? `Gepland (${planned}×) · nog eens` : "Plan in"}),
+        r.custom ? el("button", {class: "btn ghost", onclick: () => { ST.custom = ST.custom.filter((x) => x.id !== r.id); for (const [d, id] of Object.entries(ST.plan)) if (id === r.id) delete ST.plan[d]; save(); }, text: "Verwijder"}) : null)));
+  }
+}
+const shortName = (it) => it.name.replace(/^(EVERYDAY|BONI|BH|SOUBRY|IGLO|Mccain)\s+/i, "").replace(/\s+[\d,]+\s*(x\s*\d+\s*)?(g|kg|ml|L|st|cl)\b.*$/i, "").replace(/\s*±.*$/, "").toLowerCase();
+function planToday(r) {
+  const t0 = today0();
+  for (let i = 0; i < 7; i++) { const k = iso(new Date(t0.getTime() + i * DAY + 12 * 36e5)); if (!ST.plan[k]) { ST.plan[k] = r.id; save(); toast(`${r.name} gepland voor ${i === 0 ? "vandaag" : i === 1 ? "morgen" : k.slice(8) + "/" + k.slice(5, 7)}.`); return; } }
+  toast("Je weekmenu is vol. Maak een dag vrij in het weekmenu.");
+}
+
+function renderAll() {
+  if (!CATL.length) return;
+  renderKar(); renderVoorraad(); renderPlan(); renderRecipes();
+}
+
+/* ---------- actions ---------- */
+function cartText(lines) {
+  return lines.map((l) => `${l.qty}× ${l.it.cg || l.it.name} (${eur.format(l.cost)})`).join("\n") + `\nTotaal: ${eur.format(lines.reduce((s, l) => s + l.cost, 0))}`;
+}
+$("#sendCart").addEventListener("click", () => {
+  const lines = buildCart().filter((l) => l.qty > 0);
+  if (!lines.length) return;
+  ST.sent = {at: Date.now(), done: false, total: Math.round(lines.reduce((s, l) => s + l.cost, 0) * 100) / 100,
+    lines: lines.map((l) => ({key: l.key, name: l.it.cg || l.it.name, search: l.it.search, qty: l.qty, price: l.it.price}))};
+  save(); toast("Lijst klaargezet voor Claude.");
+});
+$("#copyCart").addEventListener("click", async () => {
+  const lines = buildCart().filter((l) => l.qty > 0);
+  try { await navigator.clipboard.writeText(cartText(lines)); toast("Lijst gekopieerd."); }
+  catch { openDialog(el("div", {}, el("h2", {text: "Boodschappenlijst"}), el("textarea", {style: "width:100%;height:50vh;font:inherit", readonly: true}, cartText(lines)), el("div", {class: "btns"}, el("button", {class: "btn", onclick: closeDialog, text: "Sluiten"})))); }
+});
+$("#received").addEventListener("click", () => {
+  if (!ST.sent) return;
+  const at = Date.now();
+  for (const l of ST.sent.lines) ST.ev.push({k: l.key, d: l.qty, at});
+  ST.sent.done = true; ST.extra = {}; ST.qty = {};
+  save(); toast("Voorraad bijgewerkt met je bestelling.");
+});
+$("#addItem").addEventListener("click", () => {
+  const input = el("input", {class: "search", placeholder: "Zoek een product…", type: "search"});
+  const list = el("div");
+  const draw = () => {
+    const q = input.value.trim().toLowerCase();
+    list.replaceChildren(...CATL.filter((it) => !q || it.name.toLowerCase().includes(q)).slice(0, 40).map((it) =>
+      el("div", {class: "row"}, el("div", {class: "main"}, el("div", {class: "name", text: it.cg || it.name}), el("div", {class: "meta", text: eur.format(it.price)})),
+        el("button", {class: "btn", onclick: () => { ST.extra[it.key] = (ST.extra[it.key] || 0) + 1; delete ST.qty[it.key]; save(); toast("Toegevoegd."); }, text: "+ 1"}))));
+  };
+  input.addEventListener("input", draw); draw();
+  openDialog(el("div", {}, el("h2", {text: "Product toevoegen"}), input, list, el("div", {class: "btns"}, el("button", {class: "btn", onclick: closeDialog, text: "Klaar"}))));
+  setTimeout(() => input.focus(), 50);
+});
+function openDialog(content) { $("#dlgBody").replaceChildren(content); $("#dlg").classList.add("on"); }
+function closeDialog() { $("#dlg").classList.remove("on"); }
+$("#dlg").addEventListener("click", (e) => { if (e.target.id === "dlg") closeDialog(); });
+
+$("#tabs").addEventListener("click", (e) => {
+  const b = e.target.closest("button"); if (!b) return;
+  UI.tab = b.dataset.v;
+  $$("#tabs button").forEach((x) => x.classList.toggle("on", x === b));
+  $$("section.view").forEach((s) => s.classList.toggle("on", s.id === UI.tab));
+  try { history.replaceState(null, "", "#" + UI.tab); } catch {}
+});
+$("#locSeg").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; UI.loc = b.dataset.l; $$("#locSeg button").forEach((x) => x.classList.toggle("on", x === b)); renderVoorraad(); });
+$("#stockSearch").addEventListener("input", (e) => { UI.q = e.target.value; renderVoorraad(); });
+$("#filters").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; const t = b.dataset.t; UI.tags.has(t) ? UI.tags.delete(t) : UI.tags.add(t); b.classList.toggle("on", UI.tags.has(t)); renderRecipes(); });
+$("#sortSeg").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; UI.sort = b.dataset.s; $$("#sortSeg button").forEach((x) => x.classList.toggle("on", x === b)); renderRecipes(); });
+const h = (location.hash || "").slice(1);
+if (["kar", "voorraad", "gerechten", "uitgaven"].includes(h)) $("#tab-" + h).click();
+
+/* ---------- new recipe via Claude ---------- */
+$("#genRecipe").addEventListener("click", async () => {
+  if (!sample) return;
+  const btn = $("#genRecipe"), st = $("#genStatus");
+  btn.disabled = true; st.textContent = "Claude bedenkt een gerecht…";
+  const cat = CATL.map((it) => `${it.key} | ${it.cg || it.name} | verpakking ${it.pack} ${it.unit} | ${it.price.toFixed(2)} EUR`).join("\n");
+  const existing = allRecipes().map((r) => r.name).join(", ");
+  const prefs = [...UI.tags].join(", ") || "snel, budget, belgisch";
+  const prompt = `Bedenk één nieuw avondgerecht voor 1 persoon. Voorkeuren: ${prefs} (snel = klaar in max 30 minuten). Niet een van deze: ${existing}.
+Gebruik ALLEEN producten uit deze lijst (sleutel | naam | verpakking | prijs). Peper, zout, olie en kruiden mag je veronderstellen zonder ze op te nemen.
+${cat}
+
+Antwoord met enkel JSON, zonder uitleg: {"name": "...", "min": 20, "tags": ["snel","budget","belgisch"], "ing": [{"item": "<sleutel>", "use": <hoeveelheid in de eenheid van de verpakking>}], "steps": ["...", "..."]}
+"use" is in dezelfde eenheid als de verpakking (g, ml, st, sneden, zakjes). Tags: alleen de woorden snel, budget, belgisch die echt passen. Schrijf in het Nederlands (Vlaams).`;
+  try {
+    const out = await sample.json(prompt, {modelTier: "default"});
+    const ing = (out.ing || []).filter((g) => CAT[g.item] && +g.use > 0).map((g) => ({item: g.item, use: +g.use}));
+    if (!out.name || !ing.length || !Array.isArray(out.steps)) throw new Error("onvolledig");
+    const r = {id: "c" + Date.now().toString(36), name: String(out.name).slice(0, 80), min: Math.min(180, Math.max(5, +out.min || 30)),
+      tags: (out.tags || []).filter((t) => ["snel", "budget", "belgisch"].includes(t)), ing, steps: out.steps.map(String).slice(0, 10), custom: true};
+    if (r.min <= 30 && !r.tags.includes("snel")) r.tags.push("snel");
+    ST.custom = (ST.custom || []).concat(r).slice(-30);
+    save(); st.textContent = "Nieuw: " + r.name;
+    setTimeout(() => { const c = document.getElementById("r-" + r.id); if (c) c.scrollIntoView({behavior: "smooth", block: "center"}); }, 100);
+  } catch (e) {
+    st.textContent = e && e.code === "rate_limited" ? "Even te veel aanvragen, probeer straks opnieuw." : e && e.code === "not_granted" ? "" : "Dat lukte niet, probeer opnieuw.";
+    if (e && e.code === "not_granted") $("#genWrap").hidden = true;
+  }
+  btn.disabled = false;
+});
+
+/* ---------- boot ---------- */
+function applyShared() {
+  if (!CATL.length || !RECIPES.length) return;
+  for (const k in rateCache) delete rateCache[k];
+  $("#boot").hidden = true;
+  if (META.pricedAt) { const d = parseDay(META.pricedAt); $("#pricedAt").textContent = `Prijzen Collect&Go ${d.getDate()} ${MON[d.getMonth()]}`; }
+  if (META.lastTicket) { const d = parseDay(META.lastTicket); $("#histInfo").textContent = `Voorraadschatting gebaseerd op je kastickets tot ${d.getDate()} ${MON[d.getMonth()]} ${d.getFullYear()}. Nieuwe tickets komen er wekelijks bij.`; }
+  renderAll();
+}
+(async () => {
+  const timer = setTimeout(() => { if (!CATL.length) $("#boot").textContent = "De gegevens zijn nog niet bereikbaar. Controleer je verbinding."; }, 10000);
+  db = await claude.use("db");
+  if (!db) { $("#boot").textContent = "Meld je aan bij Claude om je boodschappen te zien."; return; }
+  const user = await claude.use("user");
+  try { uid = user ? await user.id() : null; } catch { uid = null; }
+  if (user) { try { const w = await user.can("data.write"); if (w === false) canWrite = false; } catch {} }
+  db.doc("shared/catalog").onSnapshot((s) => { if (s.exists) { const d = s.data(); CATL = (d.items || []).slice(); CAT = Object.fromEntries(CATL.map((i) => [i.key, i])); META.pricedAt = d.pricedAt; clearTimeout(timer); applyShared(); } }, () => {});
+  db.doc("shared/recipes").onSnapshot((s) => { if (s.exists) { RECIPES = (s.data().recipes || []).slice(); applyShared(); } }, () => {});
+  db.doc("shared/history").onSnapshot((s) => { if (s.exists) { const d = s.data(); HIST = d.purchases || {}; META.lastTicket = d.lastTicket; applyShared(); } }, () => {});
+  if (uid) {
+    db.doc(`data/users/${uid}/state`).onSnapshot((s) => {
+      if (s.metadata && s.metadata.hasPendingWrites) return;
+      if (dirty || saving) return;
+      const d = s.exists ? s.data() : {};
+      ST = Object.assign({corr: {}, ev: [], plan: {}, extra: {}, qty: {}, skip: {}, mins: {}, custom: [], sent: null}, JSON.parse(JSON.stringify(d)));
+      stLoaded = true; applyShared();
+    }, () => {});
+  } else canWrite = false;
+  sample = await claude.use("sample");
+  if (sample) $("#genWrap").hidden = false;
+})();
+})();
+</script>
+</body>
+</html>
