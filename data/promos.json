@@ -3476,6 +3476,32 @@
    "type": "folder",
    "price": 6.15,
    "label": null
+  },
+  {
+   "id": "pp-victoria-blond-8-5-6x33cl",
+   "key": "victoria-blond-8-5-6x33cl",
+   "matched": true,
+   "name": "VICTORIA blond 8,5% 6x33cl",
+   "until": "2026-12-01",
+   "type": "price",
+   "price": 3.87,
+   "regular": 4.84,
+   "label": null,
+   "source": "prijsprofeet",
+   "url": "https://www.prijsprofeet.be/product/colruyt_4276809/victoria-blond-8-5"
+  },
+  {
+   "id": "pp-dash-pods-witter-dan-wit-26st",
+   "key": "dash-pods-witter-dan-wit-26st",
+   "matched": true,
+   "name": "DASH pods witter dan wit 26st",
+   "until": "2026-12-01",
+   "type": "price",
+   "price": 6.81,
+   "regular": 10.47,
+   "label": null,
+   "source": "prijsprofeet",
+   "url": "https://www.prijsprofeet.be/product/colruyt_4899061/dash-pods-witter-dan-wit"
   }
  ]
 }

@@ -244,6 +244,7 @@ function chgBadge(key) {
   const down = c.to < c.from;
   return el("span", {class: "chg " + (down ? "down" : "up"), title: `was ${eur.format(c.from)}`, text: (down ? "↓ " : "↑ ") + eur.format(Math.abs(c.to - c.from)) + (c.perKg ? "/kg" : "")});
 }
+const ppLink = () => el("a", {href: "https://www.prijsprofeet.be/", target: "_blank", rel: "noopener", text: "PrijsProfeet"});
 const thumb = (it) => it.img ? el("img", {class: "thumb", src: it.img, alt: "", loading: "lazy"}) : null;
 
 /* ---------- list ops ---------- */
@@ -321,6 +322,7 @@ function renderList() {
     done.length ? el("button", {class: "btn", onclick: () => { ST.list = todo; save(); }, text: "Afgevinkte wissen"}) : null,
     el("button", {class: "btn", onclick: () => { if (confirm("Hele lijst leegmaken?")) { ST.list = []; save(); } }, text: "Lijst leegmaken"})));
   box.append(el("p", {class: "small muted", style: "margin:4px", text: "Tik op een product als het in je winkelkar ligt."}));
+  if (ST.list.some((l) => itemOf(l).src === "PrijsProfeet")) box.append(el("p", {class: "small muted", style: "margin:4px"}, "Colruyt-prijzen o.a. via ", ppLink(), "."));
 }
 function lineRow(l) {
   const it = itemOf(l), s = suggestion(it, l.qty);
@@ -392,6 +394,7 @@ function renderPrices() {
   box.append(el("h2", {class: "grp", text: `Prijswijzigingen (30 dagen)`}));
   if (down.length) box.append(el("div", {class: "card"}, down.slice(0, 12).map(row)));
   if (up.length) box.append(el("div", {class: "card"}, up.slice(0, 12).map(row)));
+  box.append(el("p", {class: "small muted", style: "margin:0 4px 8px"}, "Op basis van je kastickets en ", ppLink(), "."));
 }
 
 function renderPromos() {
@@ -415,14 +418,15 @@ function renderPromos() {
       thumb(it),
       el("div", {class: "main"},
         el("div", {class: "name"}, it.name, d.pct > 0 ? el("span", {class: "tag", text: `-${d.pct}%`}) : null),
-        el("div", {class: "meta", text: `${dealText(p, it)}` + (d.save > 0.004 ? ` · ${eur.format(d.unit)}/st.` : "") + (p.until ? ` · t/m ${fmtDay(p.until)}` : "")})),
+        el("div", {class: "meta"}, `${dealText(p, it)}` + (d.save > 0.004 ? ` · ${eur.format(d.unit)}/st.` : "") + (p.until ? ` · t/m ${fmtDay(p.until)}` : ""),
+          p.url ? [" · ", el("a", {href: p.url, target: "_blank", rel: "noopener", text: "PrijsProfeet"})] : null)),
       el("button", {class: "add" + (l ? " in" : ""), onclick: () => { if (l && l.qty < d.qty) setQty(it.key, d.qty); else addItem(it.key, l ? 1 : d.qty, it.name); }, text: l ? `${l.qty} ✓ +` : `+${d.qty}`}));
   };
   if (yours.length) { box.append(el("h2", {class: "grp", text: "Voor jou"})); box.append(el("div", {class: "card"}, yours.map(promoRow))); }
   box.append(el("h2", {class: "grp", text: `${yours.length ? "Andere promoties" : "Promoties"} (${rest.length})`}));
   box.append(el("div", {class: "card"}, rest.slice(0, UI.pmax).map(promoRow)));
   if (rest.length > UI.pmax) box.append(el("button", {class: "btn more", onclick: () => { UI.pmax += 60; render(); }, text: `Toon meer (${rest.length - UI.pmax})`}));
-  if (META.promosAt) box.append(el("p", {class: "small muted", style: "margin:8px 4px", text: `Colruyt-folder via promotiez.be, bijgewerkt ${fmtDay(META.promosAt)}.`}));
+  if (META.promosAt) box.append(el("p", {class: "small muted", style: "margin:8px 4px", text: `Colruyt-folder via promotiez.be en PrijsProfeet, bijgewerkt ${fmtDay(META.promosAt)}.`}));
 }
 
 function renderRecipes() {
