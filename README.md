@@ -20,6 +20,7 @@ When a product on your list has a multi-buy deal, the list tells you how many to
 - `data/recipes.json` — recipes
 - `scripts/update_promos.py` — reads current Colruyt promotions from promotiez.be
 - `scripts/update_prices.py` — reads prices from receipt text; only product names and shelf prices are stored
+- `manifest.webmanifest`, `icons/`, `sw.js` — full screen from the home screen, works offline
 
 ## Daily update
 
@@ -27,7 +28,6 @@ A scheduled Claude task runs every evening: it runs `update_promos.py`, reads ne
 from Hotmail, runs `update_prices.py` on them, commits the data and sends a notification with price changes
 and promotions on products you buy. Colruyt's own website blocks automated visits, so prices come from receipts
 (only products you buy) and promotions from the public folder listing on promotiez.be.
-- `manifest.webmanifest`, `icons/`, `sw.js` — full screen from the home screen, works offline
 
 Your list is saved on the device (browser storage), not in the repo.
 
