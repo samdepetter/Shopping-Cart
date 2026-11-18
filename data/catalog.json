@@ -1,1058 +1,4350 @@
 {
-  "items": [
-    {
-      "cat": "Aardappelen & frieten",
-      "cg": "BONI aardappelblokjes 1kg",
-      "key": "boni-aardappelblokjes-1kg",
-      "loc": "diepvries",
-      "name": "BONI aardappelblokjes 1kg",
-      "pack": 1000,
-      "price": 2.09,
-      "search": "BONI aardappelblokjes 1kg",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Aardappelen & frieten",
-      "cg": "BONI aardappelpuree broccoli 1kg",
-      "key": "boni-aardappelpuree-broccoli-1kg",
-      "loc": "diepvries",
-      "name": "BONI aardappelpuree broccoli 1kg",
-      "pack": 1000,
-      "price": 3.79,
-      "search": "BONI aardappelpuree broccoli 1kg",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Aardappelen & frieten",
-      "cg": "BONI aardappelpuree wortel 1kg",
-      "key": "boni-aardappelpuree-wortel-1kg",
-      "loc": "diepvries",
-      "name": "BONI aardappelpuree wortel 1kg",
-      "pack": 1000,
-      "price": 3.05,
-      "search": "BONI aardappelpuree wortel 1kg",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": null,
-      "cg": "BONI bladspinazie in porties 1,5kg",
-      "key": "spinazie",
-      "loc": "diepvries",
-      "name": "BONI bladspinazie in porties 1,5kg",
-      "pack": 1500,
-      "price": 1.83,
-      "search": "BONI bladspinazie in porties 1,5kg",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": null,
-      "cg": "BONI erwten en jonge wortelen 1,5kg",
-      "key": "erwten-wortelen",
-      "loc": "diepvries",
-      "name": "BONI erwten en jonge wortelen 1,5kg",
-      "pack": 1500,
-      "price": 2.69,
-      "search": "BONI erwten en jonge wortelen 1,5kg",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": "Aardappelen & frieten",
-      "cg": "BONI frieten Airfryer oven 1kg",
-      "key": "boni-frieten-airfryer-oven-1kg",
-      "loc": "diepvries",
-      "name": "BONI frieten Airfryer oven 1kg",
-      "pack": 1000,
-      "price": 1.85,
-      "search": "BONI frieten Airfryer oven 1kg",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "BONI kipnuggets 500g",
-      "key": "boni-kipnuggets-500g",
-      "loc": "diepvries",
-      "name": "BONI kipnuggets 500g",
-      "pack": 1,
-      "price": 2.69,
-      "search": "BONI kipnuggets 500g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": null,
-      "cg": "BONI wokmix groenten 1kg",
-      "key": "wokgroenten",
-      "loc": "diepvries",
-      "name": "BONI wokmix groenten 1kg",
-      "pack": 1000,
-      "price": 2.99,
-      "search": "BONI wokmix groenten 1kg",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": "Diepvries & kant-en-klaar",
-      "cg": "DR.OETKER RISTORANTE pizza Hawaii 355g",
-      "key": "dr-oetker-ristorante-pizza-hawaii-355g",
-      "loc": "diepvries",
-      "name": "DR.OETKER RISTORANTE pizza Hawaii 355g",
-      "pack": 1,
-      "price": 1.99,
-      "search": "DR.OETKER RISTORANTE pizza Hawaii 355g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Diepvries & kant-en-klaar",
-      "cg": "DR.OETKER RISTORANTE pizza salame 320g",
-      "key": "dr-oetker-ristorante-pizza-salame-320g",
-      "loc": "diepvries",
-      "name": "DR.OETKER RISTORANTE pizza salame 320g",
-      "pack": 1,
-      "price": 1.99,
-      "search": "DR.OETKER RISTORANTE pizza salame 320g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Diepvries & kant-en-klaar",
-      "cg": "DR.OETKER RISTORANTE Prosciutto 340g",
-      "key": "dr-oetker-ristorante-prosciutto-340g",
-      "loc": "diepvries",
-      "name": "DR.OETKER RISTORANTE Prosciutto 340g",
-      "pack": 1,
-      "price": 3.09,
-      "search": "DR.OETKER RISTORANTE Prosciutto 340g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Diepvries & kant-en-klaar",
-      "cg": "DR.OETKER RISTORANTE Speciale 345g",
-      "key": "dr-oetker-ristorante-speciale-345g",
-      "loc": "diepvries",
-      "name": "DR.OETKER RISTORANTE Speciale 345g",
-      "pack": 1,
-      "price": 1.99,
-      "search": "DR.OETKER RISTORANTE Speciale 345g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "EVERYDAY frikandel 20x70g",
-      "key": "everyday-frikandel-20x70g",
-      "loc": "diepvries",
-      "name": "EVERYDAY frikandel 20x70g",
-      "pack": 1,
-      "price": 2.39,
-      "search": "EVERYDAY frikandel 20x70g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": null,
-      "cg": "IGLO 15 Fish Sticks MSC 450g",
-      "key": "vissticks",
-      "loc": "diepvries",
-      "name": "IGLO 15 Fish Sticks MSC 450g",
-      "pack": 15,
-      "price": 3.29,
-      "search": "IGLO 15 Fish Sticks MSC 450g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "st"
-    },
-    {
-      "cat": null,
-      "cg": "Mccain Kroketten Klassiek | Frituur 1kg",
-      "key": "kroketten",
-      "loc": "diepvries",
-      "name": "Mccain Kroketten Klassiek | Frituur 1kg",
-      "pack": 1000,
-      "price": 2.99,
-      "search": "Mccain Kroketten Klassiek | Frituur 1kg",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "Gevogelte Bal.brochette ±250g",
-      "key": "balletjesbrochette",
-      "loc": "frigo",
-      "name": "balletjesbrochette",
-      "pack": 375,
-      "price": 5.61,
-      "search": "Gevogelte Bal.brochette ±250g",
-      "src": "Collect&Go (€ 14,96/kg × 375 g)",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "bereid gehakt varken+kalf",
-      "key": "bereid-gehakt-varken-kalf",
-      "loc": "frigo",
-      "name": "bereid gehakt varken+kalf",
-      "pack": 500,
-      "price": 2.42,
-      "search": "bereid gehakt varken+kalf",
-      "src": "Collect&Go (€ 4,84/kg × 500 g)",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vleeswaren & beleg",
-      "cg": null,
-      "key": "bereide-americain-van-de-chef",
-      "loc": "frigo",
-      "name": "bereide americain van de chef",
-      "pack": 200,
-      "price": 2.55,
-      "search": "bereide americain van de chef",
-      "src": "gemiddelde van je laatste kastickets",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vleeswaren & beleg",
-      "cg": "bereide filet americain",
-      "key": "bereide-filet-americain",
-      "loc": "frigo",
-      "name": "bereide filet americain",
-      "pack": 200,
-      "price": 2.63,
-      "search": "bereide filet americain",
-      "src": "Collect&Go (€ 13,16/kg × 200 g)",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "BH Bereid Gehakt Varken",
-      "key": "bh-bereid-gehakt-varken",
-      "loc": "frigo",
-      "name": "BH Bereid Gehakt Varken",
-      "pack": 500,
-      "price": 3.79,
-      "search": "BH Bereid Gehakt Varken",
-      "src": "Collect&Go (€ 7,58/kg × 500 g)",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "Blinde vink 3x150g",
-      "key": "bh-blinde-vink",
-      "loc": "frigo",
-      "name": "BH BLINDE VINK",
-      "pack": 450,
-      "price": 7.19,
-      "search": "Blinde vink 3x150g",
-      "src": "Collect&Go (€ 15,98/kg × 450 g)",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "BH Chipolata Varken",
-      "key": "bh-chipolata-varken",
-      "loc": "frigo",
-      "name": "BH Chipolata Varken",
-      "pack": 350,
-      "price": 1.89,
-      "search": "BH Chipolata Varken",
-      "src": "Collect&Go (€ 5,41/kg × 350 g)",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "BH boerenchipolata varken",
-      "key": "boerenchipolata-350g",
-      "loc": "frigo",
-      "name": "Boerenchipolata ±350g",
-      "pack": 350,
-      "price": 2.5,
-      "search": "BH boerenchipolata varken",
-      "src": "Collect&Go (€ 7,14/kg × 350 g)",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Zuivel & eieren",
-      "cg": "BONI Belgische scharreleieren L 6st",
-      "key": "boni-belgische-scharreleieren-l-6st",
-      "loc": "frigo",
-      "name": "BONI Belgische scharreleieren L 6st",
-      "pack": 6,
-      "price": 2.39,
-      "search": "BONI Belgische scharreleieren L 6st",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "BONI beter welzijns kip.borstfil ±1kg",
-      "key": "boni-beter-welzijns-kip-borstfil-1kg",
-      "loc": "frigo",
-      "name": "BONI beter welzijns kip.borstfil ±1kg",
-      "pack": 1000,
-      "price": 11.99,
-      "search": "BONI beter welzijns kip.borstfil ±1kg",
-      "src": "Collect&Go (€ 11,99/kg × 1000 g)",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vleeswaren & beleg",
-      "cg": "BONI CHIFFONADE KIPFILET 110g",
-      "key": "boni-chiffonade-kipfilet-110g",
-      "loc": "frigo",
-      "name": "BONI CHIFFONADE KIPFILET 110g",
-      "pack": 1,
-      "price": 2.63,
-      "search": "BONI CHIFFONADE KIPFILET 110g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Zuivel & eieren",
-      "cg": "BONI extra lichte room 7% vg brik 25cl",
-      "key": "boni-extra-lichte-room-7-vg-brik-25cl",
-      "loc": "frigo",
-      "name": "BONI extra lichte room 7% vg brik 25cl",
-      "pack": 1,
-      "price": 0.75,
-      "search": "BONI extra lichte room 7% vg brik 25cl",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Kaas",
-      "cg": "BONI franse emmental geraspt 200g",
-      "key": "boni-franse-emmental-geraspt-200g",
-      "loc": "frigo",
-      "name": "BONI franse emmental geraspt 200g",
-      "pack": 200,
-      "price": 2.35,
-      "search": "BONI franse emmental geraspt 200g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vleeswaren & beleg",
-      "cg": "BONI gevogelteworst sneetjes 150g",
-      "key": "boni-gevogelteworst-sneetjes-150g",
-      "loc": "frigo",
-      "name": "BONI gevogelteworst sneetjes 150g",
-      "pack": 1,
-      "price": 1.49,
-      "search": "BONI gevogelteworst sneetjes 150g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Kaas",
-      "cg": "BONI gouda jong belegen sneetjes 300g",
-      "key": "boni-gouda-jong-belegen-sneetjes-300g",
-      "loc": "frigo",
-      "name": "BONI gouda jong belegen sneetjes 300g",
-      "pack": 300,
-      "price": 3.94,
-      "search": "BONI gouda jong belegen sneetjes 300g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Zuivel & eieren",
-      "cg": "BONI margarine bakken&braden 500g",
-      "key": "boni-margarine-bakken-braden-vlb-500ml",
-      "loc": "frigo",
-      "name": "BONI margarine bakken&braden vlb. 500ml",
-      "pack": 500,
-      "price": 1.59,
-      "search": "BONI margarine bakken&braden 500g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vleeswaren & beleg",
-      "cg": "BONI Toastham 150g",
-      "key": "boni-toastham-150g",
-      "loc": "frigo",
-      "name": "BONI Toastham 150g",
-      "pack": 150,
-      "price": 1.89,
-      "search": "BONI Toastham 150g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vleeswaren & beleg",
-      "cg": "BONI vleessalade zonder gluten 200g",
-      "key": "boni-vleessalade-zonder-gluten-200g",
-      "loc": "frigo",
-      "name": "BONI vleessalade zonder gluten 200g",
-      "pack": 1,
-      "price": 1.93,
-      "search": "BONI vleessalade zonder gluten 200g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": null,
-      "cg": "BONI witloof 500g",
-      "key": "witloof",
-      "loc": "frigo",
-      "name": "BONI witloof 500g",
-      "pack": 500,
-      "price": 2.57,
-      "search": "BONI witloof 500g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": "Zuivel & eieren",
-      "cg": "BONI Yoghurt Mag Nat Su 8x125g",
-      "key": "boni-yoghurt-mag-nat-su-8x125g",
-      "loc": "frigo",
-      "name": "BONI Yoghurt Mag Nat Su 8x125g",
-      "pack": 1,
-      "price": 1.49,
-      "search": "BONI Yoghurt Mag Nat Su 8x125g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "boomstammetjes varken 4x140g",
-      "key": "boomstammetjes-varken-4x140g",
-      "loc": "frigo",
-      "name": "boomstammetjes varken 4x140g",
-      "pack": 560,
-      "price": 5.58,
-      "search": "boomstammetjes varken 4x140g",
-      "src": "Collect&Go (€ 9,97/kg × 560 g)",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": null,
-      "key": "chipolata-350g",
-      "loc": "frigo",
-      "name": "Chipolata ±350g",
-      "pack": 350,
-      "price": 2.6,
-      "search": "Chipolata ±350g",
-      "src": "gemiddelde van je laatste kastickets",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Zuivel & eieren",
-      "cg": "CHOCOMEL De Enige Echte Brik 1L",
-      "key": "chocomel-brik-1l",
-      "loc": "frigo",
-      "name": "CHOCOMEL brik 1L",
-      "pack": 1,
-      "price": 1.29,
-      "search": "CHOCOMEL De Enige Echte Brik 1L",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Vleeswaren & beleg",
-      "cg": null,
-      "key": "d-lio-breydelhamsalade-180g",
-      "loc": "frigo",
-      "name": "DÉLIO Breydelhamsalade 180g",
-      "pack": 1,
-      "price": 2.22,
-      "search": "DÉLIO Breydelhamsalade 180g",
-      "src": "gemiddelde van je laatste kastickets",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": null,
-      "cg": "EVERYDAY champignons fijn 250g",
-      "key": "champignons",
-      "loc": "frigo",
-      "name": "EVERYDAY champignons fijn 250g",
-      "pack": 250,
-      "price": 1.25,
-      "search": "EVERYDAY champignons fijn 250g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "EVERYDAY Cordon Bleu kip kalkoen 500g",
-      "key": "everyday-cordon-bleu-kip-kalkoen-500g",
-      "loc": "frigo",
-      "name": "EVERYDAY Cordon Bleu kip kalkoen 500g",
-      "pack": 500,
-      "price": 4.3,
-      "search": "EVERYDAY Cordon Bleu kip kalkoen 500g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Zuivel & eieren",
-      "cg": "EVERYDAY crème dessert chocolade 4x125g",
-      "key": "everyday-cr-me-dessert-chocolade-4x125g",
-      "loc": "frigo",
-      "name": "EVERYDAY crème dessert chocolade 4x125g",
-      "pack": 1,
-      "price": 0.99,
-      "search": "EVERYDAY crème dessert chocolade 4x125g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Zuivel & eieren",
-      "cg": "EVERYDAY crème dessert vanille 4x125g",
-      "key": "everyday-cr-me-dessert-vanille-4x125g",
-      "loc": "frigo",
-      "name": "EVERYDAY crème dessert vanille 4x125g",
-      "pack": 1,
-      "price": 0.99,
-      "search": "EVERYDAY crème dessert vanille 4x125g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Zuivel & eieren",
-      "cg": "EVERYDAY dubbele room 200g",
-      "key": "everyday-dubbele-room-200g",
-      "loc": "frigo",
-      "name": "EVERYDAY dubbele room 200g",
-      "pack": 200,
-      "price": 1.66,
-      "search": "EVERYDAY dubbele room 200g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "EVERYDAY gehaktballen 8x60g",
-      "key": "everyday-gehaktballen-8x60g",
-      "loc": "frigo",
-      "name": "EVERYDAY gehaktballen 8x60g",
-      "pack": 480,
-      "price": 2.87,
-      "search": "EVERYDAY gehaktballen 8x60g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": null,
-      "cg": "EVERYDAY Gekookte schouderham 300g",
-      "key": "schouderham",
-      "loc": "frigo",
-      "name": "EVERYDAY Gekookte schouderham 300g",
-      "pack": 300,
-      "price": 2.48,
-      "search": "EVERYDAY Gekookte schouderham 300g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": "Vleeswaren & beleg",
-      "cg": "EVERYDAY gerookte spekblokjes 250g",
-      "key": "everyday-gerookte-spekblokjes-250g",
-      "loc": "frigo",
-      "name": "EVERYDAY gerookte spekblokjes 250g",
-      "pack": 250,
-      "price": 1.91,
-      "search": "EVERYDAY gerookte spekblokjes 250g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Zuivel & eieren",
-      "cg": "EVERYDAY halfvolle chocomelk brik 1L",
-      "key": "everyday-halfvolle-chocomelk-brik-1l",
-      "loc": "frigo",
-      "name": "EVERYDAY halfvolle chocomelk brik 1L",
-      "pack": 1,
-      "price": 0.99,
-      "search": "EVERYDAY halfvolle chocomelk brik 1L",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Vleeswaren & beleg",
-      "cg": "EVERYDAY hespenworst sneetjes 200g",
-      "key": "everyday-hespenworst-sneetjes-200g",
-      "loc": "frigo",
-      "name": "EVERYDAY hespenworst sneetjes 200g",
-      "pack": 1,
-      "price": 1.17,
-      "search": "EVERYDAY hespenworst sneetjes 200g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": null,
-      "cg": "EVERYDAY Kerstomaten 500g",
-      "key": "kerstomaten",
-      "loc": "frigo",
-      "name": "EVERYDAY Kerstomaten 500g",
-      "pack": 500,
-      "price": 1.78,
-      "search": "EVERYDAY Kerstomaten 500g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": "Diepvries & kant-en-klaar",
-      "cg": "BONI Macaroni Ham kaas 1kg",
-      "key": "everyday-macaroni-ham-kaas-1kg",
-      "loc": "frigo",
-      "name": "EVERYDAY macaroni ham-kaas 1kg",
-      "pack": 1,
-      "price": 3.99,
-      "search": "BONI Macaroni Ham kaas 1kg",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Zuivel & eieren",
-      "cg": "EVERYDAY rijstpap vanille 200g",
-      "key": "everyday-rijstpap-vanille-200g",
-      "loc": "frigo",
-      "name": "EVERYDAY rijstpap vanille 200g",
-      "pack": 1,
-      "price": 0.38,
-      "search": "EVERYDAY rijstpap vanille 200g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Vleeswaren & beleg",
-      "cg": "EVERYDAY salami z.look sneetjes 225g",
-      "key": "everyday-salami-z-look-sneetjes-225g",
-      "loc": "frigo",
-      "name": "EVERYDAY salami z.look sneetjes 225g",
-      "pack": 1,
-      "price": 1.49,
-      "search": "EVERYDAY salami z.look sneetjes 225g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Vleeswaren & beleg",
-      "cg": "EVERYDAY Vleessalade 250g",
-      "key": "everyday-vleessalade-250g",
-      "loc": "frigo",
-      "name": "EVERYDAY Vleessalade 250g",
-      "pack": 1,
-      "price": 1.28,
-      "search": "EVERYDAY Vleessalade 250g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Zuivel & eieren",
-      "cg": "EVERYDAY Volle melk brik 1L",
-      "key": "everyday-volle-melk-brik-1l",
-      "loc": "frigo",
-      "name": "EVERYDAY Volle melk brik 1L",
-      "pack": 1000,
-      "price": 0.89,
-      "search": "EVERYDAY Volle melk brik 1L",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "ml"
-    },
-    {
-      "cat": "Zuivel & eieren",
-      "cg": "EVERYDAY yoghurt mager 8x125g",
-      "key": "everyday-yoghurt-mager-nat-suik-8x125g",
-      "loc": "frigo",
-      "name": "EVERYDAY yoghurt mager nat.suik. 8x125g",
-      "pack": 1,
-      "price": 1.19,
-      "search": "EVERYDAY yoghurt mager 8x125g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "gemarineerde kippenbrochette",
-      "key": "gemarineerde-kippenbrochette",
-      "loc": "frigo",
-      "name": "gemarineerde kippenbrochette",
-      "pack": 375,
-      "price": 6.56,
-      "search": "gemarineerde kippenbrochette",
-      "src": "Collect&Go (€ 17,49/kg × 375 g)",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": null,
-      "cg": "Ijsbergsla 1st",
-      "key": "ijsbergsla",
-      "loc": "frigo",
-      "name": "Ijsbergsla 1st",
-      "pack": 1,
-      "price": 1.09,
-      "search": "Ijsbergsla 1st",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "st"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "kalkoenenschnitzel 375g",
-      "key": "kalkoenenschnitzel-375g",
-      "loc": "frigo",
-      "name": "kalkoenenschnitzel 375g",
-      "pack": 375,
-      "price": 3.89,
-      "search": "kalkoenenschnitzel 375g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "Gepaneerde Krokante Kip 500g",
-      "key": "kip-krokant-4x125g",
-      "loc": "frigo",
-      "name": "Kip Krokant 4x125g",
-      "pack": 1,
-      "price": 5.69,
-      "search": "Gepaneerde Krokante Kip 500g",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": null,
-      "cg": "Kippenfilet 450g",
-      "key": "kippenfilet",
-      "loc": "frigo",
-      "name": "Kippenfilet 450g",
-      "pack": 450,
-      "price": 5.49,
-      "search": "Kippenfilet 450g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": null,
-      "cg": "looksaus 200g",
-      "key": "looksaus",
-      "loc": "frigo",
-      "name": "looksaus 200g",
-      "pack": 200,
-      "price": 1.6,
-      "search": "looksaus 200g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": "Vleeswaren & beleg",
-      "cg": "Martino",
-      "key": "martino",
-      "loc": "frigo",
-      "name": "Martino",
-      "pack": 200,
-      "price": 2.2,
-      "search": "Martino",
-      "src": "Collect&Go (€ 10,99/kg × 200 g)",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "Spekburger varken",
-      "key": "spekburger-varken",
-      "loc": "frigo",
-      "name": "Spekburger varken",
-      "pack": 300,
-      "price": 3.95,
-      "search": "Spekburger varken",
-      "src": "Collect&Go (€ 13,17/kg × 300 g)",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "verse worsten varken+kalf",
-      "key": "verse-worsten-varken-kalf",
-      "loc": "frigo",
-      "name": "verse worsten varken+kalf",
-      "pack": 500,
-      "price": 5.05,
-      "search": "verse worsten varken+kalf",
-      "src": "Collect&Go (€ 10,11/kg × 500 g)",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "vleeskoek varken ±1kg",
-      "key": "vleeskoek-varken-1kg",
-      "loc": "frigo",
-      "name": "vleeskoek varken ±1kg",
-      "pack": 1000,
-      "price": 10.81,
-      "search": "vleeskoek varken ±1kg",
-      "src": "Collect&Go (€ 10,81/kg × 1000 g)",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "wokreepjes gevogelte",
-      "key": "wokreepjes-gevogelte",
-      "loc": "frigo",
-      "name": "wokreepjes gevogelte",
-      "pack": 300,
-      "price": 4.12,
-      "search": "wokreepjes gevogelte",
-      "src": "Collect&Go (€ 13,73/kg × 300 g)",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": "Vers vlees & vis",
-      "cg": "wokschotel gevogelte 2pers 1,14kg",
-      "key": "wokschotel-gevogelte-2pers-1-14kg",
-      "loc": "frigo",
-      "name": "wokschotel gevogelte 2pers 1,14kg",
-      "pack": 1,
-      "price": 11.85,
-      "search": "wokschotel gevogelte 2pers 1,14kg",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "st"
-    },
-    {
-      "cat": null,
-      "cg": "BONI appelmousseline bok 200g",
-      "key": "appelmoes",
-      "loc": "kast",
-      "name": "BONI appelmousseline bok 200g",
-      "pack": 200,
-      "price": 0.8,
-      "search": "BONI appelmousseline bok 200g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": null,
-      "cg": "BONI bladerdeeg pasteitjes 6st 150g",
-      "key": "pasteitjes",
-      "loc": "kast",
-      "name": "BONI bladerdeeg pasteitjes 6st 150g",
-      "pack": 6,
-      "price": 1.85,
-      "search": "BONI bladerdeeg pasteitjes 6st 150g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "st"
-    },
-    {
-      "cat": null,
-      "cg": "BONI mayonaise met eieren TD 500ml",
-      "key": "mayonaise",
-      "loc": "kast",
-      "name": "BONI mayonaise met eieren TD 500ml",
-      "pack": 500,
-      "price": 1.59,
-      "search": "BONI mayonaise met eieren TD 500ml",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "ml"
-    },
-    {
-      "cat": null,
-      "cg": "BONI pitabroodjes voorgebakken 10st 500g",
-      "key": "pita",
-      "loc": "kast",
-      "name": "BONI pitabroodjes voorgebakken 10st 500g",
-      "pack": 10,
-      "price": 0.99,
-      "search": "BONI pitabroodjes voorgebakken 10st 500g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "st"
-    },
-    {
-      "cat": null,
-      "cg": "BONI rijst basmati 4x125g",
-      "key": "basmati",
-      "loc": "kast",
-      "name": "BONI rijst basmati 4x125g",
-      "pack": 4,
-      "price": 1.19,
-      "search": "BONI rijst basmati 4x125g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "zakjes"
-    },
-    {
-      "cat": null,
-      "cg": "BONI saus zoetzuur 500g",
-      "key": "zoetzuur",
-      "loc": "kast",
-      "name": "BONI saus zoetzuur 500g",
-      "pack": 500,
-      "price": 1.72,
-      "search": "BONI saus zoetzuur 500g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": null,
-      "cg": "BONI toastbrood 500g",
-      "key": "toastbrood",
-      "loc": "kast",
-      "name": "BONI toastbrood 500g",
-      "pack": 20,
-      "price": 1.15,
-      "search": "BONI toastbrood 500g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "sneden"
-    },
-    {
-      "cat": null,
-      "cg": "BONI uien 2,5kg",
-      "key": "uien",
-      "loc": "kast",
-      "name": "BONI uien 2,5kg",
-      "pack": 2500,
-      "price": 1.99,
-      "search": "BONI uien 2,5kg",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": null,
-      "cg": "BONI vol-au-vent bokaal 400g",
-      "key": "volauvent",
-      "loc": "kast",
-      "name": "BONI vol-au-vent bokaal 400g",
-      "pack": 400,
-      "price": 4.19,
-      "search": "BONI vol-au-vent bokaal 400g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": "Aardappelen & frieten",
-      "cg": "EVERYDAY bloemige aardappelen 5kg",
-      "key": "everyday-bloemige-aardappelen-5kg",
-      "loc": "kast",
-      "name": "EVERYDAY bloemige aardappelen 5kg",
-      "pack": 5000,
-      "price": 4.89,
-      "search": "EVERYDAY bloemige aardappelen 5kg",
-      "src": "Collect&Go",
-      "stock": true,
-      "unit": "g"
-    },
-    {
-      "cat": null,
-      "cg": "EVERYDAY passata gezeefde tom. brik 500g",
-      "key": "passata",
-      "loc": "kast",
-      "name": "EVERYDAY passata gezeefde tom. brik 500g",
-      "pack": 500,
-      "price": 0.59,
-      "search": "EVERYDAY passata gezeefde tom. brik 500g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": null,
-      "cg": "EVERYDAY spaghetti 500g",
-      "key": "spaghetti",
-      "loc": "kast",
-      "name": "EVERYDAY spaghetti 500g",
-      "pack": 500,
-      "price": 0.45,
-      "search": "EVERYDAY spaghetti 500g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    },
-    {
-      "cat": null,
-      "cg": "SOUBRY al dente horentjes 375g",
-      "key": "horentjes",
-      "loc": "kast",
-      "name": "SOUBRY al dente horentjes 375g",
-      "pack": 375,
-      "price": 0.94,
-      "search": "SOUBRY al dente horentjes 375g",
-      "src": "Collect&Go",
-      "stock": false,
-      "unit": "g"
-    }
-  ],
-  "pricedAt": "2026-11-17"
+ "items": [
+  {
+   "cat": null,
+   "cg": "BONI bladerdeeg pasteitjes 6st 150g",
+   "key": "pasteitjes",
+   "loc": "kast",
+   "name": "BONI bladerdeeg pasteitjes 6st 150g",
+   "pack": 6,
+   "price": 1.85,
+   "search": "BONI bladerdeeg pasteitjes 6st 150g",
+   "src": "Collect&Go",
+   "stock": false,
+   "unit": "st"
+  },
+  {
+   "cat": null,
+   "cg": "BONI erwten en jonge wortelen 1,5kg",
+   "key": "erwten-wortelen",
+   "loc": "diepvries",
+   "name": "BONI erwten en jonge wortelen 1,5kg",
+   "pack": 1500,
+   "price": 2.69,
+   "search": "BONI erwten en jonge wortelen 1,5kg",
+   "src": "Collect&Go",
+   "stock": false,
+   "unit": "g"
+  },
+  {
+   "cat": null,
+   "cg": "BONI toastbrood 500g",
+   "key": "toastbrood",
+   "loc": "kast",
+   "name": "BONI toastbrood 500g",
+   "pack": 20,
+   "price": 1.15,
+   "search": "BONI toastbrood 500g",
+   "src": "Collect&Go",
+   "stock": false,
+   "unit": "sneden"
+  },
+  {
+   "cat": null,
+   "cg": "BONI uien 2,5kg",
+   "key": "uien",
+   "loc": "kast",
+   "name": "BONI uien 2,5kg",
+   "pack": 2500,
+   "price": 1.99,
+   "search": "BONI uien 2,5kg",
+   "src": "Collect&Go",
+   "stock": false,
+   "unit": "g"
+  },
+  {
+   "cat": null,
+   "cg": "BONI vol-au-vent bokaal 400g",
+   "key": "volauvent",
+   "loc": "kast",
+   "name": "BONI vol-au-vent bokaal 400g",
+   "pack": 400,
+   "price": 4.19,
+   "search": "BONI vol-au-vent bokaal 400g",
+   "src": "Collect&Go",
+   "stock": false,
+   "unit": "g"
+  },
+  {
+   "cat": null,
+   "cg": "BONI wokmix groenten 1kg",
+   "key": "wokgroenten",
+   "loc": "diepvries",
+   "name": "BONI wokmix groenten 1kg",
+   "pack": 1000,
+   "price": 2.99,
+   "search": "BONI wokmix groenten 1kg",
+   "src": "Collect&Go",
+   "stock": false,
+   "unit": "g"
+  },
+  {
+   "cat": null,
+   "cg": "Mccain Kroketten Klassiek | Frituur 1kg",
+   "key": "kroketten",
+   "loc": "diepvries",
+   "name": "Mccain Kroketten Klassiek | Frituur 1kg",
+   "pack": 1000,
+   "price": 2.99,
+   "search": "Mccain Kroketten Klassiek | Frituur 1kg",
+   "src": "Collect&Go",
+   "stock": false,
+   "unit": "g"
+  },
+  {
+   "key": "belviva-belgische-ovenfriet-600g",
+   "name": "BELVIVA Belgische ovenfriet 600g",
+   "cat": "Aardappelen & frieten",
+   "price": 3.99,
+   "priced": "2026-10-22"
+  },
+  {
+   "key": "belviva-klassiek-oven-friet-600g",
+   "name": "BELVIVA Klassiek oven friet 600g",
+   "cat": "Aardappelen & frieten",
+   "price": 3.99,
+   "priced": "2026-07-07"
+  },
+  {
+   "key": "belviva-zig-zag-frieten-600g",
+   "name": "BELVIVA Zig zag frieten 600g",
+   "cat": "Aardappelen & frieten",
+   "price": 2.62,
+   "priced": "2025-10-06"
+  },
+  {
+   "cat": "Aardappelen & frieten",
+   "cg": "BONI aardappelblokjes 1kg",
+   "key": "boni-aardappelblokjes-1kg",
+   "loc": "diepvries",
+   "name": "BONI aardappelblokjes 1kg",
+   "pack": 1000,
+   "price": 1.99,
+   "search": "BONI aardappelblokjes 1kg",
+   "stock": true,
+   "unit": "g",
+   "priced": "2026-09-09"
+  },
+  {
+   "key": "boni-aardappelpuree-1kg",
+   "name": "BONI aardappelpuree 1kg",
+   "cat": "Aardappelen & frieten",
+   "price": 1.98,
+   "priced": "2026-10-22"
+  },
+  {
+   "cat": "Aardappelen & frieten",
+   "cg": "BONI aardappelpuree broccoli 1kg",
+   "key": "boni-aardappelpuree-broccoli-1kg",
+   "loc": "diepvries",
+   "name": "BONI aardappelpuree broccoli 1kg",
+   "pack": 1000,
+   "price": 2.92,
+   "search": "BONI aardappelpuree broccoli 1kg",
+   "stock": true,
+   "unit": "g",
+   "priced": "2025-10-21"
+  },
+  {
+   "key": "boni-aardappelpuree-spinazie-1kg",
+   "name": "BONI aardappelpuree spinazie 1kg",
+   "cat": "Aardappelen & frieten",
+   "price": 2.75,
+   "priced": "2025-03-06"
+  },
+  {
+   "cat": "Aardappelen & frieten",
+   "cg": "BONI aardappelpuree wortel 1kg",
+   "key": "boni-aardappelpuree-wortel-1kg",
+   "loc": "diepvries",
+   "name": "BONI aardappelpuree wortel 1kg",
+   "pack": 1000,
+   "price": 2.81,
+   "search": "BONI aardappelpuree wortel 1kg",
+   "stock": true,
+   "unit": "g",
+   "priced": "2026-11-13",
+   "art": "30315"
+  },
+  {
+   "key": "boni-fijne-frieten-2kg",
+   "name": "BONI fijne frieten 2kg",
+   "cat": "Aardappelen & frieten",
+   "price": 2.58,
+   "priced": "2026-06-05"
+  },
+  {
+   "key": "boni-frietaardappelen-bewaar-2-5kg",
+   "name": "BONI Frietaardappelen bewaar 2,5kg",
+   "cat": "Aardappelen & frieten",
+   "price": 3.95,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-frietaardappelen-primeur-5kg",
+   "name": "BONI frietaardappelen primeur 5kg",
+   "cat": "Aardappelen & frieten",
+   "price": 6.25,
+   "priced": "2026-08-19"
+  },
+  {
+   "cat": "Aardappelen & frieten",
+   "cg": "BONI frieten Airfryer oven 1kg",
+   "key": "boni-frieten-airfryer-oven-1kg",
+   "loc": "diepvries",
+   "name": "BONI frieten Airfryer oven 1kg",
+   "pack": 1000,
+   "price": 1.79,
+   "search": "BONI frieten Airfryer oven 1kg",
+   "stock": true,
+   "unit": "g",
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-laurette-aardappelen-2-5kg",
+   "name": "BONI Laurette aardappelen 2,5kg",
+   "cat": "Aardappelen & frieten",
+   "price": 5.49,
+   "priced": "2025-06-04"
+  },
+  {
+   "key": "boni-laurette-primeur-2-5kg",
+   "name": "BONI Laurette primeur 2,5kg",
+   "cat": "Aardappelen & frieten",
+   "price": 5.99,
+   "priced": "2025-08-28"
+  },
+  {
+   "key": "boni-oven-airf-frit-allumet-friet-1kg",
+   "name": "BONI oven Airf. frit. allumet. friet 1kg",
+   "cat": "Aardappelen & frieten",
+   "price": 1.85,
+   "priced": "2026-09-17"
+  },
+  {
+   "key": "boni-polderaardappelen-2-5kg",
+   "name": "BONI polderaardappelen 2,5kg",
+   "cat": "Aardappelen & frieten",
+   "price": 4.99,
+   "priced": "2025-05-02"
+  },
+  {
+   "key": "boni-pommes-duchesse-1kg",
+   "name": "BONI Pommes Duchesse 1kg",
+   "cat": "Aardappelen & frieten",
+   "price": 1.59,
+   "priced": "2026-03-25"
+  },
+  {
+   "key": "boni-primeur-krielaardappelen-2kg",
+   "name": "BONI primeur krielaardappelen 2kg",
+   "cat": "Aardappelen & frieten",
+   "price": 4.95,
+   "priced": "2026-07-30"
+  },
+  {
+   "key": "boni-zoete-aardappel-los",
+   "name": "BONI zoete aardappel (los)",
+   "cat": "Aardappelen & frieten",
+   "kgPrice": 1.99,
+   "avgKg": 0.652,
+   "price": 1.3,
+   "priced": "2025-12-29"
+  },
+  {
+   "cat": "Aardappelen & frieten",
+   "cg": "EVERYDAY bloemige aardappelen 5kg",
+   "key": "everyday-bloemige-aardappelen-5kg",
+   "loc": "kast",
+   "name": "EVERYDAY bloemige aardappelen 5kg",
+   "pack": 5000,
+   "price": 5.49,
+   "search": "EVERYDAY bloemige aardappelen 5kg",
+   "stock": true,
+   "unit": "g",
+   "priced": "2025-12-13"
+  },
+  {
+   "key": "mousline-puree-natuur-4x130g",
+   "name": "MOUSLINE puree natuur 4x130g",
+   "cat": "Aardappelen & frieten",
+   "price": 3.75,
+   "priced": "2025-06-23"
+  },
+  {
+   "key": "potato-chef-belgische-aardappelen-4kg",
+   "name": "POTATO CHEF Belgische aardappelen 4kg",
+   "cat": "Aardappelen & frieten",
+   "price": 6.49,
+   "priced": "2025-07-02"
+  },
+  {
+   "key": "brugse-zot-de-warmste-zot-6-75cl",
+   "name": "BRUGSE ZOT De Warmste Zot 6% 75cl",
+   "cat": "Alcohol",
+   "price": 5.99,
+   "priced": "2025-01-25"
+  },
+  {
+   "key": "chateau-haut-belian-75cl",
+   "name": "Château Haut Belian 75cl",
+   "cat": "Alcohol",
+   "price": 5.85,
+   "priced": "2026-04-08"
+  },
+  {
+   "key": "cornet-oaked-blond-8-5-6x33cl",
+   "name": "CORNET Oaked blond 8,5% 6x33cl",
+   "cat": "Alcohol",
+   "price": 5.59,
+   "priced": "2026-10-22"
+  },
+  {
+   "key": "desperados-original-5-9-6x33cl",
+   "name": "DESPERADOS Original 5,9% 6x33cl",
+   "cat": "Alcohol",
+   "price": 9.39,
+   "priced": "2026-07-13"
+  },
+  {
+   "key": "diable-rose-aoc-saint-mont-75cl",
+   "name": "Diable rose AOC Saint-Mont 75cl",
+   "cat": "Alcohol",
+   "price": 5.59,
+   "priced": "2026-11-13"
+  },
+  {
+   "key": "disaronno-velvet-17-70cl",
+   "name": "DISARONNO Velvet 17% 70cl",
+   "cat": "Alcohol",
+   "price": 17.99,
+   "priced": "2025-05-02"
+  },
+  {
+   "key": "duc-de-lerme-rose-75cl",
+   "name": "DUC DE LERME rosé 75cl",
+   "cat": "Alcohol",
+   "price": 3.99,
+   "priced": "2025-10-29"
+  },
+  {
+   "key": "duvel-bier-blond-8-5-8x33cl",
+   "name": "DUVEL Bier blond 8,5% 8x33cl",
+   "cat": "Alcohol",
+   "price": 11.98,
+   "priced": "2026-09-26"
+  },
+  {
+   "key": "duvel-tripel-hop-citra-9-5-vol-6x33cl",
+   "name": "DUVEL Tripel hop citra 9,5%vol 6x33cl",
+   "cat": "Alcohol",
+   "price": 13.18,
+   "priced": "2025-04-01"
+  },
+  {
+   "key": "duvel-tripel-hop-krush-8-4-4x33cl",
+   "name": "DUVEL Tripel Hop Krush 8,4% 4x33cl",
+   "cat": "Alcohol",
+   "price": 8.79,
+   "priced": "2026-09-26"
+  },
+  {
+   "key": "gran-baron-cava-brut-75cl",
+   "name": "GRAN BARON Cava Brut 75cl",
+   "cat": "Alcohol",
+   "price": 7.99,
+   "priced": "2026-09-26"
+  },
+  {
+   "key": "granbeau-gde-cuv-rose-igp-pays-d-oc-75cl",
+   "name": "Granbeau Gde Cuv.Rosé IGP Pays d'Oc 75cl",
+   "cat": "Alcohol",
+   "price": 5.79,
+   "priced": "2025-05-02"
+  },
+  {
+   "key": "jp-chenet-grenache-cinsault-75cl",
+   "name": "JP. CHENET Grenache Cinsault 75cl",
+   "cat": "Alcohol",
+   "price": 5.0,
+   "priced": "2026-09-26"
+  },
+  {
+   "key": "jupiler-pils-5-2-bak-24x25cl",
+   "name": "JUPILER pils 5,2% bak 24x25cl",
+   "cat": "Alcohol",
+   "price": 15.98,
+   "priced": "2026-08-19"
+  },
+  {
+   "key": "jupiler-pils-5-2-bak-24x33cl",
+   "name": "JUPILER Pils 5,2% bak 24x33cl",
+   "cat": "Alcohol",
+   "price": 12.61,
+   "priced": "2026-03-25"
+  },
+  {
+   "key": "kahlua-likeur-16-0-70cl",
+   "name": "KAHLUA likeur 16,0% 70cl",
+   "cat": "Alcohol",
+   "price": 17.99,
+   "priced": "2026-09-26"
+  },
+  {
+   "key": "kasteel-rouge-8-blik-50cl",
+   "name": "KASTEEL rouge 8% blik 50cl",
+   "cat": "Alcohol",
+   "price": 2.99,
+   "priced": "2026-09-26"
+  },
+  {
+   "key": "licor-43-31-0-vol-70cl",
+   "name": "LICOR 43 31,0%vol 70cl",
+   "cat": "Alcohol",
+   "price": 21.99,
+   "priced": "2025-05-10"
+  },
+  {
+   "key": "liefmans-fruitesse-3-8-8x25cl",
+   "name": "LIEFMANS Fruitesse 3,8% 8x25cl",
+   "cat": "Alcohol",
+   "price": 9.98,
+   "priced": "2025-02-22"
+  },
+  {
+   "key": "lindemans-pecheresse-2-5-8x25cl",
+   "name": "LINDEMANS Pecheresse 2,5% 8x25cl",
+   "cat": "Alcohol",
+   "price": 11.68,
+   "priced": "2025-05-02"
+  },
+  {
+   "key": "ma-belle-pomelle-ventoux-rose-75cl",
+   "name": "Ma Belle Pomelle Ventoux rosé 75cl",
+   "cat": "Alcohol",
+   "price": 6.99,
+   "priced": "2025-05-10"
+  },
+  {
+   "key": "martini-bellini-peach-8-0-vol-75cl",
+   "name": "MARTINI Bellini Peach 8,0%vol 75cl",
+   "cat": "Alcohol",
+   "price": 6.89,
+   "priced": "2025-12-13"
+  },
+  {
+   "key": "mas-pere-cava-brut-selection-75cl",
+   "name": "MAS PERE Cava brut Selection 75cl",
+   "cat": "Alcohol",
+   "price": 8.49,
+   "priced": "2025-11-08"
+  },
+  {
+   "key": "michel-torino-malbec-reserva-75cl",
+   "name": "Michel Torino Malbec Reserva 75cl",
+   "cat": "Alcohol",
+   "price": 7.99,
+   "priced": "2025-04-01"
+  },
+  {
+   "key": "nolens-hasseltse-graanjenever-30-1l",
+   "name": "NOLENS Hasseltse graanjenever 30% 1L",
+   "cat": "Alcohol",
+   "price": 13.49,
+   "priced": "2026-05-22"
+  },
+  {
+   "key": "recoda-cava-brut-75cl",
+   "name": "RECODA Cava brut 75cl",
+   "cat": "Alcohol",
+   "price": 5.49,
+   "priced": "2026-10-22"
+  },
+  {
+   "key": "san-giorgio-amaretto-25-70cl",
+   "name": "SAN GIORGIO Amaretto 25% 70cl",
+   "cat": "Alcohol",
+   "price": 9.99,
+   "priced": "2026-08-19"
+  },
+  {
+   "key": "sprite-vodka-absolut-5-blik-25cl",
+   "name": "SPRITE Vodka Absolut 5% blik 25cl",
+   "cat": "Alcohol",
+   "price": 2.59,
+   "priced": "2025-08-05"
+  },
+  {
+   "key": "stella-artois-pils-5-2-bak-24x25cl",
+   "name": "STELLA ARTOIS pils 5,2% bak 24x25cl",
+   "cat": "Alcohol",
+   "price": 16.45,
+   "priced": "2026-04-16"
+  },
+  {
+   "key": "terrefort-cahors-75cl",
+   "name": "TERREFORT Cahors 75cl",
+   "cat": "Alcohol",
+   "price": 4.49,
+   "priced": "2025-02-22"
+  },
+  {
+   "key": "victoria-blond-8-5-6x33cl",
+   "name": "VICTORIA blond 8,5% 6x33cl",
+   "cat": "Alcohol",
+   "price": 7.69,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-baby-sensitive-vochtige-doekje-80st",
+   "name": "BONI baby sensitive vochtige doekje 80st",
+   "cat": "Baby",
+   "price": 0.75,
+   "priced": "2026-07-30"
+  },
+  {
+   "key": "boni-baby-wipes-soft-80st",
+   "name": "BONI baby wipes Soft 80st",
+   "cat": "Baby",
+   "price": 0.99,
+   "priced": "2025-09-15"
+  },
+  {
+   "key": "boni-kinderpleisters-40st",
+   "name": "BONI kinderpleisters 40st",
+   "cat": "Baby",
+   "price": 0.79,
+   "priced": "2026-08-28"
+  },
+  {
+   "key": "boni-luierbroekjes-4-26st",
+   "name": "BONI luierbroekjes 4 26st",
+   "cat": "Baby",
+   "price": 4.06,
+   "priced": "2025-04-01"
+  },
+  {
+   "key": "boni-luierbroekjes-6-22st",
+   "name": "BONI luierbroekjes 6 22st",
+   "cat": "Baby",
+   "price": 5.73,
+   "priced": "2026-04-13"
+  },
+  {
+   "key": "boni-luierbroekjes-7-20st",
+   "name": "BONI luierbroekjes 7 20st",
+   "cat": "Baby",
+   "price": 7.27,
+   "priced": "2025-11-08"
+  },
+  {
+   "key": "boni-luierbroekjes-m6-xl-maxi-36st",
+   "name": "BONI luierbroekjes m6 XL maxi 36st",
+   "cat": "Baby",
+   "price": 9.39,
+   "priced": "2026-09-09"
+  },
+  {
+   "key": "boni-luiers-5-junior-11-16kg-64st",
+   "name": "BONI luiers 5 Junior 11-16kg 64st",
+   "cat": "Baby",
+   "price": 8.71,
+   "priced": "2025-10-21"
+  },
+  {
+   "key": "boni-luiers-6-xl-13-18kg-56st",
+   "name": "BONI luiers 6 XL 13-18kg 56st",
+   "cat": "Baby",
+   "price": 11.18,
+   "priced": "2025-10-21"
+  },
+  {
+   "key": "boni-luiers-xlarge-6-13-18kg-56st",
+   "name": "BONI luiers XLarge 6 13-18kg 56st",
+   "cat": "Baby",
+   "price": 10.06,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-tandenborstel-kids-2st",
+   "name": "BONI tandenborstel kids 2st",
+   "cat": "Baby",
+   "price": 1.29,
+   "priced": "2026-09-26"
+  },
+  {
+   "key": "ella-s-kitchen-smoothie-red-6m-bio-90g",
+   "name": "ELLA'S KITCHEN smoothie Red 6m+ bio 90g",
+   "cat": "Baby",
+   "price": 1.19,
+   "priced": "2025-05-02"
+  },
+  {
+   "key": "elmex-tandpasta-kinderen-2-6j-50ml",
+   "name": "ELMEX tandpasta kinderen 2-6j 50ml",
+   "cat": "Baby",
+   "price": 1.74,
+   "priced": "2025-11-29"
+  },
+  {
+   "key": "nan-optipro-verzadiging-6m-800g",
+   "name": "NAN OPTIPRO verzadiging 6m 800g",
+   "cat": "Baby",
+   "price": 17.95,
+   "priced": "2025-01-02"
+  },
+  {
+   "key": "nestle-sunny-fruit-orang-bis-12-36m-110g",
+   "name": "NESTLÉ Sunny Fruit Orang/Bis.12-36m 110g",
+   "cat": "Baby",
+   "price": 1.59,
+   "priced": "2025-04-12"
+  },
+  {
+   "key": "nutrilon-1-groeimelk-vanaf-1-jaar-800g",
+   "name": "NUTRILON 1+ groeimelk vanaf 1 jaar 800g",
+   "cat": "Baby",
+   "price": 12.99,
+   "priced": "2025-08-11"
+  },
+  {
+   "key": "nutrilon-2-opvolgmelk-6m-800g",
+   "name": "NUTRILON 2 opvolgmelk 6m+ 800g",
+   "cat": "Baby",
+   "price": 13.99,
+   "priced": "2025-05-02"
+  },
+  {
+   "key": "olvarit-appel-aardbei-banaan-8m-2x200g",
+   "name": "OLVARIT appel aardbei banaan 8m+ 2x200g",
+   "cat": "Baby",
+   "price": 2.18,
+   "priced": "2025-02-01"
+  },
+  {
+   "key": "olvarit-appel-banaan-bosbes-12m-100g",
+   "name": "OLVARIT appel banaan bosbes. 12m+ 100g",
+   "cat": "Baby",
+   "price": 1.19,
+   "priced": "2025-03-29"
+  },
+  {
+   "key": "olvarit-appel-peer-framboos-12m-2x200g",
+   "name": "OLVARIT appel peer framboos 12m+ 2x200g",
+   "cat": "Baby",
+   "price": 2.38,
+   "priced": "2025-05-02"
+  },
+  {
+   "key": "olvarit-appel-perzik-mango-12m-2x200g",
+   "name": "OLVARIT appel perzik mango 12m+ 2x200g",
+   "cat": "Baby",
+   "price": 2.38,
+   "priced": "2025-05-22"
+  },
+  {
+   "key": "olvarit-banaan-sinaas-koek-12m-2x200g",
+   "name": "OLVARIT banaan sinaas koek 12m+ 2x200g",
+   "cat": "Baby",
+   "price": 2.58,
+   "priced": "2025-03-06"
+  },
+  {
+   "key": "olvarit-broccoli-kalkoen-aard-12m-2x250g",
+   "name": "OLVARIT broccoli kalkoen aard.12m 2x250g",
+   "cat": "Baby",
+   "price": 2.98,
+   "priced": "2025-05-02"
+  },
+  {
+   "key": "olvarit-peer-banaan-abrikoos-8m-100g",
+   "name": "OLVARIT peer banaan abrikoos 8m+ 100g",
+   "cat": "Baby",
+   "price": 1.29,
+   "priced": "2025-03-29"
+  },
+  {
+   "key": "olvarit-pomp-kip-aardappel-15m-2x-250g",
+   "name": "OLVARIT Pomp Kip Aardappel +15M 2x 250g",
+   "cat": "Baby",
+   "price": 1.98,
+   "priced": "2025-04-22"
+  },
+  {
+   "key": "olvarit-pomp-kip-pasta-12-glas-2x250g",
+   "name": "OLVARIT pomp-kip-pasta 12+ glas 2x250g",
+   "cat": "Baby",
+   "price": 2.98,
+   "priced": "2025-06-16"
+  },
+  {
+   "key": "olvarit-pompoen-wortel-kip-6m-2x200g",
+   "name": "OLVARIT pompoen wortel kip 6m+ 2x200g",
+   "cat": "Baby",
+   "price": 2.89,
+   "priced": "2025-01-02"
+  },
+  {
+   "key": "olvarit-smoot-kokos-mango-12m-100g",
+   "name": "OLVARIT smoot. kokos-mango 12m+ 100g",
+   "cat": "Baby",
+   "price": 1.09,
+   "priced": "2025-01-02"
+  },
+  {
+   "key": "olvarit-spinazie-witvis-rijst-6m-2x200g",
+   "name": "OLVARIT spinazie witvis rijst 6m+ 2x200g",
+   "cat": "Baby",
+   "price": 2.18,
+   "priced": "2025-01-02"
+  },
+  {
+   "key": "pampers-luiers-pre-prot-m5-11-16kg-80st",
+   "name": "PAMPERS luiers pre.prot. m5 11-16kg 80st",
+   "cat": "Baby",
+   "price": 41.69,
+   "priced": "2025-11-22"
+  },
+  {
+   "key": "pampers-pants-baby-dry-m6-14-19kg-20st",
+   "name": "PAMPERS pants baby dry m6 14-19kg 20st",
+   "cat": "Baby",
+   "price": 7.74,
+   "priced": "2025-07-29"
+  },
+  {
+   "key": "tahiti-douche-kids-exotisch-300ml",
+   "name": "TAHITI douche Kids exotisch 300ml",
+   "cat": "Baby",
+   "price": 2.59,
+   "priced": "2026-07-13"
+  },
+  {
+   "key": "theramed-tandpasta-1-6-jaar-50ml",
+   "name": "THERAMED tandpasta 1-6 jaar 50ml",
+   "cat": "Baby",
+   "price": 1.99,
+   "priced": "2025-06-04"
+  },
+  {
+   "key": "zwitsal-shampoo-400ml",
+   "name": "ZWITSAL shampoo 400ml",
+   "cat": "Baby",
+   "price": 2.99,
+   "priced": "2025-03-29"
+  },
+  {
+   "key": "zwitsal-wasgel-400ml",
+   "name": "ZWITSAL Wasgel 400ml",
+   "cat": "Baby",
+   "price": 3.39,
+   "priced": "2025-01-02"
+  },
+  {
+   "key": "boni-brioche-gesneden-500g",
+   "name": "BONI brioche gesneden 500g",
+   "cat": "Brood & bakkerij",
+   "price": 2.64,
+   "priced": "2026-11-13",
+   "art": "19234"
+  },
+  {
+   "key": "boni-chocoladebroodjes-10st-700g",
+   "name": "BONI Chocoladebroodjes 10st 700g",
+   "cat": "Brood & bakkerij",
+   "price": 3.36,
+   "priced": "2026-06-05"
+  },
+  {
+   "key": "boni-chocoladebroodjes-10st-750g",
+   "name": "BONI Chocoladebroodjes 10st 750g",
+   "cat": "Brood & bakkerij",
+   "price": 3.68,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-ciabatta-voorgebakken-300g",
+   "name": "BONI ciabatta voorgebakken 300g",
+   "cat": "Brood & bakkerij",
+   "price": 0.58,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-croissants-12st-660g",
+   "name": "BONI Croissants 12st 660g",
+   "cat": "Brood & bakkerij",
+   "price": 2.97,
+   "priced": "2026-07-13"
+  },
+  {
+   "key": "boni-grissini-sesam-125g",
+   "name": "BONI grissini sesam 125g",
+   "cat": "Brood & bakkerij",
+   "price": 1.19,
+   "priced": "2025-12-29"
+  },
+  {
+   "key": "boni-mini-sandwiches-12x27g",
+   "name": "BONI mini sandwiches 12x27g",
+   "cat": "Brood & bakkerij",
+   "price": 1.19,
+   "priced": "2025-01-13"
+  },
+  {
+   "cat": "Brood & bakkerij",
+   "cg": "BONI pitabroodjes voorgebakken 10st 500g",
+   "key": "pita",
+   "loc": "kast",
+   "name": "BONI pitabroodjes voorgebakken 10st 500g",
+   "pack": 10,
+   "price": 0.89,
+   "search": "BONI pitabroodjes voorgebakken 10st 500g",
+   "stock": false,
+   "unit": "st",
+   "priced": "2025-02-18"
+  },
+  {
+   "key": "boni-pitabroodjes-voorgebakken-6st-480g",
+   "name": "BONI pitabroodjes voorgebakken 6st 480g",
+   "cat": "Brood & bakkerij",
+   "price": 1.02,
+   "priced": "2026-06-05"
+  },
+  {
+   "key": "boni-poffertjes-50st",
+   "name": "BONI poffertjes 50st",
+   "cat": "Brood & bakkerij",
+   "price": 2.42,
+   "priced": "2026-08-19"
+  },
+  {
+   "key": "boni-tortilla-original-300g",
+   "name": "BONI Tortilla Original 300g",
+   "cat": "Brood & bakkerij",
+   "price": 0.89,
+   "priced": "2025-05-10"
+  },
+  {
+   "key": "boni-wraps-6st-370g",
+   "name": "BONI Wraps 6st 370g",
+   "cat": "Brood & bakkerij",
+   "price": 1.39,
+   "priced": "2025-05-10"
+  },
+  {
+   "key": "brood-tijger-wit-vgb-800g",
+   "name": "Brood tijger Wit VGB 800g",
+   "cat": "Brood & bakkerij",
+   "price": 1.99,
+   "priced": "2025-09-15"
+  },
+  {
+   "key": "bruin-brood-vierkant-dagver-800g",
+   "name": "bruin brood vierkant dagver 800g",
+   "cat": "Brood & bakkerij",
+   "price": 0.99,
+   "priced": "2025-03-06"
+  },
+  {
+   "key": "everyday-1-2-wit-stokbrood-4x150g",
+   "name": "EVERYDAY 1/2 wit stokbrood 4x150g",
+   "cat": "Brood & bakkerij",
+   "price": 1.1,
+   "priced": "2026-06-20"
+  },
+  {
+   "key": "everyday-bruin-brood-gesneden-800g",
+   "name": "EVERYDAY bruin brood gesneden 800g",
+   "cat": "Brood & bakkerij",
+   "price": 0.99,
+   "priced": "2025-02-01"
+  },
+  {
+   "key": "everyday-sandwiches-met-boter-10st",
+   "name": "EVERYDAY sandwiches met boter 10st",
+   "cat": "Brood & bakkerij",
+   "price": 1.19,
+   "priced": "2026-09-09"
+  },
+  {
+   "key": "la-lorraine-botersandwich-mini-12x27g",
+   "name": "LA LORRAINE Botersandwich Mini 12x27g",
+   "cat": "Brood & bakkerij",
+   "price": 3.09,
+   "priced": "2025-10-11"
+  },
+  {
+   "key": "la-lorraine-botersandwiches-10x45g",
+   "name": "LA LORRAINE botersandwiches 10x45g",
+   "cat": "Brood & bakkerij",
+   "price": 1.66,
+   "priced": "2025-01-02"
+  },
+  {
+   "key": "tijgerbrood-wit-dagvers-800g",
+   "name": "tijgerbrood wit dagvers 800g",
+   "cat": "Brood & bakkerij",
+   "price": 2.19,
+   "priced": "2026-11-13",
+   "art": "7004"
+  },
+  {
+   "key": "wit-brood-vierkant-dagvers-400g",
+   "name": "wit brood vierkant dagvers 400g",
+   "cat": "Brood & bakkerij",
+   "price": 0.99,
+   "priced": "2026-08-28"
+  },
+  {
+   "key": "boni-macaroni-ham-kaas-1kg",
+   "name": "BONI Macaroni Ham kaas 1kg",
+   "cat": "Diepvries & kant-en-klaar",
+   "price": 3.79,
+   "priced": "2026-09-17"
+  },
+  {
+   "key": "dr-oetker-casa-di-mama-pizza-hawai-415g",
+   "name": "DR.OETKER CASA DI MAMA pizza Hawaï 415g",
+   "cat": "Diepvries & kant-en-klaar",
+   "price": 4.49,
+   "priced": "2026-06-16"
+  },
+  {
+   "key": "dr-oetker-casa-di-mama-salame-390g",
+   "name": "DR.OETKER CASA DI MAMA Salame 390g",
+   "cat": "Diepvries & kant-en-klaar",
+   "price": 3.99,
+   "priced": "2026-06-16"
+  },
+  {
+   "cat": "Diepvries & kant-en-klaar",
+   "cg": "DR.OETKER RISTORANTE pizza Hawaii 355g",
+   "key": "dr-oetker-ristorante-pizza-hawaii-355g",
+   "loc": "diepvries",
+   "name": "DR.OETKER RISTORANTE pizza Hawaii 355g",
+   "pack": 1,
+   "price": 2.54,
+   "search": "DR.OETKER RISTORANTE pizza Hawaii 355g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-07-30"
+  },
+  {
+   "cat": "Diepvries & kant-en-klaar",
+   "cg": "DR.OETKER RISTORANTE pizza salame 320g",
+   "key": "dr-oetker-ristorante-pizza-salame-320g",
+   "loc": "diepvries",
+   "name": "DR.OETKER RISTORANTE pizza salame 320g",
+   "pack": 1,
+   "price": 2.59,
+   "search": "DR.OETKER RISTORANTE pizza salame 320g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-07-30"
+  },
+  {
+   "cat": "Diepvries & kant-en-klaar",
+   "cg": "DR.OETKER RISTORANTE Prosciutto 340g",
+   "key": "dr-oetker-ristorante-prosciutto-340g",
+   "loc": "diepvries",
+   "name": "DR.OETKER RISTORANTE Prosciutto 340g",
+   "pack": 1,
+   "price": 3.09,
+   "search": "DR.OETKER RISTORANTE Prosciutto 340g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-04-13"
+  },
+  {
+   "cat": "Diepvries & kant-en-klaar",
+   "cg": "DR.OETKER RISTORANTE Speciale 345g",
+   "key": "dr-oetker-ristorante-speciale-345g",
+   "loc": "diepvries",
+   "name": "DR.OETKER RISTORANTE Speciale 345g",
+   "pack": 1,
+   "price": 2.79,
+   "search": "DR.OETKER RISTORANTE Speciale 345g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2025-11-08"
+  },
+  {
+   "key": "everyday-bolognaise-saus-990g",
+   "name": "EVERYDAY bolognaise saus 990g",
+   "cat": "Diepvries & kant-en-klaar",
+   "price": 2.06,
+   "priced": "2025-09-02"
+  },
+  {
+   "key": "everyday-lasagne-bolognese-400g",
+   "name": "EVERYDAY lasagne bolognese 400g",
+   "cat": "Diepvries & kant-en-klaar",
+   "price": 1.45,
+   "priced": "2025-01-25"
+  },
+  {
+   "key": "everyday-macaroni-ham-kaas-500g",
+   "name": "EVERYDAY macaroni ham kaas 500g",
+   "cat": "Diepvries & kant-en-klaar",
+   "price": 2.79,
+   "priced": "2026-01-20"
+  },
+  {
+   "cat": "Diepvries & kant-en-klaar",
+   "cg": "BONI Macaroni Ham kaas 1kg",
+   "key": "everyday-macaroni-ham-kaas-1kg",
+   "loc": "frigo",
+   "name": "EVERYDAY macaroni ham-kaas 1kg",
+   "pack": 1,
+   "price": 3.79,
+   "search": "BONI Macaroni Ham kaas 1kg",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-05-16"
+  },
+  {
+   "key": "manna-bolognaise-saus-25-vlees-ext-355g",
+   "name": "MANNA bolognaise saus 25%vlees ext. 355g",
+   "cat": "Diepvries & kant-en-klaar",
+   "price": 2.89,
+   "priced": "2025-08-21"
+  },
+  {
+   "key": "wagner-piccolinis-snack-prosciutto-9x30g",
+   "name": "WAGNER PICCOLINIS Snack Prosciutto 9x30g",
+   "cat": "Diepvries & kant-en-klaar",
+   "price": 1.99,
+   "priced": "2025-12-13"
+  },
+  {
+   "key": "boni-agrum-50cl",
+   "name": "BONI Agrum' 50cl",
+   "cat": "Frisdrank & water",
+   "price": 0.42,
+   "priced": "2026-09-17"
+  },
+  {
+   "key": "boni-agrum-zero-50cl",
+   "name": "BONI Agrum' zero 50cl",
+   "cat": "Frisdrank & water",
+   "price": 0.38,
+   "priced": "2025-10-29"
+  },
+  {
+   "key": "boni-limonade-orange-50cl",
+   "name": "BONI Limonade Orange 50cl",
+   "cat": "Frisdrank & water",
+   "price": 0.35,
+   "priced": "2026-08-28"
+  },
+  {
+   "key": "boni-limonade-orange-zero-50cl",
+   "name": "BONI Limonade Orange Zero 50cl",
+   "cat": "Frisdrank & water",
+   "price": 0.48,
+   "priced": "2026-09-17"
+  },
+  {
+   "key": "boni-plat-water-1-5l",
+   "name": "BONI plat water 1,5L",
+   "cat": "Frisdrank & water",
+   "price": 0.38,
+   "priced": "2026-05-29"
+  },
+  {
+   "key": "boni-plat-water-2l",
+   "name": "BONI plat water 2L",
+   "cat": "Frisdrank & water",
+   "price": 0.52,
+   "priced": "2025-07-02"
+  },
+  {
+   "key": "boni-plat-water-sportdop-33cl",
+   "name": "BONI plat water sportdop 33cl",
+   "cat": "Frisdrank & water",
+   "price": 0.21,
+   "priced": "2025-12-24"
+  },
+  {
+   "key": "coca-cola-cherry-33cl",
+   "name": "COCA-COLA Cherry 33cl",
+   "cat": "Frisdrank & water",
+   "price": 0.74,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "everyday-appelsap-brik-10x20cl",
+   "name": "EVERYDAY appelsap brik 10x20cl",
+   "cat": "Frisdrank & water",
+   "price": 2.41,
+   "priced": "2025-02-22"
+  },
+  {
+   "key": "everyday-bruisend-water-1-5l",
+   "name": "EVERYDAY bruisend water 1,5L",
+   "cat": "Frisdrank & water",
+   "price": 0.32,
+   "priced": "2025-10-21"
+  },
+  {
+   "key": "everyday-bruisend-water-50cl",
+   "name": "EVERYDAY Bruisend water 50cl",
+   "cat": "Frisdrank & water",
+   "price": 0.22,
+   "priced": "2026-08-28"
+  },
+  {
+   "key": "everyday-cola-regular-1-5l",
+   "name": "EVERYDAY cola regular 1,5L",
+   "cat": "Frisdrank & water",
+   "price": 0.57,
+   "priced": "2026-07-07"
+  },
+  {
+   "key": "everyday-cola-zero-1-5l",
+   "name": "EVERYDAY cola zero 1,5L",
+   "cat": "Frisdrank & water",
+   "price": 0.57,
+   "priced": "2025-06-16"
+  },
+  {
+   "key": "everyday-limonade-orange-50cl",
+   "name": "EVERYDAY Limonade Orange 50cl",
+   "cat": "Frisdrank & water",
+   "price": 0.33,
+   "priced": "2025-10-29"
+  },
+  {
+   "key": "everyday-plat-water-2l",
+   "name": "EVERYDAY Plat water 2L",
+   "cat": "Frisdrank & water",
+   "price": 0.38,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "evian-plat-water-1-5l",
+   "name": "EVIAN plat water 1,5L",
+   "cat": "Frisdrank & water",
+   "price": 0.92,
+   "priced": "2025-03-06"
+  },
+  {
+   "key": "monin-siroop-karamel-25cl",
+   "name": "MONIN siroop karamel 25cl",
+   "cat": "Frisdrank & water",
+   "price": 3.59,
+   "priced": "2025-12-24"
+  },
+  {
+   "key": "oasis-mini-appelsien-25cl",
+   "name": "OASIS MINI Appelsien 25cl",
+   "cat": "Frisdrank & water",
+   "price": 1.0,
+   "priced": "2026-05-16"
+  },
+  {
+   "key": "rodeo-energiedrank-blik-25cl",
+   "name": "RODEO energiedrank blik 25cl",
+   "cat": "Frisdrank & water",
+   "price": 0.45,
+   "priced": "2026-11-13",
+   "art": "5531"
+  },
+  {
+   "key": "sodastream-7-up-flavor-440ml",
+   "name": "SODASTREAM 7 Up Flavor 440ml",
+   "cat": "Frisdrank & water",
+   "price": 6.59,
+   "priced": "2025-09-15"
+  },
+  {
+   "key": "sodastream-no-sugar-passion-fruit-440ml",
+   "name": "SODASTREAM No Sugar Passion Fruit 440ml",
+   "cat": "Frisdrank & water",
+   "price": 5.99,
+   "priced": "2025-09-15"
+  },
+  {
+   "key": "valvert-plat-water-1-5l",
+   "name": "VALVERT plat water 1,5L",
+   "cat": "Frisdrank & water",
+   "price": 0.86,
+   "priced": "2025-01-13"
+  },
+  {
+   "key": "bloemkool-1st",
+   "name": "bloemkool 1st",
+   "cat": "Groenten & fruit",
+   "price": 1.69,
+   "priced": "2025-03-29"
+  },
+  {
+   "key": "boni-aardbeien-500g",
+   "name": "BONI aardbeien 500g",
+   "cat": "Groenten & fruit",
+   "price": 2.99,
+   "priced": "2025-07-02"
+  },
+  {
+   "key": "boni-appel-jonagold-6st",
+   "name": "BONI appel jonagold 6st",
+   "cat": "Groenten & fruit",
+   "kgPrice": 1.65,
+   "avgKg": 1.224,
+   "price": 2.02,
+   "priced": "2026-09-09"
+  },
+  {
+   "key": "boni-appel-magic-star",
+   "name": "BONI Appel Magic Star",
+   "cat": "Groenten & fruit",
+   "kgPrice": 2.5,
+   "avgKg": 0.384,
+   "price": 0.96,
+   "priced": "2026-05-22"
+  },
+  {
+   "key": "boni-bananen-1kg",
+   "name": "BONI bananen ±1kg",
+   "cat": "Groenten & fruit",
+   "kgPrice": 1.99,
+   "avgKg": 1.059,
+   "price": 2.11,
+   "priced": "2026-09-17"
+  },
+  {
+   "cat": "Groenten & fruit",
+   "cg": "BONI bladspinazie in porties 1,5kg",
+   "key": "spinazie",
+   "loc": "diepvries",
+   "name": "BONI bladspinazie in porties 1,5kg",
+   "pack": 1500,
+   "price": 1.63,
+   "search": "BONI bladspinazie in porties 1,5kg",
+   "stock": false,
+   "unit": "g",
+   "priced": "2026-08-19"
+  },
+  {
+   "key": "boni-blauwe-druiven-pitloos-400g",
+   "name": "BONI blauwe druiven pitloos 400g",
+   "cat": "Groenten & fruit",
+   "price": 2.39,
+   "priced": "2026-04-13"
+  },
+  {
+   "key": "boni-broccoli-in-roosjes-1kg",
+   "name": "BONI broccoli in roosjes 1kg",
+   "cat": "Groenten & fruit",
+   "price": 1.79,
+   "priced": "2026-08-19"
+  },
+  {
+   "key": "boni-doperwten-extra-fijn-340g",
+   "name": "BONI doperwten extra fijn 340g",
+   "cat": "Groenten & fruit",
+   "price": 0.79,
+   "priced": "2025-12-24"
+  },
+  {
+   "key": "boni-doperwten-extra-fijn-blik-200g",
+   "name": "BONI doperwten extra fijn blik 200g",
+   "cat": "Groenten & fruit",
+   "price": 0.63,
+   "priced": "2026-06-10"
+  },
+  {
+   "key": "boni-erwten-wortelen-extr-fijn-blik-200g",
+   "name": "BONI erwten wortelen extr.fijn blik 200g",
+   "cat": "Groenten & fruit",
+   "price": 0.68,
+   "priced": "2025-12-13"
+  },
+  {
+   "key": "boni-fijn-prinsessenbonen-400g",
+   "name": "BONI fijn prinsessenbonen 400g",
+   "cat": "Groenten & fruit",
+   "price": 2.49,
+   "priced": "2025-12-29"
+  },
+  {
+   "key": "boni-hele-princessenbonen-z-fijn-1-5kg",
+   "name": "BONI Hele princessenbonen z.fijn 1,5kg",
+   "cat": "Groenten & fruit",
+   "price": 2.47,
+   "priced": "2026-08-19"
+  },
+  {
+   "key": "boni-jonge-slascheuten-100g",
+   "name": "BONI jonge slascheuten 100g",
+   "cat": "Groenten & fruit",
+   "price": 1.15,
+   "priced": "2026-06-27"
+  },
+  {
+   "key": "boni-kiwi-groen-ravier-1kg",
+   "name": "BONI Kiwi Groen ravier 1kg",
+   "cat": "Groenten & fruit",
+   "price": 3.99,
+   "priced": "2025-10-06"
+  },
+  {
+   "key": "boni-mini-appelen-8st",
+   "name": "BONI mini appelen 8st",
+   "cat": "Groenten & fruit",
+   "kgPrice": 2.59,
+   "avgKg": 1.066,
+   "price": 2.76,
+   "priced": "2025-10-21"
+  },
+  {
+   "key": "boni-mini-magic-star-6-8st",
+   "name": "BONI mini magic star 6-8st",
+   "cat": "Groenten & fruit",
+   "kgPrice": 2.19,
+   "avgKg": 1.055,
+   "price": 2.31,
+   "priced": "2025-09-02"
+  },
+  {
+   "key": "boni-paprika-mix-3st",
+   "name": "BONI Paprika mix 3st",
+   "cat": "Groenten & fruit",
+   "kgPrice": 4.98,
+   "avgKg": 0.634,
+   "price": 3.16,
+   "priced": "2025-12-04"
+  },
+  {
+   "key": "boni-persappelsienen-3kg",
+   "name": "BONI persappelsienen 3kg",
+   "cat": "Groenten & fruit",
+   "price": 3.99,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-rode-kool-met-appel-1kg",
+   "name": "BONI rode kool met appel 1kg",
+   "cat": "Groenten & fruit",
+   "price": 2.55,
+   "priced": "2026-09-26"
+  },
+  {
+   "key": "boni-royal-gala-6st",
+   "name": "BONI Royal Gala 6st",
+   "cat": "Groenten & fruit",
+   "kgPrice": 2.33,
+   "avgKg": 1.146,
+   "price": 2.67,
+   "priced": "2026-09-26"
+  },
+  {
+   "key": "boni-rucola-zak-100g",
+   "name": "BONI rucola zak 100g",
+   "cat": "Groenten & fruit",
+   "price": 0.98,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-sla-rucola-100g",
+   "name": "BONI sla rucola 100g",
+   "cat": "Groenten & fruit",
+   "price": 1.19,
+   "priced": "2025-12-13"
+  },
+  {
+   "key": "boni-veldsla-125g",
+   "name": "BONI veldsla 125g",
+   "cat": "Groenten & fruit",
+   "price": 1.43,
+   "priced": "2026-07-07"
+  },
+  {
+   "key": "boni-veldsla-150g",
+   "name": "BONI veldsla 150g",
+   "cat": "Groenten & fruit",
+   "price": 2.36,
+   "priced": "2026-04-16"
+  },
+  {
+   "cat": "Groenten & fruit",
+   "cg": "BONI witloof 500g",
+   "key": "witloof",
+   "loc": "frigo",
+   "name": "BONI witloof 500g",
+   "pack": 500,
+   "price": 2.99,
+   "search": "BONI witloof 500g",
+   "stock": false,
+   "unit": "g",
+   "priced": "2025-09-08"
+  },
+  {
+   "key": "boni-wortelen-schijfjes-1-5kg",
+   "name": "BONI wortelen schijfjes 1,5kg",
+   "cat": "Groenten & fruit",
+   "price": 1.88,
+   "priced": "2025-12-24"
+  },
+  {
+   "key": "boni-zoete-mais-blik-150g",
+   "name": "BONI zoete maïs blik 150g",
+   "cat": "Groenten & fruit",
+   "price": 0.62,
+   "priced": "2025-05-10"
+  },
+  {
+   "key": "everyday-bananen-1kg",
+   "name": "EVERYDAY bananen ±1kg",
+   "cat": "Groenten & fruit",
+   "kgPrice": 0.99,
+   "avgKg": 0.972,
+   "price": 0.96,
+   "priced": "2026-11-03"
+  },
+  {
+   "cat": "Groenten & fruit",
+   "cg": "EVERYDAY champignons fijn 250g",
+   "key": "champignons",
+   "loc": "frigo",
+   "name": "EVERYDAY champignons fijn 250g",
+   "pack": 250,
+   "price": 1.0,
+   "search": "EVERYDAY champignons fijn 250g",
+   "stock": false,
+   "unit": "g",
+   "priced": "2025-05-17"
+  },
+  {
+   "key": "everyday-cocktail-tomaten-500g",
+   "name": "EVERYDAY cocktail tomaten 500g",
+   "cat": "Groenten & fruit",
+   "price": 1.98,
+   "priced": "2026-04-08"
+  },
+  {
+   "cat": "Groenten & fruit",
+   "cg": "EVERYDAY Kerstomaten 500g",
+   "key": "kerstomaten",
+   "loc": "frigo",
+   "name": "EVERYDAY Kerstomaten 500g",
+   "pack": 500,
+   "price": 1.39,
+   "search": "EVERYDAY Kerstomaten 500g",
+   "stock": false,
+   "unit": "g",
+   "priced": "2026-07-07"
+  },
+  {
+   "key": "everyday-sinaasappel-eet-pers-4kg",
+   "name": "EVERYDAY Sinaasappel Eet ! Pers 4kg",
+   "cat": "Groenten & fruit",
+   "price": 4.98,
+   "priced": "2026-04-13"
+  },
+  {
+   "key": "everyday-sjalotten-500g",
+   "name": "EVERYDAY sjalotten 500g",
+   "cat": "Groenten & fruit",
+   "price": 0.99,
+   "priced": "2025-05-17"
+  },
+  {
+   "key": "everyday-spinazie-roomsaus-450g",
+   "name": "EVERYDAY spinazie roomsaus 450g",
+   "cat": "Groenten & fruit",
+   "price": 0.59,
+   "priced": "2026-09-26"
+  },
+  {
+   "key": "florette-kropsla-fijne-kruiden-180g",
+   "name": "FLORETTE Kropsla Fijne kruiden 180g",
+   "cat": "Groenten & fruit",
+   "price": 2.99,
+   "priced": "2025-09-01"
+  },
+  {
+   "key": "gele-paprika-s",
+   "name": "gele paprika's",
+   "cat": "Groenten & fruit",
+   "kgPrice": 3.0,
+   "avgKg": 0.28,
+   "price": 0.84,
+   "priced": "2025-06-23"
+  },
+  {
+   "key": "groene-paprika-s",
+   "name": "groene paprika's",
+   "cat": "Groenten & fruit",
+   "kgPrice": 3.19,
+   "avgKg": 0.248,
+   "price": 0.79,
+   "priced": "2025-06-23"
+  },
+  {
+   "key": "hass-avocado-ready2eat",
+   "name": "HASS Avocado Ready2Eat",
+   "cat": "Groenten & fruit",
+   "price": 1.0,
+   "priced": "2025-05-10"
+  },
+  {
+   "cat": "Groenten & fruit",
+   "cg": "Ijsbergsla 1st",
+   "key": "ijsbergsla",
+   "loc": "frigo",
+   "name": "Ijsbergsla 1st",
+   "pack": 1,
+   "price": 0.99,
+   "search": "Ijsbergsla 1st",
+   "stock": false,
+   "unit": "st",
+   "priced": "2025-10-06"
+  },
+  {
+   "key": "komkommer",
+   "name": "komkommer",
+   "cat": "Groenten & fruit",
+   "price": 1.08,
+   "priced": "2026-04-16"
+  },
+  {
+   "key": "paprika-punt-zoet-rood",
+   "name": "paprika punt zoet rood",
+   "cat": "Groenten & fruit",
+   "kgPrice": 7.02,
+   "avgKg": 0.114,
+   "price": 0.8,
+   "priced": "2025-10-21"
+  },
+  {
+   "key": "rode-paprika",
+   "name": "rode paprika",
+   "cat": "Groenten & fruit",
+   "kgPrice": 2.98,
+   "avgKg": 0.208,
+   "price": 0.62,
+   "priced": "2025-06-23"
+  },
+  {
+   "key": "rode-uien",
+   "name": "Rode uien",
+   "cat": "Groenten & fruit",
+   "kgPrice": 2.5,
+   "avgKg": 0.222,
+   "price": 0.56,
+   "priced": "2026-07-30"
+  },
+  {
+   "key": "romeinse-slaharten-3st",
+   "name": "Romeinse slaharten 3st",
+   "cat": "Groenten & fruit",
+   "price": 1.81,
+   "priced": "2026-04-16"
+  },
+  {
+   "key": "sla-multicolor-flandria-1st",
+   "name": "sla multicolor Flandria 1st",
+   "cat": "Groenten & fruit",
+   "price": 0.89,
+   "priced": "2025-08-21"
+  },
+  {
+   "key": "sla-uit-serre-flandria-1st",
+   "name": "sla uit serre Flandria 1st",
+   "cat": "Groenten & fruit",
+   "price": 0.99,
+   "priced": "2026-04-08"
+  },
+  {
+   "key": "sperzieboontjes-450g",
+   "name": "sperzieboontjes ±450g",
+   "cat": "Groenten & fruit",
+   "kgPrice": 10.8,
+   "avgKg": 0.324,
+   "price": 3.5,
+   "priced": "2025-11-29"
+  },
+  {
+   "key": "tomaten-extra",
+   "name": "tomaten extra",
+   "cat": "Groenten & fruit",
+   "kgPrice": 1.59,
+   "avgKg": 0.311,
+   "price": 0.49,
+   "priced": "2026-07-13"
+  },
+  {
+   "key": "uien-2",
+   "name": "Uien",
+   "cat": "Groenten & fruit",
+   "kgPrice": 1.7,
+   "avgKg": 0.227,
+   "price": 0.39,
+   "priced": "2026-06-20"
+  },
+  {
+   "key": "witloof-extra-flandria",
+   "name": "witloof extra Flandria",
+   "cat": "Groenten & fruit",
+   "kgPrice": 1.79,
+   "avgKg": 0.368,
+   "price": 0.66,
+   "priced": "2026-05-22"
+  },
+  {
+   "key": "wortelen",
+   "name": "wortelen",
+   "cat": "Groenten & fruit",
+   "kgPrice": 1.06,
+   "avgKg": 0.16,
+   "price": 0.17,
+   "priced": "2025-02-18"
+  },
+  {
+   "key": "agriselect-kattenbakvulling-jorgio-6l",
+   "name": "AGRISELECT Kattenbakvulling Jorgio 6L",
+   "cat": "Huisdieren",
+   "price": 3.29,
+   "priced": "2025-06-04"
+  },
+  {
+   "key": "boni-adult-brokjes-in-saus-vlees-12x100g",
+   "name": "BONI Adult brokjes in saus vlees 12x100g",
+   "cat": "Huisdieren",
+   "price": 3.99,
+   "priced": "2026-11-13",
+   "art": "21821"
+  },
+  {
+   "key": "boni-adult-vlees-vis-brokjes-12x100g",
+   "name": "BONI Adult vlees&vis brokjes 12x100g",
+   "cat": "Huisdieren",
+   "price": 3.99,
+   "priced": "2026-07-07"
+  },
+  {
+   "key": "boni-kat-jelly-duo-kip-eend-wortel-400g",
+   "name": "BONI kat jelly duo kip-eend-wortel 400g",
+   "cat": "Huisdieren",
+   "price": 1.09,
+   "priced": "2025-05-10"
+  },
+  {
+   "key": "boni-kat-reepjes-vlees-in-saus-12x85g",
+   "name": "BONI kat reepjes vlees in saus 12x85g",
+   "cat": "Huisdieren",
+   "price": 4.99,
+   "priced": "2026-10-22"
+  },
+  {
+   "key": "boni-kat-terrine-duo-rund-lever-400g",
+   "name": "BONI kat terrine duo rund&lever 400g",
+   "cat": "Huisdieren",
+   "price": 0.78,
+   "priced": "2025-05-02"
+  },
+  {
+   "key": "boni-kat-terrine-kalkoen-eend-100g",
+   "name": "BONI kat terrine kalkoen-eend 100g",
+   "cat": "Huisdieren",
+   "price": 0.79,
+   "priced": "2025-07-09"
+  },
+  {
+   "key": "boni-katbakvulling-lavendel-doos-6l",
+   "name": "BONI katbakvulling lavendel doos 6L",
+   "cat": "Huisdieren",
+   "price": 3.79,
+   "priced": "2026-11-13"
+  },
+  {
+   "key": "everyday-kat-stukjes-gevogelte-415g",
+   "name": "EVERYDAY kat stukjes gevogelte 415g",
+   "cat": "Huisdieren",
+   "price": 0.49,
+   "priced": "2025-04-22"
+  },
+  {
+   "key": "everyday-kat-stukjes-met-rund-415g",
+   "name": "EVERYDAY kat stukjes met rund 415g",
+   "cat": "Huisdieren",
+   "price": 0.49,
+   "priced": "2025-06-23"
+  },
+  {
+   "key": "everyday-kat-terrine-rund-vlootje-100g",
+   "name": "EVERYDAY kat terrine rund vlootje 100g",
+   "cat": "Huisdieren",
+   "price": 0.29,
+   "priced": "2025-06-04"
+  },
+  {
+   "key": "everyday-kattenbakvulling-7l",
+   "name": "EVERYDAY kattenbakvulling ±7L",
+   "cat": "Huisdieren",
+   "price": 1.65,
+   "priced": "2026-03-04"
+  },
+  {
+   "key": "friskies-binnenh-kat-kip-kalkoen-1-5kg",
+   "name": "FRISKIES binnenh.kat kip & kalkoen 1,5kg",
+   "cat": "Huisdieren",
+   "price": 6.69,
+   "priced": "2025-06-04"
+  },
+  {
+   "key": "friskies-indoor-kattenvoer-1-5kg",
+   "name": "FRISKIES indoor kattenvoer 1,5kg",
+   "cat": "Huisdieren",
+   "price": 6.09,
+   "priced": "2026-06-27"
+  },
+  {
+   "key": "friskies-volwassen-kat-konijn-kip-1-5kg",
+   "name": "FRISKIES volwassen kat konijn&kip 1,5kg",
+   "cat": "Huisdieren",
+   "price": 5.59,
+   "priced": "2026-10-22"
+  },
+  {
+   "key": "friskies-volwassen-kat-rund-kip-1-5kg",
+   "name": "FRISKIES Volwassen kat Rund & Kip 1,5kg",
+   "cat": "Huisdieren",
+   "price": 5.45,
+   "priced": "2025-09-08"
+  },
+  {
+   "key": "whiskas-1-jaar-gevogelte-saus-12x85g",
+   "name": "WHISKAS 1+ jaar Gevogelte Saus 12x85g",
+   "cat": "Huisdieren",
+   "price": 4.66,
+   "priced": "2026-06-10"
+  },
+  {
+   "key": "whiskas-mix-gelei-1-pouch-12x85g",
+   "name": "WHISKAS mix gelei 1+ pouch 12x85g",
+   "cat": "Huisdieren",
+   "price": 6.75,
+   "priced": "2026-06-27"
+  },
+  {
+   "key": "whiskas-vlees-in-saus-7-12x85g",
+   "name": "WHISKAS vlees in saus 7+ 12x85g",
+   "cat": "Huisdieren",
+   "price": 4.66,
+   "priced": "2026-06-10"
+  },
+  {
+   "key": "boni-allesreiniger-citrus-750ml",
+   "name": "BONI allesreiniger Citrus 750ml",
+   "cat": "Huishouden & schoonmaak",
+   "price": 1.29,
+   "priced": "2026-06-10"
+  },
+  {
+   "key": "boni-kalkreiniger-spray-750ml",
+   "name": "BONI kalkreiniger spray 750ml",
+   "cat": "Huishouden & schoonmaak",
+   "price": 1.48,
+   "priced": "2025-06-04"
+  },
+  {
+   "key": "boni-keukenrol-decor-3l-64v-6r",
+   "name": "BONI keukenrol decor 3l 64v 6r",
+   "cat": "Huishouden & schoonmaak",
+   "price": 4.27,
+   "priced": "2026-07-13"
+  },
+  {
+   "key": "boni-regenereerzout-4x1kg",
+   "name": "BONI regenereerzout 4x1kg",
+   "cat": "Huishouden & schoonmaak",
+   "price": 2.58,
+   "priced": "2026-06-10"
+  },
+  {
+   "key": "boni-spoelmiddel-1l",
+   "name": "BONI spoelmiddel 1L",
+   "cat": "Huishouden & schoonmaak",
+   "price": 1.79,
+   "priced": "2026-05-16"
+  },
+  {
+   "key": "boni-toiletpapier-comfort-2l-162v-16r",
+   "name": "BONI toiletpapier comfort 2l 162v 16r",
+   "cat": "Huishouden & schoonmaak",
+   "price": 5.99,
+   "priced": "2025-10-29"
+  },
+  {
+   "key": "boni-toiletpapier-decor-3l-180v-16r",
+   "name": "BONI toiletpapier decor 3l 180v 16r",
+   "cat": "Huishouden & schoonmaak",
+   "price": 5.99,
+   "priced": "2025-05-17"
+  },
+  {
+   "key": "boni-vaatwasreiniger-250ml",
+   "name": "BONI vaatwasreiniger 250ml",
+   "cat": "Huishouden & schoonmaak",
+   "price": 1.29,
+   "priced": "2026-05-16"
+  },
+  {
+   "key": "boni-wasmiddel-caps-color-36st",
+   "name": "BONI Wasmiddel caps color 36st",
+   "cat": "Huishouden & schoonmaak",
+   "price": 6.85,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-wasmiddel-caps-universal-36st",
+   "name": "BONI Wasmiddel caps universal 36st",
+   "cat": "Huishouden & schoonmaak",
+   "price": 9.99,
+   "priced": "2025-06-04"
+  },
+  {
+   "key": "boni-wasverzachter-lavendel-1-5l",
+   "name": "BONI wasverzachter lavendel 1,5L",
+   "cat": "Huishouden & schoonmaak",
+   "price": 2.39,
+   "priced": "2025-06-04"
+  },
+  {
+   "key": "boni-wc-blok-blauw-water-2st",
+   "name": "BONI wc blok blauw water 2st",
+   "cat": "Huishouden & schoonmaak",
+   "price": 1.32,
+   "priced": "2026-08-19"
+  },
+  {
+   "key": "boni-wc-blok-cherry-blossom-violet-2st",
+   "name": "BONI WC-blok Cherry Blossom&Violet 2st",
+   "cat": "Huishouden & schoonmaak",
+   "price": 1.79,
+   "priced": "2026-07-30"
+  },
+  {
+   "key": "boni-wc-blok-morning-dew-pine-2st",
+   "name": "BONI WC-blok Morning Dew&Pine 2st",
+   "cat": "Huishouden & schoonmaak",
+   "price": 1.99,
+   "priced": "2025-09-08"
+  },
+  {
+   "key": "dash-pods-witter-dan-wit-26st",
+   "name": "DASH pods witter dan wit 26st",
+   "cat": "Huishouden & schoonmaak",
+   "price": 7.79,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "dettol-allesreiniger-citrus-2l",
+   "name": "DETTOL allesreiniger citrus 2L",
+   "cat": "Huishouden & schoonmaak",
+   "price": 2.19,
+   "priced": "2025-07-02"
+  },
+  {
+   "key": "dreft-handaf-maxpower-pomegranate-730ml",
+   "name": "DREFT handaf.maxpower pomegranate 730ml",
+   "cat": "Huishouden & schoonmaak",
+   "price": 7.99,
+   "priced": "2025-06-04"
+  },
+  {
+   "key": "dreft-handafwas-quickwash-original-1-05l",
+   "name": "DREFT handafwas Quickwash Original 1,05L",
+   "cat": "Huishouden & schoonmaak",
+   "price": 5.62,
+   "priced": "2026-05-16"
+  },
+  {
+   "key": "dreft-max-power-handaf-pomegranate-370ml",
+   "name": "DREFT MAX POWER handaf.Pomegranate 370ml",
+   "cat": "Huishouden & schoonmaak",
+   "price": 3.15,
+   "priced": "2025-01-02"
+  },
+  {
+   "key": "everyday-aluminiumfolie-30m",
+   "name": "EVERYDAY aluminiumfolie 30m",
+   "cat": "Huishouden & schoonmaak",
+   "price": 1.89,
+   "priced": "2025-05-17"
+  },
+  {
+   "key": "everyday-keukenrol-2l-128v-4r",
+   "name": "EVERYDAY keukenrol 2l 128v 4r",
+   "cat": "Huishouden & schoonmaak",
+   "price": 3.29,
+   "priced": "2025-03-06"
+  },
+  {
+   "key": "everyday-pedaalemmerzak-30x25l",
+   "name": "EVERYDAY pedaalemmerzak 30x25L",
+   "cat": "Huishouden & schoonmaak",
+   "price": 0.89,
+   "priced": "2026-05-22"
+  },
+  {
+   "key": "everyday-pedaalemmerzak-40x10l",
+   "name": "EVERYDAY pedaalemmerzak 40x10L",
+   "cat": "Huishouden & schoonmaak",
+   "price": 1.49,
+   "priced": "2026-05-22"
+  },
+  {
+   "key": "everyday-schuursponsen-10st",
+   "name": "EVERYDAY schuursponsen 10st",
+   "cat": "Huishouden & schoonmaak",
+   "price": 0.45,
+   "priced": "2025-08-16"
+  },
+  {
+   "key": "everyday-toiletpapier-4l-152v-6r",
+   "name": "EVERYDAY Toiletpapier 4l 152v 6r",
+   "cat": "Huishouden & schoonmaak",
+   "price": 2.35,
+   "priced": "2025-09-15"
+  },
+  {
+   "key": "everyday-toiletpapier-maxi-2l-396v-12r",
+   "name": "EVERYDAY Toiletpapier Maxi 2l 396v 12r",
+   "cat": "Huishouden & schoonmaak",
+   "price": 4.83,
+   "priced": "2026-01-20"
+  },
+  {
+   "key": "everyday-wc-gel-eucalyptus-den-javel-1l",
+   "name": "EVERYDAY wc gel eucalyptus&den javel 1L",
+   "cat": "Huishouden & schoonmaak",
+   "price": 1.05,
+   "priced": "2025-09-08"
+  },
+  {
+   "key": "everyday-wc-blok-met-2-nav-atlant-3st",
+   "name": "EVERYDAY wc-blok met 2 nav. Atlant. 3st",
+   "cat": "Huishouden & schoonmaak",
+   "price": 1.39,
+   "priced": "2025-01-13"
+  },
+  {
+   "key": "everyday-zakdoekjes-box-2l-150st",
+   "name": "EVERYDAY zakdoekjes box 2l 150st",
+   "cat": "Huishouden & schoonmaak",
+   "price": 0.64,
+   "priced": "2026-01-20"
+  },
+  {
+   "key": "fackelmann-groentenmes-zwart-19cm",
+   "name": "FACKELMANN Groentenmes zwart 19cm",
+   "cat": "Huishouden & schoonmaak",
+   "price": 4.29,
+   "priced": "2025-05-17"
+  },
+  {
+   "key": "finish-quantum-vaatwas-tabs-regular-31st",
+   "name": "FINISH QUANTUM vaatwas tabs regular 31st",
+   "cat": "Huishouden & schoonmaak",
+   "price": 13.49,
+   "priced": "2026-05-22"
+  },
+  {
+   "key": "lenor-fresh-air-ochtendfris-60d-840ml",
+   "name": "LENOR Fresh Air ochtendfris 60d 840ml",
+   "cat": "Huishouden & schoonmaak",
+   "price": 4.99,
+   "priced": "2025-01-25"
+  },
+  {
+   "key": "lenor-geurparels-jasmin-rose-de-mai-240g",
+   "name": "LENOR geurparels Jasmin&Rose de Mai 240g",
+   "cat": "Huishouden & schoonmaak",
+   "price": 8.23,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "pmd-zakken-ilva-20-stuks-20st",
+   "name": "pmd-zakken ilva 20 stuks 20st",
+   "cat": "Huishouden & schoonmaak",
+   "price": 5.0,
+   "priced": "2026-08-19"
+  },
+  {
+   "key": "rotolux-beugel-10",
+   "name": "ROTOLUX Beugel 10",
+   "cat": "Huishouden & schoonmaak",
+   "price": 1.99,
+   "priced": "2025-12-24"
+  },
+  {
+   "key": "scottex-kussenzacht-135v-18r",
+   "name": "SCOTTEX Kussenzacht 135v 18r",
+   "cat": "Huishouden & schoonmaak",
+   "price": 13.49,
+   "priced": "2026-03-17"
+  },
+  {
+   "key": "wc-net-intense-gel-lavender-fresh-750ml",
+   "name": "WC NET Intense gel Lavender Fresh 750ml",
+   "cat": "Huishouden & schoonmaak",
+   "price": 2.49,
+   "priced": "2025-07-02"
+  },
+  {
+   "key": "wc-net-javel-mountain-fresh-750ml",
+   "name": "WC NET javel Mountain Fresh 750ml",
+   "cat": "Huishouden & schoonmaak",
+   "price": 2.56,
+   "priced": "2025-07-02"
+  },
+  {
+   "cat": "Kaas",
+   "cg": "BONI franse emmental geraspt 200g",
+   "key": "boni-franse-emmental-geraspt-200g",
+   "loc": "frigo",
+   "name": "BONI franse emmental geraspt 200g",
+   "pack": 200,
+   "price": 2.19,
+   "search": "BONI franse emmental geraspt 200g",
+   "stock": true,
+   "unit": "g",
+   "priced": "2026-10-22"
+  },
+  {
+   "key": "boni-geitenkaas-gerookt-spek-4x30g",
+   "name": "BONI Geitenkaas Gerookt Spek 4x30g",
+   "cat": "Kaas",
+   "price": 2.99,
+   "priced": "2025-07-09"
+  },
+  {
+   "key": "boni-gouda-brand-lo-blok-175g",
+   "name": "BONI Gouda Brand.lo.Blok. 175g",
+   "cat": "Kaas",
+   "price": 2.99,
+   "priced": "2026-07-07"
+  },
+  {
+   "cat": "Kaas",
+   "cg": "BONI gouda jong belegen sneetjes 300g",
+   "key": "boni-gouda-jong-belegen-sneetjes-300g",
+   "loc": "frigo",
+   "name": "BONI gouda jong belegen sneetjes 300g",
+   "pack": 300,
+   "price": 3.79,
+   "search": "BONI gouda jong belegen sneetjes 300g",
+   "stock": true,
+   "unit": "g",
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-gouda-kubus-belgisch-175g",
+   "name": "BONI gouda kubus Belgisch 175g",
+   "cat": "Kaas",
+   "price": 2.5,
+   "priced": "2025-12-29"
+  },
+  {
+   "key": "boni-gouda-oud-sneetjes-350g",
+   "name": "BONI gouda oud sneetjes 350g",
+   "cat": "Kaas",
+   "price": 5.82,
+   "priced": "2025-08-28"
+  },
+  {
+   "key": "boni-gratin-mix-geraspt-200g",
+   "name": "BONI Gratin Mix geraspt 200g",
+   "cat": "Kaas",
+   "price": 2.79,
+   "priced": "2025-12-13"
+  },
+  {
+   "key": "boni-koekaas-blokje-45-200g",
+   "name": "BONI Koekaas blokje 45+ 200g",
+   "cat": "Kaas",
+   "price": 1.49,
+   "priced": "2026-04-24"
+  },
+  {
+   "key": "boni-raclettekaas-sneetjes-400g",
+   "name": "BONI raclettekaas sneetjes 400g",
+   "cat": "Kaas",
+   "price": 3.22,
+   "priced": "2025-12-13"
+  },
+  {
+   "key": "boni-spaghetti-mix-geraspt-200g",
+   "name": "BONI Spaghetti Mix geraspt 200g",
+   "cat": "Kaas",
+   "price": 2.49,
+   "priced": "2026-11-13",
+   "art": "39144"
+  },
+  {
+   "key": "caprice-des-dieux-kaas-zacht-200g",
+   "name": "CAPRICE DES DIEUX kaas zacht 200g",
+   "cat": "Kaas",
+   "price": 2.61,
+   "priced": "2025-05-17"
+  },
+  {
+   "key": "chavroux-geitenkaas-buche-150g",
+   "name": "CHAVROUX geitenkaas buche 150g",
+   "cat": "Kaas",
+   "price": 3.98,
+   "priced": "2026-04-24"
+  },
+  {
+   "key": "everyday-camembert-250g",
+   "name": "EVERYDAY camembert 250g",
+   "cat": "Kaas",
+   "price": 1.44,
+   "priced": "2025-09-08"
+  },
+  {
+   "key": "everyday-emmental-geraspt-500g",
+   "name": "EVERYDAY emmental geraspt 500g",
+   "cat": "Kaas",
+   "price": 3.99,
+   "priced": "2025-05-02"
+  },
+  {
+   "key": "everyday-emmental-sneetjes-300g",
+   "name": "EVERYDAY emmental sneetjes 300g",
+   "cat": "Kaas",
+   "price": 2.99,
+   "priced": "2025-12-29"
+  },
+  {
+   "key": "everyday-geitenkaas-rol-gerijpt-180g",
+   "name": "EVERYDAY geitenkaas rol gerijpt 180g",
+   "cat": "Kaas",
+   "price": 1.49,
+   "priced": "2025-12-13"
+  },
+  {
+   "key": "isigny-ste-mere-camembert-rauw-melk-250g",
+   "name": "ISIGNY STE MÈRE camembert rauw melk 250g",
+   "cat": "Kaas",
+   "price": 3.65,
+   "priced": "2025-01-25"
+  },
+  {
+   "key": "maredsous-smeerkaas-ham-250g",
+   "name": "MAREDSOUS smeerkaas ham 250g",
+   "cat": "Kaas",
+   "price": 4.36,
+   "priced": "2025-02-18"
+  },
+  {
+   "key": "graindor-bonen-dessert-rfa-500g",
+   "name": "GRAINDOR Bonen Dessert RFA 500g",
+   "cat": "Koffie",
+   "price": 4.39,
+   "priced": "2025-03-06"
+  },
+  {
+   "key": "graindor-bonen-espresso-utz-500g",
+   "name": "GRAINDOR bonen Espresso UTZ 500g",
+   "cat": "Koffie",
+   "price": 5.5,
+   "priced": "2025-02-22"
+  },
+  {
+   "key": "graindor-bonen-moka-rfa-500g",
+   "name": "GRAINDOR Bonen Moka RFA 500g",
+   "cat": "Koffie",
+   "price": 5.99,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "graindor-pads-regular-rfa-36st",
+   "name": "GRAINDOR Pads Regular RFA 36st",
+   "cat": "Koffie",
+   "price": 3.79,
+   "priced": "2025-11-29"
+  },
+  {
+   "key": "boni-choco-krisps-500g",
+   "name": "BONI Choco Krisps 500g",
+   "cat": "Ontbijt & smeersels",
+   "price": 1.75,
+   "priced": "2026-01-20"
+  },
+  {
+   "key": "boni-choquito-225g",
+   "name": "BONI Choquito 225g",
+   "cat": "Ontbijt & smeersels",
+   "price": 1.96,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-confituur-aardbei-61-450g",
+   "name": "BONI confituur aardbei 61% 450g",
+   "cat": "Ontbijt & smeersels",
+   "price": 1.45,
+   "priced": "2025-05-02"
+  },
+  {
+   "key": "boni-confituur-aardbei-rabarber-370g",
+   "name": "BONI confituur aardbei-rabarber 370g",
+   "cat": "Ontbijt & smeersels",
+   "price": 1.63,
+   "priced": "2026-07-13"
+  },
+  {
+   "key": "boni-confituur-frambozen-61-370g",
+   "name": "BONI confituur frambozen 61% 370g",
+   "cat": "Ontbijt & smeersels",
+   "price": 1.75,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-confituur-kersen-61-450g",
+   "name": "BONI confituur kersen 61% 450g",
+   "cat": "Ontbijt & smeersels",
+   "price": 1.35,
+   "priced": "2025-08-16"
+  },
+  {
+   "key": "boni-gelei-aalbessen-61-370g",
+   "name": "BONI gelei aalbessen 61% 370g",
+   "cat": "Ontbijt & smeersels",
+   "price": 1.93,
+   "priced": "2026-09-09"
+  },
+  {
+   "key": "boni-hagelslag-melkchocolade-600g",
+   "name": "BONI hagelslag melkchocolade 600g",
+   "cat": "Ontbijt & smeersels",
+   "price": 2.29,
+   "priced": "2025-04-12"
+  },
+  {
+   "key": "boni-hazelnootpasta-750g",
+   "name": "BONI hazelnootpasta 750g",
+   "cat": "Ontbijt & smeersels",
+   "price": 1.99,
+   "priced": "2026-10-22"
+  },
+  {
+   "key": "everyday-confituur-vruchten-50-450g",
+   "name": "EVERYDAY confituur vruchten 50% 450g",
+   "cat": "Ontbijt & smeersels",
+   "price": 1.49,
+   "priced": "2025-11-29"
+  },
+  {
+   "key": "everyday-hazelnootpasta-750g",
+   "name": "EVERYDAY hazelnootpasta 750g",
+   "cat": "Ontbijt & smeersels",
+   "price": 1.98,
+   "priced": "2026-09-09"
+  },
+  {
+   "key": "kellogg-s-tresor-chocolad-hazelnoot-410g",
+   "name": "KELLOGG'S TRÉSOR chocolad.hazelnoot 410g",
+   "cat": "Ontbijt & smeersels",
+   "price": 2.99,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "kellogg-s-tresor-melkchocolade-410g",
+   "name": "KELLOGG'S TRÉSOR melkchocolade 410g",
+   "cat": "Ontbijt & smeersels",
+   "price": 2.99,
+   "priced": "2025-07-29"
+  },
+  {
+   "key": "boni-ananas-schijven-op-siroop-blik-227g",
+   "name": "BONI ananas schijven op siroop blik 227g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 1.09,
+   "priced": "2025-12-29"
+  },
+  {
+   "key": "boni-ananasschijf-op-sap-227g",
+   "name": "BONI ananasschijf op sap 227g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 0.7,
+   "priced": "2025-02-18"
+  },
+  {
+   "cat": "Pasta, rijst & conserven",
+   "cg": "BONI appelmousseline bok 200g",
+   "key": "appelmoes",
+   "loc": "kast",
+   "name": "BONI appelmousseline bok 200g",
+   "pack": 200,
+   "price": 0.66,
+   "search": "BONI appelmousseline bok 200g",
+   "stock": false,
+   "unit": "g",
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-belg-krieken-ontpit-siroop-bok-340g",
+   "name": "BONI Belg.krieken ontpit siroop bok 340g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 1.49,
+   "priced": "2025-02-01"
+  },
+  {
+   "key": "boni-griekse-pasta-500g",
+   "name": "BONI Griekse pasta 500g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 1.35,
+   "priced": "2025-09-08"
+  },
+  {
+   "key": "boni-kokosmelk-blik-400ml",
+   "name": "BONI kokosmelk blik 400ml",
+   "cat": "Pasta, rijst & conserven",
+   "price": 0.99,
+   "priced": "2025-12-29"
+  },
+  {
+   "key": "boni-krieken-ontpit-lichte-siroop-340g",
+   "name": "BONI krieken ontpit lichte siroop 340g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 2.15,
+   "priced": "2025-11-22"
+  },
+  {
+   "key": "boni-noordkrieken-ontpit-siroop-700g",
+   "name": "BONI noordkrieken ontpit siroop 700g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 2.49,
+   "priced": "2026-08-19"
+  },
+  {
+   "key": "boni-parelcouscous-munt-400g",
+   "name": "BONI Parelcouscous munt 400g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 4.29,
+   "priced": "2026-04-16"
+  },
+  {
+   "key": "boni-passata-gezeefde-tomaten-brik-500g",
+   "name": "BONI passata gezeefde tomaten brik 500g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 0.79,
+   "priced": "2026-09-17"
+  },
+  {
+   "key": "boni-pates-d-alsace-tagliatelle-250g",
+   "name": "BONI pâtes d'Alsace tagliatelle 250g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 1.42,
+   "priced": "2025-05-17"
+  },
+  {
+   "cat": "Pasta, rijst & conserven",
+   "cg": "BONI rijst basmati 4x125g",
+   "key": "basmati",
+   "loc": "kast",
+   "name": "BONI rijst basmati 4x125g",
+   "pack": 4,
+   "price": 1.19,
+   "search": "BONI rijst basmati 4x125g",
+   "stock": false,
+   "unit": "zakjes",
+   "priced": "2026-09-17"
+  },
+  {
+   "key": "boni-tomatenpuree-dubbel-geconcentr-140g",
+   "name": "BONI tomatenpuree dubbel geconcentr 140g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 0.69,
+   "priced": "2026-01-28"
+  },
+  {
+   "key": "boni-tomatenstukjes-met-basilicum-400g",
+   "name": "BONI tomatenstukjes met basilicum 400g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 0.79,
+   "priced": "2025-12-04"
+  },
+  {
+   "key": "bosto-parelcouscous-builtjes-4x75g",
+   "name": "BOSTO parelcouscous builtjes 4x75g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 3.29,
+   "priced": "2025-06-23"
+  },
+  {
+   "key": "croky-pickles-200g",
+   "name": "CROKY Pickles 200g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 1.89,
+   "priced": "2026-11-13"
+  },
+  {
+   "key": "everyday-appelmousseline-bokaal-710g",
+   "name": "EVERYDAY appelmousseline bokaal 710g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 0.63,
+   "priced": "2025-12-29"
+  },
+  {
+   "key": "everyday-capellini-500g",
+   "name": "EVERYDAY capellini 500g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 0.75,
+   "priced": "2025-12-24"
+  },
+  {
+   "key": "everyday-havermout-500g",
+   "name": "EVERYDAY havermout 500g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 0.48,
+   "priced": "2025-08-16"
+  },
+  {
+   "cat": "Pasta, rijst & conserven",
+   "cg": "EVERYDAY passata gezeefde tom. brik 500g",
+   "key": "passata",
+   "loc": "kast",
+   "name": "EVERYDAY passata gezeefde tom. brik 500g",
+   "pack": 500,
+   "price": 0.59,
+   "search": "EVERYDAY passata gezeefde tom. brik 500g",
+   "stock": false,
+   "unit": "g",
+   "priced": "2025-12-04"
+  },
+  {
+   "cat": "Pasta, rijst & conserven",
+   "cg": "EVERYDAY spaghetti 500g",
+   "key": "spaghetti",
+   "loc": "kast",
+   "name": "EVERYDAY spaghetti 500g",
+   "pack": 500,
+   "price": 0.45,
+   "search": "EVERYDAY spaghetti 500g",
+   "stock": false,
+   "unit": "g",
+   "priced": "2026-07-30"
+  },
+  {
+   "key": "everyday-tomatenpuree-dubbel-gecon-140g",
+   "name": "EVERYDAY tomatenpuree dubbel gecon. 140g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 0.49,
+   "priced": "2025-10-21"
+  },
+  {
+   "key": "hak-appelmoes-extra-kwaliteit-700g",
+   "name": "HAK appelmoes extra kwaliteit 700g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 1.99,
+   "priced": "2026-11-13"
+  },
+  {
+   "cat": "Pasta, rijst & conserven",
+   "cg": "SOUBRY al dente horentjes 375g",
+   "key": "horentjes",
+   "loc": "kast",
+   "name": "SOUBRY al dente horentjes 375g",
+   "pack": 375,
+   "price": 1.29,
+   "search": "SOUBRY al dente horentjes 375g",
+   "stock": false,
+   "unit": "g",
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "soubry-al-dente-spaghetti-fijn-375g",
+   "name": "SOUBRY al dente spaghetti fijn 375g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 0.7,
+   "priced": "2025-01-02"
+  },
+  {
+   "key": "soubry-capellini-extra-fijn-500g",
+   "name": "SOUBRY Capellini Extra Fijn 500g",
+   "cat": "Pasta, rijst & conserven",
+   "price": 1.79,
+   "priced": "2026-09-17"
+  },
+  {
+   "key": "boni-dressing-honingmosterd-300ml",
+   "name": "BONI dressing honingmosterd 300ml",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 2.99,
+   "priced": "2026-04-01"
+  },
+  {
+   "key": "boni-groene-pesto-190g",
+   "name": "BONI groene pesto 190g",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 1.19,
+   "priced": "2025-05-10"
+  },
+  {
+   "key": "boni-ketchup-tomaat-td-500ml",
+   "name": "BONI ketchup tomaat TD 500ml",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 1.19,
+   "priced": "2026-07-13"
+  },
+  {
+   "key": "boni-kruiden-curry-45g",
+   "name": "BONI kruiden curry 45g",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 0.73,
+   "priced": "2025-06-23"
+  },
+  {
+   "key": "boni-kruiden-lookpoeder-250g",
+   "name": "BONI kruiden lookpoeder 250g",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 3.74,
+   "priced": "2026-03-04"
+  },
+  {
+   "key": "boni-mayonaise-met-citroen-td-500ml",
+   "name": "BONI mayonaise met citroen TD 500ml",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 1.49,
+   "priced": "2026-04-13"
+  },
+  {
+   "cat": "Sauzen, kruiden & bakken",
+   "cg": "BONI mayonaise met eieren TD 500ml",
+   "key": "mayonaise",
+   "loc": "kast",
+   "name": "BONI mayonaise met eieren TD 500ml",
+   "pack": 500,
+   "price": 1.39,
+   "search": "BONI mayonaise met eieren TD 500ml",
+   "stock": false,
+   "unit": "ml",
+   "priced": "2026-11-13"
+  },
+  {
+   "key": "boni-mosterd-dijon-280g",
+   "name": "BONI mosterd Dijon 280g",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 2.75,
+   "priced": "2026-11-13"
+  },
+  {
+   "key": "boni-olijfolie-extra-vierge-1l",
+   "name": "BONI olijfolie extra vierge 1L",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 8.99,
+   "priced": "2026-04-13"
+  },
+  {
+   "key": "boni-olijfolie-extra-vierge-500ml",
+   "name": "BONI Olijfolie Extra vierge 500ml",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 5.99,
+   "priced": "2025-11-29"
+  },
+  {
+   "key": "boni-pitasaus-350ml",
+   "name": "BONI Pitasaus 350ml",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 1.79,
+   "priced": "2025-11-29"
+  },
+  {
+   "cat": "Sauzen, kruiden & bakken",
+   "cg": "BONI saus zoetzuur 500g",
+   "key": "zoetzuur",
+   "loc": "kast",
+   "name": "BONI saus zoetzuur 500g",
+   "pack": 500,
+   "price": 1.55,
+   "search": "BONI saus zoetzuur 500g",
+   "stock": false,
+   "unit": "g",
+   "priced": "2026-05-16"
+  },
+  {
+   "key": "bosto-saus-ratatouille-410g",
+   "name": "BOSTO saus ratatouille 410g",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 3.09,
+   "priced": "2026-05-16"
+  },
+  {
+   "key": "dr-oetker-mix-voor-pannenkoeken-3x200g",
+   "name": "DR.OETKER mix voor pannenkoeken 3x200g",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 3.45,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "dr-oetker-vanillesuiker-10st",
+   "name": "DR.OETKER vanillesuiker 10st",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 0.99,
+   "priced": "2025-06-16"
+  },
+  {
+   "key": "ducros-kruiden-italiaanse-mengeling-30g",
+   "name": "DUCROS kruiden italiaanse mengeling 30g",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 3.19,
+   "priced": "2026-01-28"
+  },
+  {
+   "key": "everyday-bloem-tarwe-1kg",
+   "name": "EVERYDAY bloem tarwe 1kg",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 0.35,
+   "priced": "2025-06-16"
+  },
+  {
+   "key": "everyday-bouillon-groenten-12x10g",
+   "name": "EVERYDAY bouillon groenten 12x10g",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 0.39,
+   "priced": "2025-11-15"
+  },
+  {
+   "key": "everyday-bouillon-kip-12st",
+   "name": "EVERYDAY bouillon kip 12st",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 0.43,
+   "priced": "2025-10-11"
+  },
+  {
+   "key": "everyday-kruiden-kip-180g",
+   "name": "EVERYDAY kruiden kip 180g",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 1.36,
+   "priced": "2026-08-19"
+  },
+  {
+   "key": "everyday-nootmuskaat-gemalen-105g",
+   "name": "EVERYDAY nootmuskaat gemalen 105g",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 1.27,
+   "priced": "2025-01-02"
+  },
+  {
+   "key": "everyday-paneermeel-400g",
+   "name": "EVERYDAY paneermeel 400g",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 0.59,
+   "priced": "2026-11-13"
+  },
+  {
+   "key": "everyday-suikerklontjes-1kg",
+   "name": "EVERYDAY suikerklontjes 1kg",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 0.99,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "heinz-tomato-gezeefd-500ml",
+   "name": "HEINZ tomato gezeefd 500ml",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 1.49,
+   "priced": "2026-10-22"
+  },
+  {
+   "key": "knorr-jagersaus-3x29g",
+   "name": "KNORR Jagersaus 3x29g",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 2.67,
+   "priced": "2025-12-29"
+  },
+  {
+   "key": "poco-loco-mexican-guacam-spice-mix-20g",
+   "name": "POCO LOCO Mexican guacam. spice mix 20g",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 1.19,
+   "priced": "2025-05-10"
+  },
+  {
+   "key": "suzi-wan-saus-zoetzure-gr-400g",
+   "name": "SUZI WAN saus zoetzure gr. 400g",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 4.75,
+   "priced": "2026-08-19"
+  },
+  {
+   "key": "tiense-suiker-bloemsuiker-molen-250g",
+   "name": "TIENSE SUIKER bloemsuiker molen 250g",
+   "cat": "Sauzen, kruiden & bakken",
+   "price": 1.75,
+   "priced": "2025-10-21"
+  },
+  {
+   "key": "bn-choc-land-4x37-5g",
+   "name": "BN Choc'Land 4x37,5g",
+   "cat": "Snoep, koeken & chips",
+   "price": 4.15,
+   "priced": "2025-08-11"
+  },
+  {
+   "key": "boni-abc-gummies-600g",
+   "name": "BONI ABC Gummies 600g",
+   "cat": "Snoep, koeken & chips",
+   "price": 3.58,
+   "priced": "2025-10-29"
+  },
+  {
+   "key": "boni-chococrocs-koeken-6x25g",
+   "name": "BONI Chococrocs koeken 6x25g",
+   "cat": "Snoep, koeken & chips",
+   "price": 2.49,
+   "priced": "2026-06-20"
+  },
+  {
+   "key": "boni-chocotini-koeken-6x37-5g",
+   "name": "BONI Chocotini koeken 6x37,5g",
+   "cat": "Snoep, koeken & chips",
+   "price": 1.59,
+   "priced": "2025-05-10"
+  },
+  {
+   "key": "boni-cookies-chocolade-225g",
+   "name": "BONI Cookies chocolade 225g",
+   "cat": "Snoep, koeken & chips",
+   "price": 0.88,
+   "priced": "2026-10-22"
+  },
+  {
+   "key": "boni-cookies-triple-chocolate-200g",
+   "name": "BONI Cookies triple chocolate 200g",
+   "cat": "Snoep, koeken & chips",
+   "price": 1.39,
+   "priced": "2026-08-08"
+  },
+  {
+   "key": "boni-gezouten-sticks-250g",
+   "name": "BONI gezouten sticks 250g",
+   "cat": "Snoep, koeken & chips",
+   "price": 0.67,
+   "priced": "2025-12-29"
+  },
+  {
+   "key": "boni-kauwgom-spearmint-50st-100g",
+   "name": "BONI kauwgom spearmint 50st 100g",
+   "cat": "Snoep, koeken & chips",
+   "price": 2.16,
+   "priced": "2025-05-02"
+  },
+  {
+   "key": "boni-mini-crackers-tom-on-chili-125g",
+   "name": "BONI mini crackers Tom-On-Chili 125g",
+   "cat": "Snoep, koeken & chips",
+   "price": 1.69,
+   "priced": "2025-12-29"
+  },
+  {
+   "key": "boni-nic-nac-500g",
+   "name": "BONI Nic-Nac 500g",
+   "cat": "Snoep, koeken & chips",
+   "price": 0.99,
+   "priced": "2025-11-29"
+  },
+  {
+   "key": "boni-paaseitjes-pralinemix-500g",
+   "name": "BONI paaseitjes Pralinémix 500g",
+   "cat": "Snoep, koeken & chips",
+   "price": 4.99,
+   "priced": "2025-04-12"
+  },
+  {
+   "key": "boni-picos-70g",
+   "name": "BONI Picos 70g",
+   "cat": "Snoep, koeken & chips",
+   "price": 1.65,
+   "priced": "2026-07-07"
+  },
+  {
+   "key": "chio-pom-bar-paprika-90g",
+   "name": "CHIO Pom-Bär Paprika 90g",
+   "cat": "Snoep, koeken & chips",
+   "price": 1.89,
+   "priced": "2026-11-13"
+  },
+  {
+   "key": "chio-pombar-original-90g",
+   "name": "CHIO pombär original 90g",
+   "cat": "Snoep, koeken & chips",
+   "price": 1.79,
+   "priced": "2025-12-29"
+  },
+  {
+   "key": "dinosaurus-koeken-chocolade-4st-225g",
+   "name": "DINOSAURUS koeken chocolade 4st 225g",
+   "cat": "Snoep, koeken & chips",
+   "price": 1.75,
+   "priced": "2025-03-29"
+  },
+  {
+   "key": "doritos-flamin-hot-160g",
+   "name": "DORITOS Flamin'Hot 160g",
+   "cat": "Snoep, koeken & chips",
+   "price": 2.29,
+   "priced": "2025-12-04"
+  },
+  {
+   "key": "everyday-chips-paprika-200g",
+   "name": "EVERYDAY chips paprika 200g",
+   "cat": "Snoep, koeken & chips",
+   "price": 0.79,
+   "priced": "2025-10-21"
+  },
+  {
+   "key": "everyday-chips-zout-200g",
+   "name": "EVERYDAY chips zout 200g",
+   "cat": "Snoep, koeken & chips",
+   "price": 0.79,
+   "priced": "2025-12-29"
+  },
+  {
+   "key": "haribo-snoep-colaflesjes-500g",
+   "name": "HARIBO snoep colaflesjes 500g",
+   "cat": "Snoep, koeken & chips",
+   "price": 2.31,
+   "priced": "2025-08-11"
+  },
+  {
+   "key": "kinder-bueno-10x43g",
+   "name": "KINDER Bueno 10x43g",
+   "cat": "Snoep, koeken & chips",
+   "price": 5.99,
+   "priced": "2025-01-02"
+  },
+  {
+   "key": "kinder-chocolate-reepjes-24st-300g",
+   "name": "KINDER CHOCOLATE reepjes 24st 300g",
+   "cat": "Snoep, koeken & chips",
+   "price": 3.49,
+   "priced": "2025-01-13"
+  },
+  {
+   "key": "lay-s-grills-125g",
+   "name": "LAY'S Grills 125g",
+   "cat": "Snoep, koeken & chips",
+   "price": 1.39,
+   "priced": "2026-11-13"
+  },
+  {
+   "key": "mentos-white-greenmint-40st-60g",
+   "name": "MENTOS white greenmint 40st 60g",
+   "cat": "Snoep, koeken & chips",
+   "price": 2.99,
+   "priced": "2025-08-11"
+  },
+  {
+   "key": "skittles-fruits-152g",
+   "name": "SKITTLES Fruits 152g",
+   "cat": "Snoep, koeken & chips",
+   "price": 0.95,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "zagazoe-choco-bars-6x20g",
+   "name": "ZAGAZOE! Choco Bars 6x20g",
+   "cat": "Snoep, koeken & chips",
+   "price": 2.29,
+   "priced": "2025-01-02"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "Gevogelte Bal.brochette ±250g",
+   "key": "balletjesbrochette",
+   "loc": "frigo",
+   "name": "balletjesbrochette",
+   "pack": 375,
+   "price": 4.79,
+   "search": "Gevogelte Bal.brochette ±250g",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 14.88,
+   "avgKg": 0.322,
+   "priced": "2026-06-10"
+  },
+  {
+   "key": "barbecue-worst-varken",
+   "name": "barbecue worst varken",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 12.47,
+   "avgKg": 0.294,
+   "price": 3.67,
+   "priced": "2025-05-10"
+  },
+  {
+   "key": "bbq-schotel-n1-4p",
+   "name": "BBQ schotel Nø1 4p",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 11.24,
+   "avgKg": 2.111,
+   "price": 23.73,
+   "priced": "2025-08-16"
+  },
+  {
+   "key": "bereid-boerengehakt-varken",
+   "name": "bereid boerengehakt varken",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 10.78,
+   "avgKg": 0.434,
+   "price": 4.68,
+   "priced": "2025-05-17"
+  },
+  {
+   "key": "bereid-gehakt-kalf",
+   "name": "bereid gehakt kalf",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 13.05,
+   "avgKg": 0.374,
+   "price": 4.88,
+   "priced": "2026-03-25"
+  },
+  {
+   "key": "bereid-gehakt-tartaar-varken",
+   "name": "bereid gehakt tartaar varken",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 9.86,
+   "avgKg": 0.152,
+   "price": 1.5,
+   "priced": "2025-09-15"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "bereid gehakt varken+kalf",
+   "key": "bereid-gehakt-varken-kalf",
+   "loc": "frigo",
+   "name": "bereid gehakt varken+kalf",
+   "pack": 500,
+   "price": 3.88,
+   "search": "bereid gehakt varken+kalf",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 4.84,
+   "avgKg": 0.802,
+   "priced": "2026-11-13",
+   "art": "10095"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "BH Bereid Gehakt Varken",
+   "key": "bh-bereid-gehakt-varken",
+   "loc": "frigo",
+   "name": "BH Bereid Gehakt Varken",
+   "pack": 500,
+   "price": 3.84,
+   "search": "BH Bereid Gehakt Varken",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 7.59,
+   "avgKg": 0.506,
+   "priced": "2026-11-03"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "Blinde vink 3x150g",
+   "key": "bh-blinde-vink",
+   "loc": "frigo",
+   "name": "BH BLINDE VINK",
+   "pack": 450,
+   "price": 6.3,
+   "search": "Blinde vink 3x150g",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 14.45,
+   "avgKg": 0.436,
+   "priced": "2026-01-20"
+  },
+  {
+   "key": "bh-boerenchipolata-varken",
+   "name": "BH boerenchipolata varken",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 8.7,
+   "avgKg": 0.339,
+   "price": 2.95,
+   "priced": "2026-06-10"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "BH Chipolata Varken",
+   "key": "bh-chipolata-varken",
+   "loc": "frigo",
+   "name": "BH Chipolata Varken",
+   "pack": 350,
+   "price": 3.01,
+   "search": "BH Chipolata Varken",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 8.68,
+   "avgKg": 0.347,
+   "priced": "2026-06-10"
+  },
+  {
+   "key": "bh-kaasburger-varken",
+   "name": "BH Kaasburger Varken",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 7.97,
+   "avgKg": 0.301,
+   "price": 2.4,
+   "priced": "2026-05-29"
+  },
+  {
+   "key": "bh-spaghettisaus-600g",
+   "name": "BH Spaghettisaus ±600g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 8.98,
+   "avgKg": 0.561,
+   "price": 5.04,
+   "priced": "2025-09-23"
+  },
+  {
+   "key": "biefsteak-chateaubriand",
+   "name": "biefsteak chateaubriand",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 18.49,
+   "avgKg": 0.431,
+   "price": 7.97,
+   "priced": "2025-09-02"
+  },
+  {
+   "key": "blinde-vink-450g",
+   "name": "Blinde vink ±450g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 14.48,
+   "avgKg": 0.428,
+   "price": 6.2,
+   "priced": "2025-12-29"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "BH boerenchipolata varken",
+   "key": "boerenchipolata-350g",
+   "loc": "frigo",
+   "name": "Boerenchipolata ±350g",
+   "pack": 350,
+   "price": 3.12,
+   "search": "BH boerenchipolata varken",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 8.98,
+   "avgKg": 0.347,
+   "priced": "2026-08-28"
+  },
+  {
+   "key": "boerenworst-450g",
+   "name": "Boerenworst ±450g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 10.11,
+   "avgKg": 0.452,
+   "price": 4.57,
+   "priced": "2025-09-02"
+  },
+  {
+   "key": "boni-atl-zalmfilet-graatloos-2x180g",
+   "name": "BONI Atl.zalmfilet graatloos 2x±180g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 15.92,
+   "avgKg": 0.407,
+   "price": 6.48,
+   "priced": "2025-11-29"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "BONI beter welzijns kip.borstfil ±1kg",
+   "key": "boni-beter-welzijns-kip-borstfil-1kg",
+   "loc": "frigo",
+   "name": "BONI beter welzijns kip.borstfil ±1kg",
+   "pack": 1000,
+   "price": 11.88,
+   "search": "BONI beter welzijns kip.borstfil ±1kg",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 11.99,
+   "avgKg": 0.991,
+   "priced": "2026-06-27"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "BONI kipnuggets 500g",
+   "key": "boni-kipnuggets-500g",
+   "loc": "diepvries",
+   "name": "BONI kipnuggets 500g",
+   "pack": 1,
+   "price": 2.69,
+   "search": "BONI kipnuggets 500g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-09-09"
+  },
+  {
+   "key": "boni-kippenburgers-12x70g",
+   "name": "BONI kippenburgers 12x70g",
+   "cat": "Vers vlees & vis",
+   "price": 2.29,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-mini-gevogelte-balletjes-300g",
+   "name": "BONI mini gevogelte balletjes 300g",
+   "cat": "Vers vlees & vis",
+   "price": 1.79,
+   "priced": "2026-09-17"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "boomstammetjes varken 4x140g",
+   "key": "boomstammetjes-varken-4x140g",
+   "loc": "frigo",
+   "name": "boomstammetjes varken 4x140g",
+   "pack": 560,
+   "price": 5.47,
+   "search": "boomstammetjes varken 4x140g",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 9.96,
+   "avgKg": 0.549,
+   "priced": "2026-11-03"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": null,
+   "key": "chipolata-350g",
+   "loc": "frigo",
+   "name": "Chipolata ±350g",
+   "pack": 350,
+   "price": 2.42,
+   "search": "Chipolata ±350g",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 6.99,
+   "avgKg": 0.346,
+   "priced": "2026-11-13",
+   "art": "30115"
+  },
+  {
+   "key": "country-steak",
+   "name": "country steak",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 25.49,
+   "avgKg": 0.457,
+   "price": 11.65,
+   "priced": "2026-04-01"
+  },
+  {
+   "key": "everyday-atlantische-gerookte-zalm-200g",
+   "name": "EVERYDAY Atlantische gerookte zalm 200g",
+   "cat": "Vers vlees & vis",
+   "price": 4.44,
+   "priced": "2025-05-17"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "EVERYDAY Cordon Bleu kip kalkoen 500g",
+   "key": "everyday-cordon-bleu-kip-kalkoen-500g",
+   "loc": "frigo",
+   "name": "EVERYDAY Cordon Bleu kip kalkoen 500g",
+   "pack": 500,
+   "price": 3.99,
+   "search": "EVERYDAY Cordon Bleu kip kalkoen 500g",
+   "stock": true,
+   "unit": "g",
+   "priced": "2026-10-22"
+  },
+  {
+   "key": "everyday-fishsticks-graatloos-msc-15x30g",
+   "name": "EVERYDAY fishsticks graatloos MSC 15x30g",
+   "cat": "Vers vlees & vis",
+   "price": 1.69,
+   "priced": "2025-09-02"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "EVERYDAY frikandel 20x70g",
+   "key": "everyday-frikandel-20x70g",
+   "loc": "diepvries",
+   "name": "EVERYDAY frikandel 20x70g",
+   "pack": 1,
+   "price": 2.39,
+   "search": "EVERYDAY frikandel 20x70g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-09-26"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "EVERYDAY gehaktballen 8x60g",
+   "key": "everyday-gehaktballen-8x60g",
+   "loc": "frigo",
+   "name": "EVERYDAY gehaktballen 8x60g",
+   "pack": 480,
+   "price": 2.86,
+   "search": "EVERYDAY gehaktballen 8x60g",
+   "stock": true,
+   "unit": "g",
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "everyday-kippenfilets-1kg",
+   "name": "EVERYDAY kippenfilets 1kg",
+   "cat": "Vers vlees & vis",
+   "price": 9.49,
+   "priced": "2026-07-30"
+  },
+  {
+   "key": "gehakt-rund-varken-1kg",
+   "name": "Gehakt Rund + Varken ±1kg",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 10.38,
+   "avgKg": 1.011,
+   "price": 10.49,
+   "priced": "2025-10-11"
+  },
+  {
+   "key": "gehakt-rund-varken-500g",
+   "name": "GEHAKT RUND VARKEN ±500g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 9.98,
+   "avgKg": 0.499,
+   "price": 4.98,
+   "priced": "2025-05-10"
+  },
+  {
+   "key": "gehakt-varken-rund-500g",
+   "name": "GEHAKT VARKEN RUND ±500g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 7.58,
+   "avgKg": 0.501,
+   "price": 3.8,
+   "priced": "2026-01-28"
+  },
+  {
+   "key": "gehakt-varken-500g",
+   "name": "GEHAKT VARKEN ±500g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 7.58,
+   "avgKg": 0.501,
+   "price": 3.8,
+   "priced": "2026-09-26"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "gemarineerde kippenbrochette",
+   "key": "gemarineerde-kippenbrochette",
+   "loc": "frigo",
+   "name": "gemarineerde kippenbrochette",
+   "pack": 375,
+   "price": 5.25,
+   "search": "gemarineerde kippenbrochette",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 11.98,
+   "avgKg": 0.438,
+   "priced": "2026-07-13"
+  },
+  {
+   "key": "gemarineerde-kippenpilons",
+   "name": "gemarineerde kippenpilons",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 6.39,
+   "avgKg": 0.661,
+   "price": 4.22,
+   "priced": "2025-08-11"
+  },
+  {
+   "key": "gemarineerde-ribbetjes",
+   "name": "Gemarineerde Ribbetjes",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 9.75,
+   "avgKg": 0.468,
+   "price": 4.56,
+   "priced": "2026-09-26"
+  },
+  {
+   "key": "gemarineerde-varkens-entrecote",
+   "name": "gemarineerde varkens entrecôte",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 11.55,
+   "avgKg": 0.569,
+   "price": 6.57,
+   "priced": "2026-04-24"
+  },
+  {
+   "key": "gepan-kip-tomaat-mozzarel-4x125g",
+   "name": "gepan. kip Tomaat/Mozzarel 4x125g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 15.95,
+   "avgKg": 0.504,
+   "price": 8.04,
+   "priced": "2025-01-07"
+  },
+  {
+   "key": "gevogeltepita-400g",
+   "name": "gevogeltepita ±400g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 7.59,
+   "avgKg": 0.402,
+   "price": 3.05,
+   "priced": "2026-06-05"
+  },
+  {
+   "key": "gyros-varken",
+   "name": "gyros varken",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 9.97,
+   "avgKg": 0.41,
+   "price": 4.09,
+   "priced": "2026-08-08"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "IGLO 15 Fish Sticks MSC 450g",
+   "key": "vissticks",
+   "loc": "diepvries",
+   "name": "IGLO 15 Fish Sticks MSC 450g",
+   "pack": 15,
+   "price": 3.19,
+   "search": "IGLO 15 Fish Sticks MSC 450g",
+   "stock": false,
+   "unit": "st",
+   "priced": "2026-05-16"
+  },
+  {
+   "key": "kalfsburger",
+   "name": "kalfsburger",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 7.99,
+   "avgKg": 0.284,
+   "price": 2.27,
+   "priced": "2025-01-02"
+  },
+  {
+   "key": "kalkoenbrochette",
+   "name": "kalkoenbrochette",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 15.52,
+   "avgKg": 0.33,
+   "price": 5.12,
+   "priced": "2026-03-17"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "kalkoenenschnitzel 375g",
+   "key": "kalkoenenschnitzel-375g",
+   "loc": "frigo",
+   "name": "kalkoenenschnitzel 375g",
+   "pack": 375,
+   "price": 4.89,
+   "search": "kalkoenenschnitzel 375g",
+   "stock": true,
+   "unit": "g",
+   "priced": "2026-07-30"
+  },
+  {
+   "key": "kalkoenenschnitzel-3x125g",
+   "name": "kalkoenenschnitzel 3x125g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 13.3,
+   "avgKg": 0.396,
+   "price": 5.27,
+   "priced": "2025-11-08"
+  },
+  {
+   "key": "kalkoenschnitzels-boursin-300g",
+   "name": "Kalkoenschnitzels Boursin 300g",
+   "cat": "Vers vlees & vis",
+   "price": 4.92,
+   "priced": "2026-09-17"
+  },
+  {
+   "key": "kip-chipolata-worst-600g",
+   "name": "Kip Chipolata Worst ±600g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 7.59,
+   "avgKg": 0.605,
+   "price": 4.59,
+   "priced": "2025-09-02"
+  },
+  {
+   "key": "kip-kebab-350g",
+   "name": "kip kebab ±350g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 16.4,
+   "avgKg": 0.341,
+   "price": 5.59,
+   "priced": "2026-05-16"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "Gepaneerde Krokante Kip 500g",
+   "key": "kip-krokant-4x125g",
+   "loc": "frigo",
+   "name": "Kip Krokant 4x125g",
+   "pack": 1,
+   "price": 4.15,
+   "search": "Gepaneerde Krokante Kip 500g",
+   "stock": true,
+   "unit": "st",
+   "kgPrice": 8.21,
+   "avgKg": 0.506,
+   "priced": "2025-09-02"
+  },
+  {
+   "key": "kipfilet-1kg",
+   "name": "kipfilet ±1kg",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 9.39,
+   "avgKg": 0.997,
+   "price": 9.36,
+   "priced": "2025-02-01"
+  },
+  {
+   "key": "kippenchipolata-worst-600g",
+   "name": "kippenchipolata worst ±600g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 9.5,
+   "avgKg": 0.623,
+   "price": 5.92,
+   "priced": "2025-02-01"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "Kippenfilet 450g",
+   "key": "kippenfilet",
+   "loc": "frigo",
+   "name": "Kippenfilet 450g",
+   "pack": 450,
+   "price": 5.38,
+   "search": "Kippenfilet 450g",
+   "stock": false,
+   "unit": "g",
+   "kgPrice": 11.98,
+   "avgKg": 0.449,
+   "priced": "2025-05-17"
+  },
+  {
+   "key": "okay-balletjesbrochette-375g",
+   "name": "OKAY balletjesbrochette ±375g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 14.49,
+   "avgKg": 0.421,
+   "price": 6.1,
+   "priced": "2026-04-16"
+  },
+  {
+   "key": "okay-boerenbrochette-300g",
+   "name": "OKAY Boerenbrochette ±300g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 18.69,
+   "avgKg": 0.314,
+   "price": 5.87,
+   "priced": "2026-04-16"
+  },
+  {
+   "key": "okay-chipolata-italiaanse-wijze",
+   "name": "OKAY chipolata italiaanse wijze",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 15.5,
+   "avgKg": 0.329,
+   "price": 5.1,
+   "priced": "2026-04-16"
+  },
+  {
+   "key": "okay-gemarineerd-honing-500g",
+   "name": "OKAY Gemarineerd Honing ±500g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 16.79,
+   "avgKg": 0.489,
+   "price": 8.21,
+   "priced": "2026-04-16"
+  },
+  {
+   "key": "restaurantsteak-2-cm",
+   "name": "Restaurantsteak ±2 cm",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 21.21,
+   "avgKg": 0.403,
+   "price": 8.55,
+   "priced": "2025-12-13"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "Spekburger varken",
+   "key": "spekburger-varken",
+   "loc": "frigo",
+   "name": "Spekburger varken",
+   "pack": 300,
+   "price": 4.71,
+   "search": "Spekburger varken",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 13.15,
+   "avgKg": 0.358,
+   "priced": "2026-07-30"
+  },
+  {
+   "key": "steak-royal",
+   "name": "Steak royal",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 27.99,
+   "avgKg": 0.443,
+   "price": 12.4,
+   "priced": "2026-05-02"
+  },
+  {
+   "key": "sweet-spareribs-650g",
+   "name": "Sweet Spareribs ±650g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 13.95,
+   "avgKg": 0.775,
+   "price": 10.81,
+   "priced": "2026-08-19"
+  },
+  {
+   "key": "varkensbrochette",
+   "name": "varkensbrochette",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 14.01,
+   "avgKg": 0.272,
+   "price": 3.81,
+   "priced": "2026-08-08"
+  },
+  {
+   "key": "verse-kipfilet-1kg",
+   "name": "VERSE KIPFILET ±1kg",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 9.17,
+   "avgKg": 1.009,
+   "price": 9.25,
+   "priced": "2025-12-04"
+  },
+  {
+   "key": "verse-kippenbillen-1kg",
+   "name": "VERSE KIPPENBILLEN ±1kg",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 3.63,
+   "avgKg": 1.24,
+   "price": 4.5,
+   "priced": "2026-09-09"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "verse worsten varken+kalf",
+   "key": "verse-worsten-varken-kalf",
+   "loc": "frigo",
+   "name": "verse worsten varken+kalf",
+   "pack": 500,
+   "price": 3.19,
+   "search": "verse worsten varken+kalf",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 10.11,
+   "avgKg": 0.316,
+   "priced": "2026-06-20"
+  },
+  {
+   "key": "vgg-ribs-texas-700g",
+   "name": "Vgg Ribs Texas ±700g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 13.31,
+   "avgKg": 0.545,
+   "price": 7.25,
+   "priced": "2026-04-08"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "vleeskoek varken ±1kg",
+   "key": "vleeskoek-varken-1kg",
+   "loc": "frigo",
+   "name": "vleeskoek varken ±1kg",
+   "pack": 1000,
+   "price": 12.77,
+   "search": "vleeskoek varken ±1kg",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 11.79,
+   "avgKg": 1.083,
+   "priced": "2026-08-19"
+  },
+  {
+   "key": "welzijn-kippenfilet-450g",
+   "name": "Welzijn Kippenfilet ±450g",
+   "cat": "Vers vlees & vis",
+   "kgPrice": 13.73,
+   "avgKg": 0.402,
+   "price": 5.52,
+   "priced": "2025-02-18"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "wokreepjes gevogelte",
+   "key": "wokreepjes-gevogelte",
+   "loc": "frigo",
+   "name": "wokreepjes gevogelte",
+   "pack": 300,
+   "price": 4.31,
+   "search": "wokreepjes gevogelte",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 13.72,
+   "avgKg": 0.314,
+   "priced": "2026-03-17"
+  },
+  {
+   "cat": "Vers vlees & vis",
+   "cg": "wokschotel gevogelte 2pers 1,14kg",
+   "key": "wokschotel-gevogelte-2pers-1-14kg",
+   "loc": "frigo",
+   "name": "wokschotel gevogelte 2pers 1,14kg",
+   "pack": 1,
+   "price": 11.85,
+   "search": "wokschotel gevogelte 2pers 1,14kg",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-07-30"
+  },
+  {
+   "key": "boni-dch-shamp-2in1-man-300ml",
+   "name": "BONI dch/shamp.2in1 man 300ml",
+   "cat": "Verzorging & hygiëne",
+   "price": 0.99,
+   "priced": "2025-07-02"
+  },
+  {
+   "key": "boni-handzeep-sinaas-lavendel-500ml",
+   "name": "BONI handzeep sinaas/lavendel 500ml",
+   "cat": "Verzorging & hygiëne",
+   "price": 0.99,
+   "priced": "2026-08-28"
+  },
+  {
+   "key": "colgate-sensation-white-75ml",
+   "name": "COLGATE sensation white 75ml",
+   "cat": "Verzorging & hygiëne",
+   "price": 1.46,
+   "priced": "2025-06-04"
+  },
+  {
+   "key": "everyday-douchegel-marine-300ml",
+   "name": "EVERYDAY Douchegel Marine 300ml",
+   "cat": "Verzorging & hygiëne",
+   "price": 0.66,
+   "priced": "2025-06-04"
+  },
+  {
+   "key": "everyday-scheergel-200ml",
+   "name": "EVERYDAY scheergel 200ml",
+   "cat": "Verzorging & hygiëne",
+   "price": 1.39,
+   "priced": "2025-04-12"
+  },
+  {
+   "key": "nivea-men-creme-gelaat-lich-hand-150ml",
+   "name": "NIVEA Men creme gelaat/lich./hand 150ml",
+   "cat": "Verzorging & hygiëne",
+   "price": 3.89,
+   "priced": "2025-01-07"
+  },
+  {
+   "key": "nivea-men-deo-deep-beat-150ml",
+   "name": "NIVEA MEN deo deep beat 150ml",
+   "cat": "Verzorging & hygiëne",
+   "price": 4.79,
+   "priced": "2025-01-07"
+  },
+  {
+   "key": "nivea-men-deo-dry-impact-roller-50ml",
+   "name": "NIVEA MEN deo Dry Impact+ roller 50ml",
+   "cat": "Verzorging & hygiëne",
+   "price": 2.95,
+   "priced": "2025-04-01"
+  },
+  {
+   "key": "nivea-men-deo-spray-sport-150ml",
+   "name": "NIVEA MEN deo spray sport 150ml",
+   "cat": "Verzorging & hygiëne",
+   "price": 3.29,
+   "priced": "2025-01-13"
+  },
+  {
+   "key": "rexona-deo-stick-woman-max-prot-45ml",
+   "name": "REXONA deo stick woman max prot. 45ml",
+   "cat": "Verzorging & hygiëne",
+   "price": 4.89,
+   "priced": "2026-05-16"
+  },
+  {
+   "key": "studio-line-gel-bed-rmx-150ml",
+   "name": "STUDIO LINE gel Bed/Rmx 150ml",
+   "cat": "Verzorging & hygiëne",
+   "price": 4.99,
+   "priced": "2025-01-13"
+  },
+  {
+   "key": "aoste-kippenworst-kids-5st-150g",
+   "name": "AOSTE kippenworst kids 5st 150g",
+   "cat": "Vleeswaren & beleg",
+   "price": 3.29,
+   "priced": "2025-05-02"
+  },
+  {
+   "cat": "Vleeswaren & beleg",
+   "cg": null,
+   "key": "bereide-americain-van-de-chef",
+   "loc": "frigo",
+   "name": "bereide americain van de chef",
+   "pack": 200,
+   "price": 2.22,
+   "search": "bereide americain van de chef",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 12.67,
+   "avgKg": 0.175,
+   "priced": "2025-12-24"
+  },
+  {
+   "cat": "Vleeswaren & beleg",
+   "cg": "bereide filet americain",
+   "key": "bereide-filet-americain",
+   "loc": "frigo",
+   "name": "bereide filet americain",
+   "pack": 200,
+   "price": 2.2,
+   "search": "bereide filet americain",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 13.16,
+   "avgKg": 0.167,
+   "priced": "2026-11-13",
+   "art": "10090"
+  },
+  {
+   "key": "boni-antipasto-italiano-150g",
+   "name": "BONI Antipasto Italiano 150g",
+   "cat": "Vleeswaren & beleg",
+   "price": 4.99,
+   "priced": "2025-02-22"
+  },
+  {
+   "key": "boni-bacon-sneetjes-gv-200g",
+   "name": "BONI bacon sneetjes GV 200g",
+   "cat": "Vleeswaren & beleg",
+   "price": 2.79,
+   "priced": "2025-02-22"
+  },
+  {
+   "key": "boni-boerenham-150g",
+   "name": "BONI boerenham 150g",
+   "cat": "Vleeswaren & beleg",
+   "price": 3.39,
+   "priced": "2025-02-22"
+  },
+  {
+   "cat": "Vleeswaren & beleg",
+   "cg": "BONI CHIFFONADE KIPFILET 110g",
+   "key": "boni-chiffonade-kipfilet-110g",
+   "loc": "frigo",
+   "name": "BONI CHIFFONADE KIPFILET 110g",
+   "pack": 1,
+   "price": 2.81,
+   "search": "BONI CHIFFONADE KIPFILET 110g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2025-12-13"
+  },
+  {
+   "key": "boni-fricandonsalade-160g",
+   "name": "BONI Fricandonsalade 160g",
+   "cat": "Vleeswaren & beleg",
+   "price": 1.95,
+   "priced": "2026-09-26"
+  },
+  {
+   "cat": "Vleeswaren & beleg",
+   "cg": "BONI gevogelteworst sneetjes 150g",
+   "key": "boni-gevogelteworst-sneetjes-150g",
+   "loc": "frigo",
+   "name": "BONI gevogelteworst sneetjes 150g",
+   "pack": 1,
+   "price": 1.49,
+   "search": "BONI gevogelteworst sneetjes 150g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2025-08-28"
+  },
+  {
+   "key": "boni-gv-kipsalade-200g",
+   "name": "BONI gv kipsalade 200g",
+   "cat": "Vleeswaren & beleg",
+   "price": 1.65,
+   "priced": "2026-05-16"
+  },
+  {
+   "key": "boni-hespenworst-sneetjes-200g",
+   "name": "BONI hespenworst sneetjes 200g",
+   "cat": "Vleeswaren & beleg",
+   "price": 1.72,
+   "priced": "2026-09-17"
+  },
+  {
+   "key": "boni-kipfilet-met-curry-150g",
+   "name": "BONI KIPFILET MET CURRY 150g",
+   "cat": "Vleeswaren & beleg",
+   "price": 2.69,
+   "priced": "2025-03-06"
+  },
+  {
+   "key": "boni-kipfilet-sneden-200g",
+   "name": "BONI kipfilet sneden 200g",
+   "cat": "Vleeswaren & beleg",
+   "price": 2.49,
+   "priced": "2025-01-02"
+  },
+  {
+   "key": "boni-kipsalade-andalouse-200g",
+   "name": "BONI kipsalade andalouse 200g",
+   "cat": "Vleeswaren & beleg",
+   "price": 1.65,
+   "priced": "2026-09-17"
+  },
+  {
+   "key": "boni-ontvette-ham-gv-150g",
+   "name": "BONI Ontvette ham GV 150g",
+   "cat": "Vleeswaren & beleg",
+   "price": 1.96,
+   "priced": "2025-02-18"
+  },
+  {
+   "key": "boni-pitasalade-200g",
+   "name": "BONI pitasalade 200g",
+   "cat": "Vleeswaren & beleg",
+   "price": 2.75,
+   "priced": "2025-07-02"
+  },
+  {
+   "key": "boni-plan-t-hummus-natuur-200g",
+   "name": "BONI PLAN'T Hummus Natuur 200g",
+   "cat": "Vleeswaren & beleg",
+   "price": 0.85,
+   "priced": "2026-07-07"
+  },
+  {
+   "key": "boni-salade-krab-surimi-200g",
+   "name": "BONI salade krab surimi 200g",
+   "cat": "Vleeswaren & beleg",
+   "price": 2.9,
+   "priced": "2025-06-23"
+  },
+  {
+   "key": "boni-salamiblokjes-zonderlook-200g",
+   "name": "BONI salamiblokjes zonderlook 200g",
+   "cat": "Vleeswaren & beleg",
+   "price": 3.2,
+   "priced": "2025-12-29"
+  },
+  {
+   "key": "boni-spek-met-roomkaas-100g",
+   "name": "BONI spek met roomkaas 100g",
+   "cat": "Vleeswaren & beleg",
+   "price": 1.99,
+   "priced": "2026-07-07"
+  },
+  {
+   "key": "boni-spekblokjes-gerookt-gv-2x100g",
+   "name": "BONI spekblokjes gerookt GV 2x100g",
+   "cat": "Vleeswaren & beleg",
+   "price": 2.23,
+   "priced": "2025-05-10"
+  },
+  {
+   "key": "boni-spekblokjes-gezouten-gv-2x100g",
+   "name": "BONI spekblokjes gezouten GV 2x100g",
+   "cat": "Vleeswaren & beleg",
+   "price": 2.23,
+   "priced": "2026-11-13",
+   "art": "27054"
+  },
+  {
+   "cat": "Vleeswaren & beleg",
+   "cg": "BONI Toastham 150g",
+   "key": "boni-toastham-150g",
+   "loc": "frigo",
+   "name": "BONI Toastham 150g",
+   "pack": 150,
+   "price": 1.89,
+   "search": "BONI Toastham 150g",
+   "stock": true,
+   "unit": "g",
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-trio-dip-grieks-210g",
+   "name": "BONI Trio dip Grieks 210g",
+   "cat": "Vleeswaren & beleg",
+   "price": 3.14,
+   "priced": "2025-12-29"
+  },
+  {
+   "cat": "Vleeswaren & beleg",
+   "cg": "BONI vleessalade zonder gluten 200g",
+   "key": "boni-vleessalade-zonder-gluten-200g",
+   "loc": "frigo",
+   "name": "BONI vleessalade zonder gluten 200g",
+   "pack": 1,
+   "price": 1.93,
+   "search": "BONI vleessalade zonder gluten 200g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-08-28"
+  },
+  {
+   "key": "colruyt-droge-worsten-275g",
+   "name": "COLRUYT droge worsten 275g",
+   "cat": "Vleeswaren & beleg",
+   "price": 2.7,
+   "priced": "2025-11-08"
+  },
+  {
+   "key": "colruyt-gerookte-droge-worsten-275g",
+   "name": "COLRUYT gerookte droge worsten 275g",
+   "cat": "Vleeswaren & beleg",
+   "price": 5.4,
+   "priced": "2025-11-22"
+  },
+  {
+   "key": "colruyt-zwarte-pens-2x150g",
+   "name": "COLRUYT zwarte pens 2x150g",
+   "cat": "Vleeswaren & beleg",
+   "price": 3.2,
+   "priced": "2025-08-05"
+  },
+  {
+   "cat": "Vleeswaren & beleg",
+   "cg": null,
+   "key": "d-lio-breydelhamsalade-180g",
+   "loc": "frigo",
+   "name": "DÉLIO Breydelhamsalade 180g",
+   "pack": 1,
+   "price": 1.97,
+   "search": "DÉLIO Breydelhamsalade 180g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2025-10-21"
+  },
+  {
+   "key": "delio-salade-kip-curry-200g",
+   "name": "DÉLIO salade kip curry 200g",
+   "cat": "Vleeswaren & beleg",
+   "price": 1.5,
+   "priced": "2025-12-24"
+  },
+  {
+   "key": "delio-vleessalade-200g",
+   "name": "DÉLIO Vleessalade 200g",
+   "cat": "Vleeswaren & beleg",
+   "price": 2.59,
+   "priced": "2025-09-23"
+  },
+  {
+   "key": "everyday-gekookte-hamblokjes-250g",
+   "name": "EVERYDAY GEKOOKTE HAMBLOKJES 250g",
+   "cat": "Vleeswaren & beleg",
+   "price": 2.19,
+   "priced": "2025-09-08"
+  },
+  {
+   "cat": "Vleeswaren & beleg",
+   "cg": "EVERYDAY Gekookte schouderham 300g",
+   "key": "schouderham",
+   "loc": "frigo",
+   "name": "EVERYDAY Gekookte schouderham 300g",
+   "pack": 300,
+   "price": 2.47,
+   "search": "EVERYDAY Gekookte schouderham 300g",
+   "stock": false,
+   "unit": "g",
+   "priced": "2025-08-28"
+  },
+  {
+   "cat": "Vleeswaren & beleg",
+   "cg": "EVERYDAY gerookte spekblokjes 250g",
+   "key": "everyday-gerookte-spekblokjes-250g",
+   "loc": "frigo",
+   "name": "EVERYDAY gerookte spekblokjes 250g",
+   "pack": 250,
+   "price": 1.87,
+   "search": "EVERYDAY gerookte spekblokjes 250g",
+   "stock": true,
+   "unit": "g",
+   "priced": "2026-10-22"
+  },
+  {
+   "cat": "Vleeswaren & beleg",
+   "cg": "EVERYDAY hespenworst sneetjes 200g",
+   "key": "everyday-hespenworst-sneetjes-200g",
+   "loc": "frigo",
+   "name": "EVERYDAY hespenworst sneetjes 200g",
+   "pack": 1,
+   "price": 1.18,
+   "search": "EVERYDAY hespenworst sneetjes 200g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "everyday-kipfilet-sneetjes-200g",
+   "name": "EVERYDAY kipfilet sneetjes 200g",
+   "cat": "Vleeswaren & beleg",
+   "price": 1.45,
+   "priced": "2026-04-13"
+  },
+  {
+   "key": "everyday-salami-met-look-sneetjes-225g",
+   "name": "EVERYDAY salami met look sneetjes 225g",
+   "cat": "Vleeswaren & beleg",
+   "price": 1.78,
+   "priced": "2026-08-08"
+  },
+  {
+   "cat": "Vleeswaren & beleg",
+   "cg": "EVERYDAY salami z.look sneetjes 225g",
+   "key": "everyday-salami-z-look-sneetjes-225g",
+   "loc": "frigo",
+   "name": "EVERYDAY salami z.look sneetjes 225g",
+   "pack": 1,
+   "price": 1.48,
+   "search": "EVERYDAY salami z.look sneetjes 225g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "everyday-spek-gerookt-sneetjes-250g",
+   "name": "EVERYDAY spek gerookt sneetjes 250g",
+   "cat": "Vleeswaren & beleg",
+   "price": 2.98,
+   "priced": "2025-11-15"
+  },
+  {
+   "cat": "Vleeswaren & beleg",
+   "cg": "EVERYDAY Vleessalade 250g",
+   "key": "everyday-vleessalade-250g",
+   "loc": "frigo",
+   "name": "EVERYDAY Vleessalade 250g",
+   "pack": 1,
+   "price": 1.29,
+   "search": "EVERYDAY Vleessalade 250g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-09-09"
+  },
+  {
+   "key": "kip-hawai-140g",
+   "name": "Kip hawai 140g",
+   "cat": "Vleeswaren & beleg",
+   "price": 1.27,
+   "priced": "2025-10-11"
+  },
+  {
+   "cat": "Vleeswaren & beleg",
+   "cg": "looksaus 200g",
+   "key": "looksaus",
+   "loc": "frigo",
+   "name": "looksaus 200g",
+   "pack": 200,
+   "price": 2.21,
+   "search": "looksaus 200g",
+   "stock": false,
+   "unit": "g",
+   "priced": "2025-06-16"
+  },
+  {
+   "cat": "Vleeswaren & beleg",
+   "cg": "Martino",
+   "key": "martino",
+   "loc": "frigo",
+   "name": "Martino",
+   "pack": 200,
+   "price": 2.06,
+   "search": "Martino",
+   "stock": true,
+   "unit": "g",
+   "kgPrice": 11.01,
+   "avgKg": 0.187,
+   "priced": "2025-12-04"
+  },
+  {
+   "key": "maya-gevogelteworst-sneetjes-100g",
+   "name": "MAYA gevogelteworst sneetjes 100g",
+   "cat": "Vleeswaren & beleg",
+   "price": 2.29,
+   "priced": "2025-11-22"
+  },
+  {
+   "key": "prepare-van-de-chef",
+   "name": "préparé van de chef",
+   "cat": "Vleeswaren & beleg",
+   "kgPrice": 14.97,
+   "avgKg": 0.167,
+   "price": 2.5,
+   "priced": "2026-04-01"
+  },
+  {
+   "key": "vers-spek-300g",
+   "name": "Vers Spek ±300g",
+   "cat": "Vleeswaren & beleg",
+   "kgPrice": 10.98,
+   "avgKg": 0.254,
+   "price": 2.79,
+   "priced": "2026-04-16"
+  },
+  {
+   "key": "becel-margarine-bakken-braden-vl-500ml",
+   "name": "BECEL margarine bakken&braden vl. 500ml",
+   "cat": "Zuivel & eieren",
+   "price": 2.79,
+   "priced": "2026-11-13",
+   "art": "13887"
+  },
+  {
+   "cat": "Zuivel & eieren",
+   "cg": "BONI Belgische scharreleieren L 6st",
+   "key": "boni-belgische-scharreleieren-l-6st",
+   "loc": "frigo",
+   "name": "BONI Belgische scharreleieren L 6st",
+   "pack": 6,
+   "price": 1.99,
+   "search": "BONI Belgische scharreleieren L 6st",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "boni-culinaire-room-20-vg-brik-25cl",
+   "name": "BONI culinaire room 20%vg brik 25cl",
+   "cat": "Zuivel & eieren",
+   "price": 0.89,
+   "priced": "2025-02-18"
+  },
+  {
+   "cat": "Zuivel & eieren",
+   "cg": "BONI extra lichte room 7% vg brik 25cl",
+   "key": "boni-extra-lichte-room-7-vg-brik-25cl",
+   "loc": "frigo",
+   "name": "BONI extra lichte room 7% vg brik 25cl",
+   "pack": 1,
+   "price": 0.75,
+   "search": "BONI extra lichte room 7% vg brik 25cl",
+   "stock": true,
+   "unit": "st",
+   "priced": "2025-10-29"
+  },
+  {
+   "key": "boni-grenadine-yoghurt-4x100g",
+   "name": "BONI grenadine yoghurt 4x100g",
+   "cat": "Zuivel & eieren",
+   "price": 1.19,
+   "priced": "2026-10-22"
+  },
+  {
+   "cat": "Zuivel & eieren",
+   "cg": "BONI margarine bakken&braden 500g",
+   "key": "boni-margarine-bakken-braden-vlb-500ml",
+   "loc": "frigo",
+   "name": "BONI margarine bakken&braden vlb. 500ml",
+   "pack": 500,
+   "price": 1.39,
+   "search": "BONI margarine bakken&braden 500g",
+   "stock": true,
+   "unit": "g",
+   "priced": "2026-08-19"
+  },
+  {
+   "key": "boni-margarine-light-25-vg-250g",
+   "name": "BONI Margarine Light 25%vg 250g",
+   "cat": "Zuivel & eieren",
+   "price": 0.79,
+   "priced": "2025-09-15"
+  },
+  {
+   "key": "boni-melkerijboter-zout-250g",
+   "name": "BONI melkerijboter zout 250g",
+   "cat": "Zuivel & eieren",
+   "price": 1.95,
+   "priced": "2026-09-26"
+  },
+  {
+   "cat": "Zuivel & eieren",
+   "cg": "BONI Yoghurt Mag Nat Su 8x125g",
+   "key": "boni-yoghurt-mag-nat-su-8x125g",
+   "loc": "frigo",
+   "name": "BONI Yoghurt Mag Nat Su 8x125g",
+   "pack": 1,
+   "price": 1.49,
+   "search": "BONI Yoghurt Mag Nat Su 8x125g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-11-13",
+   "art": "15975"
+  },
+  {
+   "key": "boni-yoghurt-mager-natuur-750g",
+   "name": "BONI yoghurt mager natuur 750g",
+   "cat": "Zuivel & eieren",
+   "price": 1.48,
+   "priced": "2025-06-23"
+  },
+  {
+   "cat": "Zuivel & eieren",
+   "cg": "CHOCOMEL De Enige Echte Brik 1L",
+   "key": "chocomel-brik-1l",
+   "loc": "frigo",
+   "name": "CHOCOMEL brik 1L",
+   "pack": 1,
+   "price": 1.29,
+   "search": "CHOCOMEL De Enige Echte Brik 1L",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-08-08"
+  },
+  {
+   "key": "chocomel-de-enige-echte-brik-1l",
+   "name": "CHOCOMEL De Enige Echte Brik 1L",
+   "cat": "Zuivel & eieren",
+   "price": 0.97,
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "everyday-aardbeidrink-brik-6x20cl",
+   "name": "EVERYDAY aardbeidrink brik 6x20cl",
+   "cat": "Zuivel & eieren",
+   "price": 1.59,
+   "priced": "2025-10-21"
+  },
+  {
+   "cat": "Zuivel & eieren",
+   "cg": "EVERYDAY crème dessert chocolade 4x125g",
+   "key": "everyday-cr-me-dessert-chocolade-4x125g",
+   "loc": "frigo",
+   "name": "EVERYDAY crème dessert chocolade 4x125g",
+   "pack": 1,
+   "price": 0.89,
+   "search": "EVERYDAY crème dessert chocolade 4x125g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-03-25"
+  },
+  {
+   "cat": "Zuivel & eieren",
+   "cg": "EVERYDAY crème dessert vanille 4x125g",
+   "key": "everyday-cr-me-dessert-vanille-4x125g",
+   "loc": "frigo",
+   "name": "EVERYDAY crème dessert vanille 4x125g",
+   "pack": 1,
+   "price": 0.89,
+   "search": "EVERYDAY crème dessert vanille 4x125g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-11-03"
+  },
+  {
+   "cat": "Zuivel & eieren",
+   "cg": "EVERYDAY dubbele room 200g",
+   "key": "everyday-dubbele-room-200g",
+   "loc": "frigo",
+   "name": "EVERYDAY dubbele room 200g",
+   "pack": 200,
+   "price": 1.66,
+   "search": "EVERYDAY dubbele room 200g",
+   "stock": true,
+   "unit": "g",
+   "priced": "2026-11-13",
+   "art": "1890"
+  },
+  {
+   "cat": "Zuivel & eieren",
+   "cg": "EVERYDAY halfvolle chocomelk brik 1L",
+   "key": "everyday-halfvolle-chocomelk-brik-1l",
+   "loc": "frigo",
+   "name": "EVERYDAY halfvolle chocomelk brik 1L",
+   "pack": 1,
+   "price": 0.99,
+   "search": "EVERYDAY halfvolle chocomelk brik 1L",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-10-22"
+  },
+  {
+   "cat": "Zuivel & eieren",
+   "cg": "EVERYDAY rijstpap vanille 200g",
+   "key": "everyday-rijstpap-vanille-200g",
+   "loc": "frigo",
+   "name": "EVERYDAY rijstpap vanille 200g",
+   "pack": 1,
+   "price": 0.35,
+   "search": "EVERYDAY rijstpap vanille 200g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2026-11-03"
+  },
+  {
+   "key": "everyday-scharrelei-m-12st",
+   "name": "EVERYDAY scharrelei M 12st",
+   "cat": "Zuivel & eieren",
+   "price": 2.49,
+   "priced": "2025-06-23"
+  },
+  {
+   "key": "everyday-verse-kaas-look-f-kruiden-150g",
+   "name": "EVERYDAY verse kaas look&f.kruiden 150g",
+   "cat": "Zuivel & eieren",
+   "price": 0.85,
+   "priced": "2025-05-17"
+  },
+  {
+   "key": "everyday-verse-kaas-met-fruit-6x100g",
+   "name": "EVERYDAY verse kaas met fruit 6x100g",
+   "cat": "Zuivel & eieren",
+   "price": 1.38,
+   "priced": "2025-05-02"
+  },
+  {
+   "cat": "Zuivel & eieren",
+   "cg": "EVERYDAY Volle melk brik 1L",
+   "key": "everyday-volle-melk-brik-1l",
+   "loc": "frigo",
+   "name": "EVERYDAY Volle melk brik 1L",
+   "pack": 1000,
+   "price": 0.89,
+   "search": "EVERYDAY Volle melk brik 1L",
+   "stock": true,
+   "unit": "ml",
+   "priced": "2026-11-03"
+  },
+  {
+   "cat": "Zuivel & eieren",
+   "cg": "EVERYDAY yoghurt mager 8x125g",
+   "key": "everyday-yoghurt-mager-nat-suik-8x125g",
+   "loc": "frigo",
+   "name": "EVERYDAY yoghurt mager nat.suik. 8x125g",
+   "pack": 1,
+   "price": 1.49,
+   "search": "EVERYDAY yoghurt mager 8x125g",
+   "stock": true,
+   "unit": "st",
+   "priced": "2025-09-08"
+  },
+  {
+   "key": "zott-monte-pudd-choc-hazeln-top-cup-70g",
+   "name": "ZOTT MONTE pudd.choc-hazeln top cup 70g",
+   "cat": "Zuivel & eieren",
+   "price": 1.64,
+   "priced": "2026-05-02"
+  }
+ ],
+ "pricedAt": "2026-11-17"
 }

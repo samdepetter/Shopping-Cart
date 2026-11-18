@@ -81,6 +81,26 @@ nav.tabbar button{flex:1;font:inherit;font-size:12px;font-weight:600;border:0;ba
 nav.tabbar button .ic{font-size:21px;line-height:1}
 nav.tabbar button.on{color:var(--accent)}
 nav.tabbar .badge{position:absolute;top:0;left:calc(50% + 6px);min-width:18px;padding:0 5px;border-radius:9px;background:var(--accent);color:#fff;font-size:11px;line-height:18px}
+.thumb{width:44px;height:44px;flex:none;border-radius:8px;object-fit:contain;background:#fff;border:1px solid var(--line)}
+.chg{display:inline-block;font-size:11.5px;font-weight:700;padding:1px 7px;border-radius:999px;margin-left:4px;vertical-align:1px}
+.chg.down{background:var(--ok-soft);color:var(--ok)}.chg.up{background:var(--promo-soft);color:var(--promo)}
+.more{width:100%;margin:4px 0 12px}
+.rhead{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.rimg{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;margin:4px 0}
+.credit{font-size:11px;color:var(--muted);margin:0 0 6px}
+.ings{list-style:none;padding:0;margin:4px 0 10px}.ings li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-top:1px solid var(--line);font-size:14.5px}.ings li:first-child{border-top:0}
+.ings .amt{color:var(--muted);white-space:nowrap}
+.steps{margin:0 0 6px;padding-left:22px}.steps li{margin:0 0 8px;font-size:14.5px}
+.cook{position:fixed;inset:0;z-index:50;background:var(--bg);display:none;flex-direction:column;padding:calc(16px + env(safe-area-inset-top)) 20px calc(20px + env(safe-area-inset-bottom))}
+.cook.on{display:flex}
+.cook .top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.cook .top b{font-size:16px}
+.cook .x{font:600 22px var(--font);border:0;background:none;color:var(--ink);padding:6px 10px;cursor:pointer}
+.cook .bar{height:5px;border-radius:3px;background:var(--line);margin:12px 0 0;overflow:hidden}.cook .bar i{display:block;height:100%;background:var(--accent)}
+.cook .n{color:var(--muted);font-weight:650;margin-top:22px}
+.cook .txt{font-size:25px;line-height:1.35;font-weight:560;flex:1;margin-top:8px;overflow:auto}
+.cook .nav{display:flex;gap:10px}.cook .nav button{flex:1;font:inherit;font-size:17px;font-weight:700;padding:16px;border-radius:14px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.cook .nav button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
 .toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:10px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:30;max-width:90vw}
 .toast.on{opacity:1}
 </style>
@@ -106,6 +126,8 @@ nav.tabbar .badge{position:absolute;top:0;left:calc(50% + 6px);min-width:18px;pa
 
   <!-- PROMOTIES -->
   <section class="view" id="v-promo">
+    <div id="priceBody"></div>
+    <div class="search"><input id="pq" type="search" placeholder="Zoek in promoties…" autocomplete="off" enterkeyhint="search"></div>
     <div id="promoBody"></div>
   </section>
 
@@ -118,10 +140,17 @@ nav.tabbar .badge{position:absolute;top:0;left:calc(50% + 6px);min-width:18px;pa
 <nav class="tabbar"><div class="in">
   <button data-v="lijst" class="on"><span class="ic">🛒</span>Lijst<span class="badge" id="badge" hidden></span></button>
   <button data-v="zoeken"><span class="ic">🔍</span>Zoeken</button>
-  <button data-v="promo"><span class="ic">🏷️</span>Promoties</button>
+  <button data-v="promo"><span class="ic">🏷️</span>Aanbod<span class="badge" id="badgeP" hidden></span></button>
   <button data-v="gerechten"><span class="ic">🍳</span>Gerechten</button>
 </div></nav>
 <div class="toast" id="toast"></div>
+<div class="cook" id="cook" role="dialog" aria-modal="true">
+  <div class="top"><b id="cookTitle"></b><button class="x" id="cookClose" aria-label="sluiten">✕</button></div>
+  <div class="bar"><i id="cookBar"></i></div>
+  <div class="n" id="cookN"></div>
+  <div class="txt" id="cookTxt"></div>
+  <div class="nav"><button id="cookPrev">← Vorige</button><button class="primary" id="cookNext">Volgende →</button></div>
+</div>
 
 <script>
 (() => {
@@ -130,11 +159,12 @@ const $ = (s) => document.querySelector(s);
 const eur = new Intl.NumberFormat("nl-BE", {style: "currency", currency: "EUR"});
 const MON = ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"];
 const KEY = "boodschappen-v2";
-const TITLES = {lijst: "Boodschappenlijst", zoeken: "Product zoeken", promo: "Promoties", gerechten: "Gerechten"};
+const TITLES = {lijst: "Boodschappenlijst", zoeken: "Product zoeken", promo: "Promoties & prijzen", gerechten: "Gerechten"};
 
 let CAT = {}, CATL = [], RECIPES = [], PROMOS = {}, PROMOL = [], META = {};
 let ST = {list: [], counts: {}};
-const UI = {view: "lijst", q: "", cat: ""};
+const UI = {view: "lijst", q: "", cat: "", pq: "", pmax: 40};
+let CHG = {}, CHGL = [];
 
 /* ---------- helpers ---------- */
 function el(tag, attrs = {}, ...kids) {
@@ -168,15 +198,16 @@ function promoFor(key) {
   return p;
 }
 function threshold(p) { return p.type === "multi" ? p.buy : p.type === "nth" ? p.n : (p.min || 1); }
+const regular = (item, p) => item.price || (p && p.regular) || 0;
 function costFor(item, q) {
-  const price = item.price || 0, p = promoFor(item.key);
+  const p = promoFor(item.key), price = regular(item, p);
   if (!p || q <= 0) return q * price;
   switch (p.type) {
     case "multi": return (Math.floor(q / p.buy) * p.pay + (q % p.buy)) * price;
     case "nth": return q * price - Math.floor(q / p.n) * price * p.pct / 100;
     case "volume": return q >= p.min ? q * p.price : q * price;
     case "percent": return q >= (p.min || 1) ? q * price * (1 - p.pct / 100) : q * price;
-    case "price": return q * p.price;
+    case "price": case "folder": return q * (p.price || price);
   }
   return q * price;
 }
@@ -186,7 +217,8 @@ function dealText(p, item) {
     case "nth": return `${p.n}de aan -${p.pct}%`;
     case "volume": return `vanaf ${p.min} st. ${eur.format(p.price)}/st.`;
     case "percent": return `-${p.pct}%` + (p.min > 1 ? ` vanaf ${p.min} st.` : "");
-    case "price": return `nu ${eur.format(p.price)}` + (item && item.price ? ` i.p.v. ${eur.format(item.price)}` : "");
+    case "price": return `nu ${eur.format(p.price)}` + (regular(item, p) > p.price ? ` i.p.v. ${eur.format(regular(item, p))}` : "");
+    case "folder": return `folderprijs ${eur.format(p.price)}`;
   }
   return p.label || "promo";
 }
@@ -194,8 +226,8 @@ function dealText(p, item) {
 function bestDeal(item) {
   const p = promoFor(item.key);
   if (!p) return null;
-  const t = threshold(p);
-  return {p, qty: t, unit: costFor(item, t) / t, save: (item.price || 0) - costFor(item, t) / t};
+  const t = threshold(p), unit = costFor(item, t) / t, reg = regular(item, p);
+  return {p, qty: t, unit, save: reg ? reg - unit : 0, pct: reg ? Math.round((reg - unit) / reg * 100) : 0};
 }
 /* suggestion for a list line: buy `to` instead of `q` */
 function suggestion(item, q) {
@@ -206,6 +238,13 @@ function suggestion(item, q) {
   const to = Math.max(t, Math.ceil(q / t) * t);
   return {ok: false, d, to, unit: costFor(item, to) / to};
 }
+function chgBadge(key) {
+  const c = CHG[key];
+  if (!c) return null;
+  const down = c.to < c.from;
+  return el("span", {class: "chg " + (down ? "down" : "up"), title: `was ${eur.format(c.from)}`, text: (down ? "↓ " : "↑ ") + eur.format(Math.abs(c.to - c.from)) + (c.perKg ? "/kg" : "")});
+}
+const thumb = (it) => it.img ? el("img", {class: "thumb", src: it.img, alt: "", loading: "lazy"}) : null;
 
 /* ---------- list ops ---------- */
 const lineOf = (key) => ST.list.find((l) => l.key === key);
@@ -229,6 +268,8 @@ const itemOf = (l) => CAT[l.key] || {key: l.key, name: l.name || l.key, cat: "Ei
 /* ---------- render ---------- */
 function render() {
   const open = ST.list.filter((l) => !l.done).length;
+  const bp = $("#badgeP"), nP = CHGL.filter((c) => c.to < c.from && (ST.counts[c.key] || lineOf(c.key))).length;
+  bp.hidden = !nP; bp.textContent = nP;
   const b = $("#badge"); b.hidden = !open; b.textContent = open;
   if (UI.view === "lijst") renderList();
   if (UI.view === "zoeken") renderSearch();
@@ -291,19 +332,22 @@ function lineRow(l) {
     el("div", {class: "top"},
       el("div", {class: "tap", role: "button", "aria-pressed": l.done ? "true" : "false", onclick: () => { l.done = !l.done; save(); }},
         el("span", {class: "check", text: "✓"}),
+        thumb(it),
         el("div", {class: "main"},
-          el("div", {class: "name"}, it.name, promoFor(it.key) ? el("span", {class: "tag", text: "promo"}) : null),
-          it.price ? el("div", {class: "meta", text: `${eur.format(it.price)}/st.`}) : null)),
+          el("div", {class: "name"}, it.name, promoFor(it.key) ? el("span", {class: "tag", text: "promo"}) : null, chgBadge(it.key)),
+          it.price ? el("div", {class: "meta", text: it.kgPrice ? `${eur.format(it.kgPrice)}/kg · ±${eur.format(it.price)}` : `${eur.format(it.price)}/st.`}) : null)),
       priceCell(it, l.qty)),
     el("div", {class: "bottom"}, stepper(l), hint));
 }
 
 function resultRow(it) {
-  const l = lineOf(it.key), d = bestDeal(it);
+  const l = lineOf(it.key), d = bestDeal(it), good = d && d.save > 0.004;
+  const price = it.kgPrice ? `${eur.format(it.kgPrice)}/kg` : it.price ? `${eur.format(it.price)}/st.` : (d ? eur.format(d.p.price || 0) : "");
   return el("div", {class: "row"},
+    thumb(it),
     el("div", {class: "main"},
-      el("div", {class: "name"}, it.name, d && d.save > 0.004 ? el("span", {class: "tag", text: dealText(d.p, it)}) : null),
-      el("div", {class: "meta"}, it.price ? `${eur.format(it.price)}/st.` : "", d && d.save > 0.004 ? ` · promo ${eur.format(d.unit)}/st. bij ${d.qty}` : "")),
+      el("div", {class: "name"}, it.name, good ? el("span", {class: "tag", text: dealText(d.p, it)}) : null, chgBadge(it.key)),
+      el("div", {class: "meta"}, price, good ? ` · promo ${eur.format(d.unit)}/st. bij ${d.qty}` : "")),
     el("button", {class: "add" + (l ? " in" : ""), "aria-label": "toevoegen", onclick: () => addItem(it.key, 1, it.name), text: l ? `${l.qty} ✓ +` : "+"}));
 }
 function renderSearch() {
@@ -331,52 +375,99 @@ function renderSearch() {
   }
 }
 
+function renderPrices() {
+  const box = $("#priceBody"); box.replaceChildren();
+  if (!CHGL.length) return;
+  const mine = (c) => lineOf(c.key) || ST.counts[c.key];
+  const list = CHGL.slice().sort((a, b) => !!mine(b) - !!mine(a) || b.date.localeCompare(a.date));
+  const row = (c) => {
+    const it = CAT[c.key] || {key: c.key, name: c.name}, down = c.to < c.from, u = c.perKg ? "/kg" : "";
+    return el("div", {class: "row"},
+      el("div", {class: "main"},
+        el("div", {class: "name"}, it.name, el("span", {class: "chg " + (down ? "down" : "up"), text: (down ? "goedkoper" : "duurder")})),
+        el("div", {class: "meta", text: `${eur.format(c.from)}${u} → ${eur.format(c.to)}${u} · ${fmtDay(c.date)}` + (promoFor(c.key) && down ? " · promo" : "")})),
+      CAT[c.key] ? el("button", {class: "add" + (lineOf(c.key) ? " in" : ""), onclick: () => addItem(c.key, 1, it.name), text: lineOf(c.key) ? `${lineOf(c.key).qty} ✓ +` : "+"}) : null);
+  };
+  const down = list.filter((c) => c.to < c.from), up = list.filter((c) => c.to > c.from);
+  box.append(el("h2", {class: "grp", text: `Prijswijzigingen (30 dagen)`}));
+  if (down.length) box.append(el("div", {class: "card"}, down.slice(0, 12).map(row)));
+  if (up.length) box.append(el("div", {class: "card"}, up.slice(0, 12).map(row)));
+}
+
 function renderPromos() {
+  renderPrices();
   const box = $("#promoBody"); box.replaceChildren();
-  const items = PROMOL.map((k) => CAT[k]).filter((it) => it && promoFor(it.key));
+  const terms = norm(UI.pq).split(/\s+/).filter(Boolean);
+  let items = PROMOL.map((k) => CAT[k]).filter((it) => it && promoFor(it.key) && terms.every((t) => norm(it.name).includes(t)));
   if (!items.length) {
     box.append(el("div", {class: "card pad empty"},
-      el("p", {text: "Er zijn op dit moment geen promoties bekend."}),
-      el("p", {class: "small", text: META.promosAt ? `Laatst bijgewerkt ${fmtDay(META.promosAt)}.` : "Promoties worden toegevoegd in data/promos.json."})));
+      el("p", {text: terms.length ? "Geen promoties gevonden." : "Er zijn op dit moment geen promoties bekend."}),
+      META.promosAt ? el("p", {class: "small", text: `Laatst bijgewerkt ${fmtDay(META.promosAt)}.`}) : null));
     return;
   }
-  const mine = (it) => !!(lineOf(it.key) || ST.counts[it.key]);
-  const sorted = items.sort((a, b) => mine(b) - mine(a) || bestDeal(b).save / (b.price || 1) - bestDeal(a).save / (a.price || 1));
-  const yours = sorted.filter(mine), rest = sorted.filter((i) => !mine(i));
-  const block = (title, list) => {
-    if (!list.length) return;
-    box.append(el("h2", {class: "grp", text: title}));
-    box.append(el("div", {class: "card"}, list.map((it) => {
-      const d = bestDeal(it), p = d.p, l = lineOf(it.key);
-      const pct = it.price ? Math.round(d.save / it.price * 100) : 0;
-      return el("div", {class: "row"},
-        el("div", {class: "main"},
-          el("div", {class: "name"}, it.name, el("span", {class: "tag", text: pct > 0 ? `-${pct}%` : "promo"})),
-          el("div", {class: "meta", text: `${dealText(p, it)} · ${eur.format(d.unit)}/st.` + (it.price ? ` i.p.v. ${eur.format(it.price)}` : "") + (p.until ? ` · t/m ${fmtDay(p.until)}` : "")}),
-          p.note ? el("div", {class: "meta", text: p.note}) : null),
-        el("button", {class: "add" + (l ? " in" : ""), onclick: () => { if (l && l.qty < d.qty) setQty(it.key, d.qty); else addItem(it.key, l ? 1 : d.qty, it.name); }, text: l ? `${l.qty} ✓ +` : `+${d.qty}`}));
-    })));
+  const mine = (it) => !!(lineOf(it.key) || ST.counts[it.key] || (PROMOS[it.key] && PROMOS[it.key].matched));
+  const pct = (it) => (bestDeal(it) || {}).pct || 0;
+  items.sort((a, b) => mine(b) - mine(a) || pct(b) - pct(a) || a.name.localeCompare(b.name));
+  const yours = items.filter(mine), rest = items.filter((i) => !mine(i));
+  const promoRow = (it) => {
+    const d = bestDeal(it), p = d.p, l = lineOf(it.key);
+    return el("div", {class: "row"},
+      thumb(it),
+      el("div", {class: "main"},
+        el("div", {class: "name"}, it.name, d.pct > 0 ? el("span", {class: "tag", text: `-${d.pct}%`}) : null),
+        el("div", {class: "meta", text: `${dealText(p, it)}` + (d.save > 0.004 ? ` · ${eur.format(d.unit)}/st.` : "") + (p.until ? ` · t/m ${fmtDay(p.until)}` : "")})),
+      el("button", {class: "add" + (l ? " in" : ""), onclick: () => { if (l && l.qty < d.qty) setQty(it.key, d.qty); else addItem(it.key, l ? 1 : d.qty, it.name); }, text: l ? `${l.qty} ✓ +` : `+${d.qty}`}));
   };
-  block("Voor jou", yours);
-  block(yours.length ? "Andere promoties" : "Alle promoties", rest);
-  if (META.promosAt) box.append(el("p", {class: "small muted", style: "margin:8px 4px", text: `Promoties bijgewerkt ${fmtDay(META.promosAt)}.`}));
+  if (yours.length) { box.append(el("h2", {class: "grp", text: "Voor jou"})); box.append(el("div", {class: "card"}, yours.map(promoRow))); }
+  box.append(el("h2", {class: "grp", text: `${yours.length ? "Andere promoties" : "Promoties"} (${rest.length})`}));
+  box.append(el("div", {class: "card"}, rest.slice(0, UI.pmax).map(promoRow)));
+  if (rest.length > UI.pmax) box.append(el("button", {class: "btn more", onclick: () => { UI.pmax += 60; render(); }, text: `Toon meer (${rest.length - UI.pmax})`}));
+  if (META.promosAt) box.append(el("p", {class: "small muted", style: "margin:8px 4px", text: `Colruyt-folder via promotiez.be, bijgewerkt ${fmtDay(META.promosAt)}.`}));
 }
 
 function renderRecipes() {
   const box = $("#recipeBody"); box.replaceChildren();
   for (const r of RECIPES) {
-    const ings = r.ing.map((g) => CAT[g.item]).filter(Boolean);
-    box.append(el("details", {class: "recipe"},
-      el("summary", {}, el("span", {text: r.name}), el("span", {class: "muted small num", text: r.min ? `${r.min} min` : ""})),
-      el("ul", {}, ings.map((it) => el("li", {text: it.name}))),
-      r.steps && r.steps.length ? el("ol", {}, r.steps.map((s) => el("li", {text: s}))) : null,
-      el("div", {class: "btns"}, el("button", {class: "btn primary", onclick: () => {
-        for (const it of ings) if (!lineOf(it.key)) ST.list.push({key: it.key, qty: 1, done: false});
-        save(); toast(`Ingrediënten voor ${r.name} op je lijst`);
-      }, text: "Ingrediënten op lijst"}))));
+    const ings = r.ing.filter((g) => CAT[g.item]);
+    const cost = ings.reduce((s, g) => s + (CAT[g.item].price || 0), 0);
+    box.append(el("details", {class: "recipe", id: "r-" + r.id},
+      el("summary", {}, el("span", {text: r.name}), el("span", {class: "muted small num", text: [r.min ? `${r.min} min` : "", r.pers ? `${r.pers} pers.` : ""].filter(Boolean).join(" · ")})),
+      r.img ? el("img", {class: "rimg", src: r.img, alt: r.name, loading: "lazy"}) : null,
+      r.img && r.imgCredit ? el("p", {class: "credit"}, "Foto: ", el("a", {href: r.imgPage || r.img, target: "_blank", rel: "noopener", text: `${r.imgCredit}${r.imgLicense ? ", " + r.imgLicense : ""}`})) : null,
+      el("ul", {class: "ings"},
+        ings.map((g) => el("li", {}, el("span", {text: CAT[g.item].name}), el("span", {class: "amt", text: g.amt || ""}))),
+        (r.extra || []).map((x) => el("li", {}, el("span", {class: "muted", text: x}), el("span", {class: "amt", text: "zelf"})))),
+      cost ? el("p", {class: "small muted", style: "margin:0 0 8px", text: `Verpakkingen samen ± ${eur.format(cost)}`}) : null,
+      el("ol", {class: "steps"}, (r.steps || []).map((x) => el("li", {text: x}))),
+      el("div", {class: "btns"},
+        el("button", {class: "btn primary", onclick: () => cook(r), text: "👩‍🍳 Kookmodus"}),
+        el("button", {class: "btn", onclick: () => {
+          for (const g of ings) if (!lineOf(g.item)) ST.list.push({key: g.item, qty: 1, done: false});
+          save(); toast(`Ingrediënten voor ${r.name} op je lijst`);
+        }, text: "Ingrediënten op lijst"}))));
   }
   if (!RECIPES.length) box.append(el("p", {class: "empty", text: "Geen gerechten."}));
 }
+
+/* ---------- cooking mode: one step at a time, screen stays on ---------- */
+const COOK = {r: null, i: 0, lock: null};
+function cook(r) {
+  COOK.r = r; COOK.i = 0; $("#cook").classList.add("on"); cookShow();
+  if (navigator.wakeLock) navigator.wakeLock.request("screen").then((l) => { COOK.lock = l; }).catch(() => {});
+}
+function cookShow() {
+  const r = COOK.r, n = r.steps.length, i = COOK.i;
+  $("#cookTitle").textContent = r.name;
+  $("#cookN").textContent = `Stap ${i + 1} van ${n}`;
+  $("#cookTxt").textContent = r.steps[i];
+  $("#cookBar").style.width = `${(i + 1) / n * 100}%`;
+  $("#cookPrev").disabled = i === 0;
+  $("#cookNext").textContent = i === n - 1 ? "Klaar ✓" : "Volgende →";
+}
+function cookClose() { $("#cook").classList.remove("on"); if (COOK.lock) COOK.lock.release().catch(() => {}); COOK.lock = null; }
+$("#cookClose").addEventListener("click", cookClose);
+$("#cookPrev").addEventListener("click", () => { if (COOK.i > 0) { COOK.i--; cookShow(); } });
+$("#cookNext").addEventListener("click", () => { if (COOK.i < COOK.r.steps.length - 1) { COOK.i++; cookShow(); } else { cookClose(); toast("Smakelijk! 🍽️"); } });
 
 /* ---------- nav ---------- */
 function go(v) {
@@ -390,20 +481,32 @@ function go(v) {
 }
 for (const b of document.querySelectorAll("nav.tabbar button")) b.addEventListener("click", () => go(b.dataset.v));
 $("#q").addEventListener("input", (e) => { UI.q = e.target.value; render(); });
+$("#pq").addEventListener("input", (e) => { UI.pq = e.target.value; UI.pmax = 40; render(); });
 
 /* ---------- boot ---------- */
 (async () => {
   try { const raw = localStorage.getItem(KEY); if (raw) ST = Object.assign(ST, JSON.parse(raw)); } catch {}
   const get = (f) => fetch(`data/${f}.json`, {cache: "no-cache"}).then((r) => r.ok ? r.json() : {}).catch(() => ({}));
-  const [cat, rec, promo] = await Promise.all([get("catalog"), get("recipes"), get("promos")]);
+  const [cat, rec, promo, prices] = await Promise.all([get("catalog"), get("recipes"), get("promos"), get("prices")]);
   CATL = (cat.items || []).map((i) => ({...i, cat: i.cat || "Overige"}));
-  for (const p of promo.promos || []) {           // promo for a product not in the catalog
+  const have = new Set(CATL.map((i) => i.key));
+  PROMOS = {};
+  for (const p of promo.promos || []) {
     if (!p.key) continue;
-    if (!CATL.some((i) => i.key === p.key) && p.name) CATL.push({key: p.key, name: p.name, cat: p.cat || "Promoties", price: p.regular || 0});
+    if (!have.has(p.key)) { CATL.push({key: p.key, name: p.name, cat: "Promoties", price: p.regular || 0}); have.add(p.key); }
   }
   CAT = Object.fromEntries(CATL.map((i) => [i.key, i]));
-  PROMOS = Object.fromEntries((promo.promos || []).filter((p) => p.key).map((p) => [p.key, p]));
+  const saveOf = (it) => (bestDeal(it) || {}).save || 0;
+  for (const p of promo.promos || []) {   // several promos for one product: keep the best
+    if (!p.key) continue;
+    const prev = PROMOS[p.key], it = CAT[p.key];
+    PROMOS[p.key] = p;
+    if (prev) { const now = saveOf(it); PROMOS[p.key] = prev; if (now > saveOf(it)) PROMOS[p.key] = p; }
+  }
   PROMOL = Object.keys(PROMOS);
+  const since = new Date(Date.now() - 30 * 864e5).toISOString().slice(0, 10);
+  CHG = {}; for (const c of (prices.changes || [])) if (c.date >= since) CHG[c.key] = c;  // latest per product
+  CHGL = Object.values(CHG);
   RECIPES = rec.recipes || [];
   META.promosAt = promo.updatedAt;
   if (cat.pricedAt) $("#pricedAt").textContent = `Prijzen ${fmtDay(cat.pricedAt)}`;

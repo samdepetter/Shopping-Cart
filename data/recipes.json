@@ -1,609 +1,1480 @@
 {
-  "recipes": [
+ "recipes": [
+  {
+   "id": "bolognese",
+   "ing": [
     {
-      "id": "bolognese",
-      "ing": [
-        {
-          "item": "spaghetti",
-          "use": 100
-        },
-        {
-          "item": "bereid-gehakt-varken-kalf",
-          "use": 150
-        },
-        {
-          "item": "passata",
-          "use": 250
-        },
-        {
-          "item": "uien",
-          "use": 100
-        },
-        {
-          "item": "boni-franse-emmental-geraspt-200g",
-          "use": 30
-        }
-      ],
-      "min": 25,
-      "name": "Spaghetti bolognese",
-      "steps": [
-        "Kook de spaghetti volgens de verpakking.",
-        "Snipper de ui en bak hem glazig, voeg het gehakt toe en bak rul.",
-        "Giet de passata erbij, kruid met peper en zout en laat 10 min sudderen.",
-        "Serveer met geraspte kaas."
-      ],
-      "tags": [
-        "snel",
-        "budget",
-        "belgisch"
-      ]
+     "item": "spaghetti",
+     "use": 100
     },
     {
-      "id": "stoemp",
-      "ing": [
-        {
-          "item": "boni-aardappelpuree-wortel-1kg",
-          "use": 350
-        },
-        {
-          "item": "verse-worsten-varken-kalf",
-          "use": 200
-        },
-        {
-          "item": "boni-margarine-bakken-braden-vlb-500ml",
-          "use": 15
-        }
-      ],
-      "min": 20,
-      "name": "Stoemp met worst",
-      "steps": [
-        "Bak de worst 15 min in margarine op middelhoog vuur, regelmatig keren.",
-        "Warm de wortelpuree op in de microgolf of een pot.",
-        "Serveer samen, met mosterd naar keuze."
-      ],
-      "tags": [
-        "snel",
-        "budget",
-        "belgisch"
-      ]
+     "item": "bereid-gehakt-varken-kalf",
+     "use": 150
     },
     {
-      "id": "witloof",
-      "ing": [
-        {
-          "item": "witloof",
-          "use": 300
-        },
-        {
-          "item": "schouderham",
-          "use": 90
-        },
-        {
-          "item": "boni-franse-emmental-geraspt-200g",
-          "use": 40
-        },
-        {
-          "item": "everyday-dubbele-room-200g",
-          "use": 100
-        },
-        {
-          "item": "boni-aardappelblokjes-1kg",
-          "use": 250
-        }
-      ],
-      "min": 30,
-      "name": "Witloof met hesp en kaas",
-      "steps": [
-        "Kook het witloof 10 min, laat goed uitlekken.",
-        "Rol elk stronkje in een sneetje hesp, leg in een ovenschaal.",
-        "Giet de room erover, strooi kaas erop en gratineer 15 min op 200 °C.",
-        "Bak intussen de aardappelblokjes in de oven of airfryer."
-      ],
-      "tags": [
-        "belgisch"
-      ]
+     "item": "passata",
+     "use": 250
     },
     {
-      "id": "volauvent",
-      "ing": [
-        {
-          "item": "volauvent",
-          "use": 300
-        },
-        {
-          "item": "pasteitjes",
-          "use": 2
-        },
-        {
-          "item": "boni-frieten-airfryer-oven-1kg",
-          "use": 250
-        }
-      ],
-      "min": 20,
-      "name": "Vol-au-vent met frietjes",
-      "steps": [
-        "Bak de frieten 15-18 min in de airfryer of oven.",
-        "Warm de vol-au-vent op in een pot.",
-        "Warm de pasteitjes 3 min op in de oven en vul ze."
-      ],
-      "tags": [
-        "snel",
-        "belgisch"
-      ]
+     "item": "uien",
+     "use": 100
     },
     {
-      "id": "croque",
-      "ing": [
-        {
-          "item": "toastbrood",
-          "use": 4
-        },
-        {
-          "item": "boni-toastham-150g",
-          "use": 40
-        },
-        {
-          "item": "boni-gouda-jong-belegen-sneetjes-300g",
-          "use": 40
-        },
-        {
-          "item": "boni-margarine-bakken-braden-vlb-500ml",
-          "use": 10
-        },
-        {
-          "item": "ijsbergsla",
-          "use": 0.25
-        },
-        {
-          "item": "kerstomaten",
-          "use": 100
-        }
-      ],
-      "min": 15,
-      "name": "Croque monsieur met slaatje",
-      "steps": [
-        "Beleg 2 sneden met hesp en kaas en dek af.",
-        "Besmeer de buitenkant dun met margarine en bak goudbruin in de pan of het croque-toestel.",
-        "Serveer met sla en tomaatjes."
-      ],
-      "tags": [
-        "snel",
-        "budget",
-        "belgisch"
-      ]
-    },
-    {
-      "id": "schnitzel",
-      "ing": [
-        {
-          "item": "kalkoenenschnitzel-375g",
-          "use": 125
-        },
-        {
-          "item": "boni-frieten-airfryer-oven-1kg",
-          "use": 250
-        },
-        {
-          "item": "boni-margarine-bakken-braden-vlb-500ml",
-          "use": 15
-        },
-        {
-          "item": "ijsbergsla",
-          "use": 0.25
-        },
-        {
-          "item": "kerstomaten",
-          "use": 100
-        },
-        {
-          "item": "mayonaise",
-          "use": 30
-        }
-      ],
-      "min": 20,
-      "name": "Kalkoenschnitzel met frietjes en sla",
-      "steps": [
-        "Bak de frieten in de airfryer of oven.",
-        "Bak de schnitzel 3-4 min per kant in margarine.",
-        "Serveer met sla, tomaatjes en mayonaise."
-      ],
-      "tags": [
-        "snel",
-        "belgisch"
-      ]
-    },
-    {
-      "id": "balletjes",
-      "ing": [
-        {
-          "item": "everyday-gehaktballen-8x60g",
-          "use": 180
-        },
-        {
-          "item": "passata",
-          "use": 250
-        },
-        {
-          "item": "uien",
-          "use": 50
-        },
-        {
-          "item": "boni-aardappelpuree-broccoli-1kg",
-          "use": 300
-        }
-      ],
-      "min": 25,
-      "name": "Balletjes in tomatensaus met puree",
-      "steps": [
-        "Bak de balletjes rondom bruin.",
-        "Voeg gesnipperde ui en passata toe en laat 15 min sudderen.",
-        "Warm de puree op en serveer."
-      ],
-      "tags": [
-        "snel",
-        "budget",
-        "belgisch"
-      ]
-    },
-    {
-      "id": "macaroni",
-      "ing": [
-        {
-          "item": "horentjes",
-          "use": 100
-        },
-        {
-          "item": "schouderham",
-          "use": 60
-        },
-        {
-          "item": "boni-franse-emmental-geraspt-200g",
-          "use": 50
-        },
-        {
-          "item": "everyday-dubbele-room-200g",
-          "use": 100
-        },
-        {
-          "item": "everyday-volle-melk-brik-1l",
-          "use": 100
-        }
-      ],
-      "min": 25,
-      "name": "Macaroni met ham en kaas",
-      "steps": [
-        "Kook de horentjes beetgaar.",
-        "Verwarm room en melk, smelt de helft van de kaas erin.",
-        "Meng pasta, ham in reepjes en saus; strooi de rest van de kaas erover en gratineer 5 min."
-      ],
-      "tags": [
-        "snel",
-        "budget",
-        "belgisch"
-      ]
-    },
-    {
-      "id": "omelet",
-      "ing": [
-        {
-          "item": "boni-belgische-scharreleieren-l-6st",
-          "use": 3
-        },
-        {
-          "item": "everyday-gerookte-spekblokjes-250g",
-          "use": 75
-        },
-        {
-          "item": "champignons",
-          "use": 125
-        },
-        {
-          "item": "toastbrood",
-          "use": 2
-        }
-      ],
-      "min": 15,
-      "name": "Omelet met spek en champignons",
-      "steps": [
-        "Bak spekblokjes en gesneden champignons 5 min.",
-        "Klop de eieren los met peper en zout en giet erover.",
-        "Laat stollen op zacht vuur en serveer met geroosterd brood."
-      ],
-      "tags": [
-        "snel",
-        "budget"
-      ]
-    },
-    {
-      "id": "kipappelmoes",
-      "ing": [
-        {
-          "item": "kippenfilet",
-          "use": 150
-        },
-        {
-          "item": "appelmoes",
-          "use": 200
-        },
-        {
-          "item": "kroketten",
-          "use": 250
-        },
-        {
-          "item": "boni-margarine-bakken-braden-vlb-500ml",
-          "use": 15
-        }
-      ],
-      "min": 25,
-      "name": "Kip met appelmoes en kroketten",
-      "steps": [
-        "Bak de kroketten in de airfryer of oven (± 15 min).",
-        "Bak de kipfilet 5-6 min per kant in margarine, kruid met peper en zout.",
-        "Serveer met appelmoes."
-      ],
-      "tags": [
-        "snel",
-        "belgisch"
-      ]
-    },
-    {
-      "id": "boomstam",
-      "ing": [
-        {
-          "item": "boomstammetjes-varken-4x140g",
-          "use": 140
-        },
-        {
-          "item": "erwten-wortelen",
-          "use": 200
-        },
-        {
-          "item": "everyday-bloemige-aardappelen-5kg",
-          "use": 300
-        },
-        {
-          "item": "boni-margarine-bakken-braden-vlb-500ml",
-          "use": 15
-        }
-      ],
-      "min": 30,
-      "name": "Boomstammetje met erwtjes en worteltjes",
-      "steps": [
-        "Kook de geschilde aardappelen 20 min.",
-        "Bak het boomstammetje 15-20 min rondom in margarine.",
-        "Kook de erwtjes en worteltjes 6 min.",
-        "Serveer samen."
-      ],
-      "tags": [
-        "budget",
-        "belgisch"
-      ]
-    },
-    {
-      "id": "zoetzuur",
-      "ing": [
-        {
-          "item": "wokreepjes-gevogelte",
-          "use": 150
-        },
-        {
-          "item": "wokgroenten",
-          "use": 200
-        },
-        {
-          "item": "basmati",
-          "use": 1
-        },
-        {
-          "item": "zoetzuur",
-          "use": 125
-        }
-      ],
-      "min": 20,
-      "name": "Kip zoetzuur met rijst",
-      "steps": [
-        "Kook het zakje rijst volgens de verpakking.",
-        "Bak de kipreepjes 5 min, voeg de wokgroenten toe en roerbak 5 min.",
-        "Giet de zoetzure saus erbij en warm door."
-      ],
-      "tags": [
-        "snel"
-      ]
-    },
-    {
-      "id": "cordonbleu",
-      "ing": [
-        {
-          "item": "everyday-cordon-bleu-kip-kalkoen-500g",
-          "use": 125
-        },
-        {
-          "item": "boni-aardappelpuree-broccoli-1kg",
-          "use": 350
-        },
-        {
-          "item": "boni-margarine-bakken-braden-vlb-500ml",
-          "use": 15
-        }
-      ],
-      "min": 20,
-      "name": "Cordon bleu met broccolipuree",
-      "steps": [
-        "Bak de cordon bleu 8-10 min op middelhoog vuur, regelmatig keren.",
-        "Warm de broccolipuree op.",
-        "Serveer samen."
-      ],
-      "tags": [
-        "snel",
-        "budget"
-      ]
-    },
-    {
-      "id": "carbonara",
-      "ing": [
-        {
-          "item": "spaghetti",
-          "use": 100
-        },
-        {
-          "item": "everyday-gerookte-spekblokjes-250g",
-          "use": 100
-        },
-        {
-          "item": "everyday-dubbele-room-200g",
-          "use": 75
-        },
-        {
-          "item": "boni-belgische-scharreleieren-l-6st",
-          "use": 1
-        },
-        {
-          "item": "boni-franse-emmental-geraspt-200g",
-          "use": 30
-        }
-      ],
-      "min": 20,
-      "name": "Pasta met spek en room",
-      "steps": [
-        "Kook de spaghetti.",
-        "Bak de spekblokjes krokant.",
-        "Meng room, ei en kaas; roer onder de warme pasta met het spek (vuur uit)."
-      ],
-      "tags": [
-        "snel",
-        "budget"
-      ]
-    },
-    {
-      "id": "pita",
-      "ing": [
-        {
-          "item": "pita",
-          "use": 2
-        },
-        {
-          "item": "wokreepjes-gevogelte",
-          "use": 150
-        },
-        {
-          "item": "ijsbergsla",
-          "use": 0.25
-        },
-        {
-          "item": "kerstomaten",
-          "use": 75
-        },
-        {
-          "item": "looksaus",
-          "use": 40
-        }
-      ],
-      "min": 15,
-      "name": "Pita met kip",
-      "steps": [
-        "Bak de kipreepjes 6-8 min met wat peper en paprikapoeder.",
-        "Warm de pitabroodjes op in de broodrooster of oven.",
-        "Vul met kip, sla, tomaat en looksaus."
-      ],
-      "tags": [
-        "snel"
-      ]
-    },
-    {
-      "id": "vissticks",
-      "ing": [
-        {
-          "item": "vissticks",
-          "use": 5
-        },
-        {
-          "item": "spinazie",
-          "use": 200
-        },
-        {
-          "item": "boni-aardappelpuree-wortel-1kg",
-          "use": 300
-        }
-      ],
-      "min": 20,
-      "name": "Vissticks met spinazie en puree",
-      "steps": [
-        "Bak de vissticks in de oven of airfryer (± 15 min).",
-        "Warm de spinazie op in een pot met een snuifje nootmuskaat.",
-        "Warm de puree op en serveer."
-      ],
-      "tags": [
-        "snel",
-        "budget"
-      ]
-    },
-    {
-      "id": "chipolata",
-      "ing": [
-        {
-          "item": "chipolata-350g",
-          "use": 175
-        },
-        {
-          "item": "appelmoes",
-          "use": 200
-        },
-        {
-          "item": "boni-aardappelblokjes-1kg",
-          "use": 250
-        },
-        {
-          "item": "boni-margarine-bakken-braden-vlb-500ml",
-          "use": 10
-        }
-      ],
-      "min": 25,
-      "name": "Chipolata met appelmoes en aardappelblokjes",
-      "steps": [
-        "Bak de aardappelblokjes in de oven of airfryer.",
-        "Bak de chipolata 12-15 min in margarine.",
-        "Serveer met appelmoes."
-      ],
-      "tags": [
-        "snel",
-        "budget",
-        "belgisch"
-      ]
-    },
-    {
-      "id": "americain",
-      "ing": [
-        {
-          "item": "bereide-filet-americain",
-          "use": 200
-        },
-        {
-          "item": "boni-frieten-airfryer-oven-1kg",
-          "use": 250
-        },
-        {
-          "item": "ijsbergsla",
-          "use": 0.25
-        },
-        {
-          "item": "kerstomaten",
-          "use": 100
-        },
-        {
-          "item": "mayonaise",
-          "use": 30
-        }
-      ],
-      "min": 15,
-      "name": "Americain met frietjes",
-      "steps": [
-        "Bak de frieten in de airfryer of oven.",
-        "Serveer de americain koud met sla, tomaatjes en mayonaise."
-      ],
-      "tags": [
-        "snel",
-        "belgisch"
-      ]
+     "item": "boni-franse-emmental-geraspt-200g",
+     "use": 30
     }
-  ]
+   ],
+   "min": 25,
+   "name": "Spaghetti bolognese",
+   "steps": [
+    "Kook de spaghetti volgens de verpakking.",
+    "Snipper de ui en bak hem glazig, voeg het gehakt toe en bak rul.",
+    "Giet de passata erbij, kruid met peper en zout en laat 10 min sudderen.",
+    "Serveer met geraspte kaas."
+   ],
+   "tags": [
+    "snel",
+    "budget",
+    "belgisch"
+   ],
+   "q": "spaghetti bolognese"
+  },
+  {
+   "id": "stoemp",
+   "ing": [
+    {
+     "item": "boni-aardappelpuree-wortel-1kg",
+     "use": 350
+    },
+    {
+     "item": "verse-worsten-varken-kalf",
+     "use": 200
+    },
+    {
+     "item": "boni-margarine-bakken-braden-vlb-500ml",
+     "use": 15
+    }
+   ],
+   "min": 20,
+   "name": "Stoemp met worst",
+   "steps": [
+    "Bak de worst 15 min in margarine op middelhoog vuur, regelmatig keren.",
+    "Warm de wortelpuree op in de microgolf of een pot.",
+    "Serveer samen, met mosterd naar keuze."
+   ],
+   "tags": [
+    "snel",
+    "budget",
+    "belgisch"
+   ],
+   "q": "stoemp"
+  },
+  {
+   "id": "witloof",
+   "ing": [
+    {
+     "item": "witloof",
+     "use": 300
+    },
+    {
+     "item": "schouderham",
+     "use": 90
+    },
+    {
+     "item": "boni-franse-emmental-geraspt-200g",
+     "use": 40
+    },
+    {
+     "item": "everyday-dubbele-room-200g",
+     "use": 100
+    },
+    {
+     "item": "boni-aardappelblokjes-1kg",
+     "use": 250
+    }
+   ],
+   "min": 30,
+   "name": "Witloof met hesp en kaas",
+   "steps": [
+    "Kook het witloof 10 min, laat goed uitlekken.",
+    "Rol elk stronkje in een sneetje hesp, leg in een ovenschaal.",
+    "Giet de room erover, strooi kaas erop en gratineer 15 min op 200 °C.",
+    "Bak intussen de aardappelblokjes in de oven of airfryer."
+   ],
+   "tags": [
+    "belgisch"
+   ],
+   "q": "chicory ham cheese gratin"
+  },
+  {
+   "id": "volauvent",
+   "ing": [
+    {
+     "item": "volauvent",
+     "use": 300
+    },
+    {
+     "item": "pasteitjes",
+     "use": 2
+    },
+    {
+     "item": "boni-frieten-airfryer-oven-1kg",
+     "use": 250
+    }
+   ],
+   "min": 20,
+   "name": "Vol-au-vent met frietjes",
+   "steps": [
+    "Bak de frieten 15-18 min in de airfryer of oven.",
+    "Warm de vol-au-vent op in een pot.",
+    "Warm de pasteitjes 3 min op in de oven en vul ze."
+   ],
+   "tags": [
+    "snel",
+    "belgisch"
+   ],
+   "q": "vol-au-vent"
+  },
+  {
+   "id": "croque",
+   "ing": [
+    {
+     "item": "toastbrood",
+     "use": 4
+    },
+    {
+     "item": "boni-toastham-150g",
+     "use": 40
+    },
+    {
+     "item": "boni-gouda-jong-belegen-sneetjes-300g",
+     "use": 40
+    },
+    {
+     "item": "boni-margarine-bakken-braden-vlb-500ml",
+     "use": 10
+    },
+    {
+     "item": "ijsbergsla",
+     "use": 0.25
+    },
+    {
+     "item": "kerstomaten",
+     "use": 100
+    }
+   ],
+   "min": 15,
+   "name": "Croque monsieur met slaatje",
+   "steps": [
+    "Beleg 2 sneden met hesp en kaas en dek af.",
+    "Besmeer de buitenkant dun met margarine en bak goudbruin in de pan of het croque-toestel.",
+    "Serveer met sla en tomaatjes."
+   ],
+   "tags": [
+    "snel",
+    "budget",
+    "belgisch"
+   ],
+   "q": "croque monsieur"
+  },
+  {
+   "id": "schnitzel",
+   "ing": [
+    {
+     "item": "kalkoenenschnitzel-375g",
+     "use": 125
+    },
+    {
+     "item": "boni-frieten-airfryer-oven-1kg",
+     "use": 250
+    },
+    {
+     "item": "boni-margarine-bakken-braden-vlb-500ml",
+     "use": 15
+    },
+    {
+     "item": "ijsbergsla",
+     "use": 0.25
+    },
+    {
+     "item": "kerstomaten",
+     "use": 100
+    },
+    {
+     "item": "mayonaise",
+     "use": 30
+    }
+   ],
+   "min": 20,
+   "name": "Kalkoenschnitzel met frietjes en sla",
+   "steps": [
+    "Bak de frieten in de airfryer of oven.",
+    "Bak de schnitzel 3-4 min per kant in margarine.",
+    "Serveer met sla, tomaatjes en mayonaise."
+   ],
+   "tags": [
+    "snel",
+    "belgisch"
+   ],
+   "q": "schnitzel fries salad"
+  },
+  {
+   "id": "balletjes",
+   "ing": [
+    {
+     "item": "everyday-gehaktballen-8x60g",
+     "use": 180
+    },
+    {
+     "item": "passata",
+     "use": 250
+    },
+    {
+     "item": "uien",
+     "use": 50
+    },
+    {
+     "item": "boni-aardappelpuree-broccoli-1kg",
+     "use": 300
+    }
+   ],
+   "min": 25,
+   "name": "Balletjes in tomatensaus met puree",
+   "steps": [
+    "Bak de balletjes rondom bruin.",
+    "Voeg gesnipperde ui en passata toe en laat 15 min sudderen.",
+    "Warm de puree op en serveer."
+   ],
+   "tags": [
+    "snel",
+    "budget",
+    "belgisch"
+   ],
+   "q": "meatballs tomato sauce"
+  },
+  {
+   "id": "macaroni",
+   "ing": [
+    {
+     "item": "horentjes",
+     "use": 100
+    },
+    {
+     "item": "schouderham",
+     "use": 60
+    },
+    {
+     "item": "boni-franse-emmental-geraspt-200g",
+     "use": 50
+    },
+    {
+     "item": "everyday-dubbele-room-200g",
+     "use": 100
+    },
+    {
+     "item": "everyday-volle-melk-brik-1l",
+     "use": 100
+    }
+   ],
+   "min": 25,
+   "name": "Macaroni met ham en kaas",
+   "steps": [
+    "Kook de horentjes beetgaar.",
+    "Verwarm room en melk, smelt de helft van de kaas erin.",
+    "Meng pasta, ham in reepjes en saus; strooi de rest van de kaas erover en gratineer 5 min."
+   ],
+   "tags": [
+    "snel",
+    "budget",
+    "belgisch"
+   ],
+   "q": "macaroni ham cheese"
+  },
+  {
+   "id": "omelet",
+   "ing": [
+    {
+     "item": "boni-belgische-scharreleieren-l-6st",
+     "use": 3
+    },
+    {
+     "item": "everyday-gerookte-spekblokjes-250g",
+     "use": 75
+    },
+    {
+     "item": "champignons",
+     "use": 125
+    },
+    {
+     "item": "toastbrood",
+     "use": 2
+    }
+   ],
+   "min": 15,
+   "name": "Omelet met spek en champignons",
+   "steps": [
+    "Bak spekblokjes en gesneden champignons 5 min.",
+    "Klop de eieren los met peper en zout en giet erover.",
+    "Laat stollen op zacht vuur en serveer met geroosterd brood."
+   ],
+   "tags": [
+    "snel",
+    "budget"
+   ],
+   "q": "omelette bacon mushrooms"
+  },
+  {
+   "id": "kipappelmoes",
+   "ing": [
+    {
+     "item": "kippenfilet",
+     "use": 150
+    },
+    {
+     "item": "appelmoes",
+     "use": 200
+    },
+    {
+     "item": "kroketten",
+     "use": 250
+    },
+    {
+     "item": "boni-margarine-bakken-braden-vlb-500ml",
+     "use": 15
+    }
+   ],
+   "min": 25,
+   "name": "Kip met appelmoes en kroketten",
+   "steps": [
+    "Bak de kroketten in de airfryer of oven (± 15 min).",
+    "Bak de kipfilet 5-6 min per kant in margarine, kruid met peper en zout.",
+    "Serveer met appelmoes."
+   ],
+   "tags": [
+    "snel",
+    "belgisch"
+   ],
+   "q": "chicken croquettes apple sauce"
+  },
+  {
+   "id": "boomstam",
+   "ing": [
+    {
+     "item": "boomstammetjes-varken-4x140g",
+     "use": 140
+    },
+    {
+     "item": "erwten-wortelen",
+     "use": 200
+    },
+    {
+     "item": "everyday-bloemige-aardappelen-5kg",
+     "use": 300
+    },
+    {
+     "item": "boni-margarine-bakken-braden-vlb-500ml",
+     "use": 15
+    }
+   ],
+   "min": 30,
+   "name": "Boomstammetje met erwtjes en worteltjes",
+   "steps": [
+    "Kook de geschilde aardappelen 20 min.",
+    "Bak het boomstammetje 15-20 min rondom in margarine.",
+    "Kook de erwtjes en worteltjes 6 min.",
+    "Serveer samen."
+   ],
+   "tags": [
+    "budget",
+    "belgisch"
+   ],
+   "q": "sausage peas carrots potatoes"
+  },
+  {
+   "id": "zoetzuur",
+   "ing": [
+    {
+     "item": "wokreepjes-gevogelte",
+     "use": 150
+    },
+    {
+     "item": "wokgroenten",
+     "use": 200
+    },
+    {
+     "item": "basmati",
+     "use": 1
+    },
+    {
+     "item": "zoetzuur",
+     "use": 125
+    }
+   ],
+   "min": 20,
+   "name": "Kip zoetzuur met rijst",
+   "steps": [
+    "Kook het zakje rijst volgens de verpakking.",
+    "Bak de kipreepjes 5 min, voeg de wokgroenten toe en roerbak 5 min.",
+    "Giet de zoetzure saus erbij en warm door."
+   ],
+   "tags": [
+    "snel"
+   ],
+   "q": "sweet and sour chicken rice"
+  },
+  {
+   "id": "cordonbleu",
+   "ing": [
+    {
+     "item": "everyday-cordon-bleu-kip-kalkoen-500g",
+     "use": 125
+    },
+    {
+     "item": "boni-aardappelpuree-broccoli-1kg",
+     "use": 350
+    },
+    {
+     "item": "boni-margarine-bakken-braden-vlb-500ml",
+     "use": 15
+    }
+   ],
+   "min": 20,
+   "name": "Cordon bleu met broccolipuree",
+   "steps": [
+    "Bak de cordon bleu 8-10 min op middelhoog vuur, regelmatig keren.",
+    "Warm de broccolipuree op.",
+    "Serveer samen."
+   ],
+   "tags": [
+    "snel",
+    "budget"
+   ],
+   "q": "cordon bleu"
+  },
+  {
+   "id": "carbonara",
+   "ing": [
+    {
+     "item": "spaghetti",
+     "use": 100
+    },
+    {
+     "item": "everyday-gerookte-spekblokjes-250g",
+     "use": 100
+    },
+    {
+     "item": "everyday-dubbele-room-200g",
+     "use": 75
+    },
+    {
+     "item": "boni-belgische-scharreleieren-l-6st",
+     "use": 1
+    },
+    {
+     "item": "boni-franse-emmental-geraspt-200g",
+     "use": 30
+    }
+   ],
+   "min": 20,
+   "name": "Pasta met spek en room",
+   "steps": [
+    "Kook de spaghetti.",
+    "Bak de spekblokjes krokant.",
+    "Meng room, ei en kaas; roer onder de warme pasta met het spek (vuur uit)."
+   ],
+   "tags": [
+    "snel",
+    "budget"
+   ],
+   "q": "pasta bacon cream sauce"
+  },
+  {
+   "id": "pita",
+   "ing": [
+    {
+     "item": "pita",
+     "use": 2
+    },
+    {
+     "item": "wokreepjes-gevogelte",
+     "use": 150
+    },
+    {
+     "item": "ijsbergsla",
+     "use": 0.25
+    },
+    {
+     "item": "kerstomaten",
+     "use": 75
+    },
+    {
+     "item": "looksaus",
+     "use": 40
+    }
+   ],
+   "min": 15,
+   "name": "Pita met kip",
+   "steps": [
+    "Bak de kipreepjes 6-8 min met wat peper en paprikapoeder.",
+    "Warm de pitabroodjes op in de broodrooster of oven.",
+    "Vul met kip, sla, tomaat en looksaus."
+   ],
+   "tags": [
+    "snel"
+   ],
+   "q": "pita chicken"
+  },
+  {
+   "id": "vissticks",
+   "ing": [
+    {
+     "item": "vissticks",
+     "use": 5
+    },
+    {
+     "item": "spinazie",
+     "use": 200
+    },
+    {
+     "item": "boni-aardappelpuree-wortel-1kg",
+     "use": 300
+    }
+   ],
+   "min": 20,
+   "name": "Vissticks met spinazie en puree",
+   "steps": [
+    "Bak de vissticks in de oven of airfryer (± 15 min).",
+    "Warm de spinazie op in een pot met een snuifje nootmuskaat.",
+    "Warm de puree op en serveer."
+   ],
+   "tags": [
+    "snel",
+    "budget"
+   ],
+   "q": "fish fingers spinach mashed"
+  },
+  {
+   "id": "chipolata",
+   "ing": [
+    {
+     "item": "chipolata-350g",
+     "use": 175
+    },
+    {
+     "item": "appelmoes",
+     "use": 200
+    },
+    {
+     "item": "boni-aardappelblokjes-1kg",
+     "use": 250
+    },
+    {
+     "item": "boni-margarine-bakken-braden-vlb-500ml",
+     "use": 10
+    }
+   ],
+   "min": 25,
+   "name": "Chipolata met appelmoes en aardappelblokjes",
+   "steps": [
+    "Bak de aardappelblokjes in de oven of airfryer.",
+    "Bak de chipolata 12-15 min in margarine.",
+    "Serveer met appelmoes."
+   ],
+   "tags": [
+    "snel",
+    "budget",
+    "belgisch"
+   ],
+   "q": "sausage apple sauce potatoes"
+  },
+  {
+   "id": "americain",
+   "ing": [
+    {
+     "item": "bereide-filet-americain",
+     "use": 200
+    },
+    {
+     "item": "boni-frieten-airfryer-oven-1kg",
+     "use": 250
+    },
+    {
+     "item": "ijsbergsla",
+     "use": 0.25
+    },
+    {
+     "item": "kerstomaten",
+     "use": 100
+    },
+    {
+     "item": "mayonaise",
+     "use": 30
+    }
+   ],
+   "min": 15,
+   "name": "Americain met frietjes",
+   "steps": [
+    "Bak de frieten in de airfryer of oven.",
+    "Serveer de americain koud met sla, tomaatjes en mayonaise."
+   ],
+   "tags": [
+    "snel",
+    "belgisch"
+   ],
+   "q": "filet americain fries"
+  },
+  {
+   "id": "kippenbillen-oven",
+   "name": "Kippenbillen uit de oven met krieltjes",
+   "min": 55,
+   "pers": 3,
+   "tags": [
+    "oven",
+    "kip"
+   ],
+   "q": "roast chicken legs potatoes",
+   "ing": [
+    {
+     "item": "verse-kippenbillen-1kg",
+     "amt": "1 kg"
+    },
+    {
+     "item": "boni-primeur-krielaardappelen-2kg",
+     "amt": "750 g"
+    },
+    {
+     "item": "everyday-kruiden-kip-180g",
+     "amt": "2 el"
+    },
+    {
+     "item": "boni-olijfolie-extra-vierge-500ml",
+     "amt": "3 el"
+    },
+    {
+     "item": "rode-uien",
+     "amt": "2"
+    },
+    {
+     "item": "boni-jonge-slascheuten-100g",
+     "amt": "1 zakje"
+    }
+   ],
+   "extra": [
+    "peper en zout"
+   ],
+   "steps": [
+    "Verwarm de oven voor op 200 °C.",
+    "Was de krieltjes en halveer de grotere. Snijd de uien in parten.",
+    "Meng de krieltjes en uien in een ovenschaal met 2 el olijfolie, peper en zout.",
+    "Wrijf de kippenbillen in met 1 el olie en de kippenkruiden en leg ze op de aardappelen.",
+    "Bak alles 45 minuten in de oven, tot het vel krokant is en het vocht bij het dikste stuk helder wegloopt.",
+    "Schep halverwege de krieltjes even om.",
+    "Serveer met de slascheuten."
+   ]
+  },
+  {
+   "id": "zalm-broccoli-rijst",
+   "name": "Zalm met broccoli en roomsaus",
+   "min": 25,
+   "pers": 2,
+   "tags": [
+    "snel",
+    "vis"
+   ],
+   "q": "salmon fillet broccoli rice plate",
+   "ing": [
+    {
+     "item": "boni-atl-zalmfilet-graatloos-2x180g",
+     "amt": "2 filets"
+    },
+    {
+     "item": "boni-broccoli-in-roosjes-1kg",
+     "amt": "400 g"
+    },
+    {
+     "item": "basmati",
+     "amt": "2 builtjes"
+    },
+    {
+     "item": "everyday-dubbele-room-200g",
+     "amt": "100 ml"
+    },
+    {
+     "item": "boni-mosterd-dijon-280g",
+     "amt": "1 tl"
+    }
+   ],
+   "extra": [
+    "boter, peper en zout",
+    "citroensap (optioneel)"
+   ],
+   "steps": [
+    "Kook de rijst volgens de verpakking.",
+    "Kook of stoom de broccoli 5–6 minuten beetgaar en giet af.",
+    "Dep de zalm droog en kruid met peper en zout.",
+    "Bak de zalm in een klontje boter op middelhoog vuur: 4 minuten op de velkant, 2–3 minuten op de andere kant.",
+    "Haal de zalm uit de pan. Giet de room in dezelfde pan, roer de mosterd erdoor en laat 2 minuten inkoken.",
+    "Serveer de zalm met broccoli, rijst en de roomsaus."
+   ]
+  },
+  {
+   "id": "kip-curry",
+   "name": "Kip curry met kokosmelk",
+   "min": 30,
+   "pers": 3,
+   "tags": [
+    "kip",
+    "rijst"
+   ],
+   "q": "chicken curry coconut milk rice",
+   "ing": [
+    {
+     "item": "everyday-kippenfilets-1kg",
+     "amt": "500 g"
+    },
+    {
+     "item": "boni-kokosmelk-blik-400ml",
+     "amt": "1 blik"
+    },
+    {
+     "item": "boni-kruiden-curry-45g",
+     "amt": "2 el"
+    },
+    {
+     "item": "boni-paprika-mix-3st",
+     "amt": "2"
+    },
+    {
+     "item": "rode-uien",
+     "amt": "1"
+    },
+    {
+     "item": "basmati",
+     "amt": "3 builtjes"
+    },
+    {
+     "item": "boni-tomatenpuree-dubbel-geconcentr-140g",
+     "amt": "1 el"
+    }
+   ],
+   "extra": [
+    "olie, zout",
+    "look (optioneel)"
+   ],
+   "steps": [
+    "Kook de rijst volgens de verpakking.",
+    "Snijd de kip in blokjes, de ui in halve ringen en de paprika in reepjes.",
+    "Bak de kip 5 minuten rondom bruin in een scheut olie en haal ze uit de pan.",
+    "Fruit de ui 3 minuten, voeg de paprika toe en bak 3 minuten mee.",
+    "Roer de currypoeder en tomatenpuree erdoor en bak 1 minuut tot het geurt.",
+    "Giet de kokosmelk erbij, doe de kip terug in de pan en laat 10 minuten zacht pruttelen.",
+    "Proef, breng op smaak met zout en serveer met de rijst."
+   ]
+  },
+  {
+   "id": "chili-con-carne",
+   "name": "Chili con carne",
+   "min": 40,
+   "pers": 4,
+   "tags": [
+    "gehakt",
+    "rijst"
+   ],
+   "q": "chili con carne",
+   "ing": [
+    {
+     "item": "gehakt-rund-varken-1kg",
+     "amt": "500 g"
+    },
+    {
+     "item": "boni-tomatenstukjes-met-basilicum-400g",
+     "amt": "2 blikken"
+    },
+    {
+     "item": "rode-paprika",
+     "amt": "1"
+    },
+    {
+     "item": "rode-uien",
+     "amt": "1"
+    },
+    {
+     "item": "boni-tomatenpuree-dubbel-geconcentr-140g",
+     "amt": "2 el"
+    },
+    {
+     "item": "basmati",
+     "amt": "4 builtjes"
+    }
+   ],
+   "extra": [
+    "1 blik rode kidneybonen",
+    "1 blik maïs",
+    "chilipoeder of paprikapoeder, komijn, zout"
+   ],
+   "steps": [
+    "Snipper de ui en snijd de paprika in blokjes.",
+    "Bak het gehakt rul in een grote pan zonder extra vet, voeg de ui toe en bak 3 minuten mee.",
+    "Roer de tomatenpuree en de kruiden erdoor en bak 1 minuut.",
+    "Voeg de tomatenstukjes en paprika toe en laat 15 minuten zacht koken.",
+    "Spoel de bonen en maïs af, voeg ze toe en laat nog 10 minuten sudderen.",
+    "Kook ondertussen de rijst.",
+    "Breng op smaak en serveer met de rijst (lekker met een lepel room of geraspte kaas)."
+   ]
+  },
+  {
+   "id": "lasagne",
+   "name": "Lasagne bolognese",
+   "min": 75,
+   "pers": 4,
+   "tags": [
+    "oven",
+    "gehakt"
+   ],
+   "q": "lasagne bolognese",
+   "ing": [
+    {
+     "item": "gehakt-varken-rund-500g",
+     "amt": "500 g"
+    },
+    {
+     "item": "passata",
+     "amt": "500 ml"
+    },
+    {
+     "item": "rode-uien",
+     "amt": "1"
+    },
+    {
+     "item": "everyday-volle-melk-brik-1l",
+     "amt": "500 ml"
+    },
+    {
+     "item": "everyday-bloem-tarwe-1kg",
+     "amt": "40 g"
+    },
+    {
+     "item": "boni-melkerijboter-zout-250g",
+     "amt": "40 g"
+    },
+    {
+     "item": "boni-gratin-mix-geraspt-200g",
+     "amt": "150 g"
+    },
+    {
+     "item": "ducros-kruiden-italiaanse-mengeling-30g",
+     "amt": "1 el"
+    }
+   ],
+   "extra": [
+    "±12 lasagnebladen",
+    "nootmuskaat, peper, zout"
+   ],
+   "steps": [
+    "Saus: bak het gehakt rul, voeg de gesnipperde ui toe en bak 3 minuten. Voeg passata en Italiaanse kruiden toe en laat 15 minuten sudderen.",
+    "Bechamel: smelt de boter, roer de bloem erdoor en laat 1 minuut garen. Voeg al roerend beetje bij beetje de melk toe tot een gladde saus. Kruid met nootmuskaat, peper en zout.",
+    "Verwarm de oven voor op 190 °C.",
+    "Schep in een ovenschaal een laagje vleessaus, dan lasagnebladen, dan bechamel. Herhaal tot alles op is en eindig met bechamel.",
+    "Strooi de geraspte kaas erover.",
+    "Bak 35–40 minuten tot de bovenkant goudbruin is en de bladen zacht zijn (prik met een mes).",
+    "Laat 10 minuten rusten voor je snijdt."
+   ]
+  },
+  {
+   "id": "wok-kip-groenten",
+   "name": "Wok met kip en groenten",
+   "min": 20,
+   "pers": 3,
+   "tags": [
+    "snel",
+    "kip"
+   ],
+   "q": "chicken stir fry vegetables",
+   "ing": [
+    {
+     "item": "wokreepjes-gevogelte",
+     "amt": "400 g"
+    },
+    {
+     "item": "boni-paprika-mix-3st",
+     "amt": "2"
+    },
+    {
+     "item": "sperzieboontjes-450g",
+     "amt": "200 g"
+    },
+    {
+     "item": "rode-uien",
+     "amt": "1"
+    },
+    {
+     "item": "suzi-wan-saus-zoetzure-gr-400g",
+     "amt": "½ pot"
+    },
+    {
+     "item": "basmati",
+     "amt": "3 builtjes"
+    }
+   ],
+   "extra": [
+    "olie",
+    "sojasaus (optioneel)"
+   ],
+   "steps": [
+    "Kook de rijst.",
+    "Halveer de boontjes en kook ze 4 minuten voor. Snijd paprika en ui in reepjes.",
+    "Verhit een wok of grote pan heel heet met een scheut olie.",
+    "Bak de kipreepjes 4–5 minuten tot ze gaar en licht gekleurd zijn.",
+    "Voeg ui, paprika en boontjes toe en roerbak 3 minuten op hoog vuur.",
+    "Giet de zoetzure saus erbij en warm 2 minuten door.",
+    "Serveer meteen met de rijst."
+   ]
+  },
+  {
+   "id": "gyros-pita",
+   "name": "Gyros in pita met tzatziki",
+   "min": 20,
+   "pers": 3,
+   "tags": [
+    "snel"
+   ],
+   "q": "gyros pita",
+   "ing": [
+    {
+     "item": "gyros-varken",
+     "amt": "500 g"
+    },
+    {
+     "item": "boni-pitabroodjes-voorgebakken-6st-480g",
+     "amt": "6"
+    },
+    {
+     "item": "boni-trio-dip-grieks-210g",
+     "amt": "1 potje"
+    },
+    {
+     "item": "ijsbergsla",
+     "amt": "¼ krop"
+    },
+    {
+     "item": "tomaten-extra",
+     "amt": "2"
+    },
+    {
+     "item": "komkommer",
+     "amt": "½"
+    },
+    {
+     "item": "rode-uien",
+     "amt": "1"
+    }
+   ],
+   "extra": [],
+   "steps": [
+    "Snijd de sla in reepjes, tomaat en komkommer in blokjes, de ui in dunne ringen.",
+    "Bak de gyros 8–10 minuten in een hete pan zonder extra vet tot hij krokant is.",
+    "Warm de pitabroodjes 3–4 minuten in de oven of broodrooster.",
+    "Snijd de pita open en vul met sla, gyros, groenten en ui.",
+    "Werk af met een flinke lepel tzatziki."
+   ]
+  },
+  {
+   "id": "burger-ciabatta",
+   "name": "Kaasburger op ciabatta met ovenfrietjes",
+   "min": 30,
+   "pers": 3,
+   "tags": [
+    "frietjes"
+   ],
+   "q": "cheeseburger fries",
+   "ing": [
+    {
+     "item": "bh-kaasburger-varken",
+     "amt": "3"
+    },
+    {
+     "item": "boni-ciabatta-voorgebakken-300g",
+     "amt": "1"
+    },
+    {
+     "item": "belviva-belgische-ovenfriet-600g",
+     "amt": "600 g"
+    },
+    {
+     "item": "ijsbergsla",
+     "amt": "enkele blaadjes"
+    },
+    {
+     "item": "tomaten-extra",
+     "amt": "1"
+    },
+    {
+     "item": "boni-ketchup-tomaat-td-500ml",
+     "amt": ""
+    },
+    {
+     "item": "croky-pickles-200g",
+     "amt": ""
+    }
+   ],
+   "extra": [],
+   "steps": [
+    "Bak de ovenfrieten volgens de verpakking (±20 min op 220 °C).",
+    "Bak de ciabatta de laatste 8 minuten mee en snijd hem daarna in 3 stukken en open.",
+    "Bak de burgers 4–5 minuten per kant in een hete pan tot ze gaar zijn.",
+    "Snijd de tomaat in plakjes.",
+    "Beleg de ciabatta met sla, burger, tomaat, augurk en ketchup.",
+    "Serveer met de frietjes."
+   ]
+  },
+  {
+   "id": "pannenkoeken",
+   "name": "Pannenkoeken",
+   "min": 30,
+   "pers": 3,
+   "tags": [
+    "zoet",
+    "snel"
+   ],
+   "q": "crepes pancakes sugar",
+   "ing": [
+    {
+     "item": "dr-oetker-mix-voor-pannenkoeken-3x200g",
+     "amt": "1 zakje"
+    },
+    {
+     "item": "everyday-volle-melk-brik-1l",
+     "amt": "volgens zakje"
+    },
+    {
+     "item": "everyday-scharrelei-m-12st",
+     "amt": "2"
+    },
+    {
+     "item": "boni-melkerijboter-zout-250g",
+     "amt": "om te bakken"
+    },
+    {
+     "item": "tiense-suiker-bloemsuiker-molen-250g",
+     "amt": ""
+    }
+   ],
+   "extra": [
+    "confituur of choco (optioneel)"
+   ],
+   "steps": [
+    "Klop de mix met melk en eieren tot een glad beslag (zie de verpakking voor de hoeveelheden).",
+    "Laat het beslag 10 minuten rusten.",
+    "Verhit een pan met een klein klontje boter.",
+    "Giet een kleine soeplepel beslag in de pan en draai de pan zodat de bodem dun bedekt is.",
+    "Bak tot de rand loslaat (±1 minuut), draai om en bak nog 30 seconden.",
+    "Herhaal met de rest van het beslag en houd de pannenkoeken warm onder een bord.",
+    "Serveer met bloemsuiker of je favoriete beleg."
+   ]
+  },
+  {
+   "id": "steak-boontjes",
+   "name": "Steak met boontjes in spek en gebakken patatjes",
+   "min": 35,
+   "pers": 2,
+   "tags": [
+    "belgisch"
+   ],
+   "q": "steak green beans bacon potatoes",
+   "ing": [
+    {
+     "item": "restaurantsteak-2-cm",
+     "amt": "2"
+    },
+    {
+     "item": "sperzieboontjes-450g",
+     "amt": "300 g"
+    },
+    {
+     "item": "everyday-spek-gerookt-sneetjes-250g",
+     "amt": "6 sneetjes"
+    },
+    {
+     "item": "boni-aardappelblokjes-1kg",
+     "amt": "500 g"
+    },
+    {
+     "item": "boni-melkerijboter-zout-250g",
+     "amt": "2 el"
+    }
+   ],
+   "extra": [
+    "peper en zout"
+   ],
+   "steps": [
+    "Haal de steaks 30 minuten voor het bakken uit de koelkast.",
+    "Kook de boontjes 6 minuten in gezouten water, spoel ze koud en maak bundeltjes van 8–10 boontjes.",
+    "Wikkel een sneetje spek rond elk bundeltje.",
+    "Bak de aardappelblokjes goudbruin in een pan met wat boter (±15 minuten) of in de airfryer.",
+    "Bak de boontjesbundels 5 minuten in een pan tot het spek krokant is.",
+    "Kruid de steaks met peper en zout. Bak ze in hete boter: 2–3 minuten per kant voor saignant, 4 voor à point.",
+    "Laat de steaks 3 minuten rusten onder aluminiumfolie en serveer."
+   ]
+  },
+  {
+   "id": "tomatensoep-balletjes",
+   "name": "Tomatensoep met balletjes",
+   "min": 40,
+   "pers": 4,
+   "tags": [
+    "soep"
+   ],
+   "q": "tomato soup meatballs",
+   "ing": [
+    {
+     "item": "tomaten-extra",
+     "amt": "1 kg"
+    },
+    {
+     "item": "uien-2",
+     "amt": "2"
+    },
+    {
+     "item": "boni-tomatenpuree-dubbel-geconcentr-140g",
+     "amt": "2 el"
+    },
+    {
+     "item": "everyday-bouillon-groenten-12x10g",
+     "amt": "2 blokjes"
+    },
+    {
+     "item": "boni-mini-gevogelte-balletjes-300g",
+     "amt": "300 g"
+    }
+   ],
+   "extra": [
+    "1 liter water",
+    "olie, peper, zout",
+    "verse basilicum (optioneel)"
+   ],
+   "steps": [
+    "Snijd de uien grof en de tomaten in vieren.",
+    "Fruit de ui 5 minuten in een soeppot met een scheut olie.",
+    "Voeg tomaten en tomatenpuree toe en bak 5 minuten.",
+    "Giet 1 liter water erbij met de bouillonblokjes en laat 20 minuten koken.",
+    "Mix de soep glad met een staafmixer.",
+    "Doe de balletjes erin en laat ze 5–8 minuten zacht garen.",
+    "Breng op smaak met peper en zout."
+   ]
+  },
+  {
+   "id": "couscous-kip",
+   "name": "Parelcouscous met kip en groenten",
+   "min": 25,
+   "pers": 3,
+   "tags": [
+    "snel",
+    "kip"
+   ],
+   "q": "pearl couscous salad chicken",
+   "ing": [
+    {
+     "item": "boni-parelcouscous-munt-400g",
+     "amt": "300 g"
+    },
+    {
+     "item": "verse-kipfilet-1kg",
+     "amt": "400 g"
+    },
+    {
+     "item": "rode-paprika",
+     "amt": "1"
+    },
+    {
+     "item": "komkommer",
+     "amt": "½"
+    },
+    {
+     "item": "everyday-cocktail-tomaten-500g",
+     "amt": "250 g"
+    },
+    {
+     "item": "boni-olijfolie-extra-vierge-500ml",
+     "amt": "3 el"
+    },
+    {
+     "item": "everyday-kruiden-kip-180g",
+     "amt": "1 el"
+    }
+   ],
+   "extra": [
+    "citroensap",
+    "feta (optioneel)"
+   ],
+   "steps": [
+    "Kook de couscous volgens de verpakking en giet af.",
+    "Snijd de kip in reepjes en kruid met de kippenkruiden.",
+    "Bak de kip 6–7 minuten in 1 el olijfolie tot ze gaar is.",
+    "Snijd paprika en komkommer in blokjes en halveer de tomaatjes.",
+    "Meng de couscous met de groenten, 2 el olijfolie en een scheut citroensap.",
+    "Schep de kip erover en serveer warm of koud."
+   ]
+  },
+  {
+   "id": "shakshuka",
+   "name": "Eieren in tomatensaus (shakshuka)",
+   "min": 25,
+   "pers": 2,
+   "tags": [
+    "snel",
+    "vegetarisch"
+   ],
+   "q": "shakshuka",
+   "ing": [
+    {
+     "item": "everyday-scharrelei-m-12st",
+     "amt": "4"
+    },
+    {
+     "item": "boni-tomatenstukjes-met-basilicum-400g",
+     "amt": "1 blik"
+    },
+    {
+     "item": "rode-paprika",
+     "amt": "1"
+    },
+    {
+     "item": "rode-uien",
+     "amt": "1"
+    },
+    {
+     "item": "everyday-1-2-wit-stokbrood-4x150g",
+     "amt": "1"
+    }
+   ],
+   "extra": [
+    "olijfolie",
+    "paprikapoeder, komijn, peper, zout"
+   ],
+   "steps": [
+    "Snijd ui en paprika in reepjes.",
+    "Fruit ze 6 minuten in een pan met olijfolie.",
+    "Voeg de kruiden toe en bak 1 minuut.",
+    "Giet de tomatenstukjes erbij en laat 8 minuten inkoken tot een dikke saus.",
+    "Maak 4 kuiltjes in de saus en breek in elk een ei.",
+    "Leg een deksel op de pan en laat 5–7 minuten garen tot het eiwit gestold is maar de dooier nog zacht.",
+    "Serveer met het afgebakken stokbrood."
+   ]
+  },
+  {
+   "id": "rode-kool-worst",
+   "name": "Rode kool met appel, worst en puree",
+   "min": 30,
+   "pers": 3,
+   "tags": [
+    "belgisch"
+   ],
+   "q": "red cabbage sausage mashed potatoes",
+   "ing": [
+    {
+     "item": "boni-rode-kool-met-appel-1kg",
+     "amt": "1 kg"
+    },
+    {
+     "item": "boerenworst-450g",
+     "amt": "450 g"
+    },
+    {
+     "item": "everyday-bloemige-aardappelen-5kg",
+     "amt": "1 kg"
+    },
+    {
+     "item": "everyday-volle-melk-brik-1l",
+     "amt": "150 ml"
+    },
+    {
+     "item": "boni-melkerijboter-zout-250g",
+     "amt": "30 g"
+    }
+   ],
+   "extra": [
+    "nootmuskaat, peper, zout"
+   ],
+   "steps": [
+    "Schil de aardappelen, snijd ze in stukken en kook ze 20 minuten gaar in gezouten water.",
+    "Bak de worst op middelhoog vuur 15–20 minuten rondom bruin en gaar.",
+    "Warm de rode kool op in een pot op zacht vuur, af en toe roeren.",
+    "Giet de aardappelen af en stamp ze fijn met warme melk en boter.",
+    "Kruid de puree met nootmuskaat, peper en zout.",
+    "Serveer de worst met rode kool en puree."
+   ]
+  },
+  {
+   "id": "spareribs-oven",
+   "name": "Spareribs uit de oven met frietjes",
+   "min": 50,
+   "pers": 2,
+   "tags": [
+    "oven"
+   ],
+   "q": "spare ribs barbecue",
+   "ing": [
+    {
+     "item": "sweet-spareribs-650g",
+     "amt": "650 g"
+    },
+    {
+     "item": "belviva-belgische-ovenfriet-600g",
+     "amt": "600 g"
+    },
+    {
+     "item": "ijsbergsla",
+     "amt": "¼ krop"
+    },
+    {
+     "item": "boni-dressing-honingmosterd-300ml",
+     "amt": ""
+    }
+   ],
+   "extra": [],
+   "steps": [
+    "Verwarm de oven voor op 180 °C.",
+    "Leg de ribs op een bakplaat met bakpapier en dek af met aluminiumfolie.",
+    "Bak 30 minuten, haal de folie weg en zet de oven op 220 °C.",
+    "Schuif de frietjes erbij en bak alles nog 20 minuten tot de ribs gekarameliseerd en de frietjes krokant zijn.",
+    "Snijd de sla en meng met de dressing.",
+    "Snijd de ribs tussen de beentjes en serveer."
+   ]
+  },
+  {
+   "id": "vispannetje",
+   "name": "Vispannetje met spinazie en puree",
+   "min": 40,
+   "pers": 3,
+   "tags": [
+    "oven",
+    "vis"
+   ],
+   "q": "fish pie mashed potato gratin",
+   "ing": [
+    {
+     "item": "boni-atl-zalmfilet-graatloos-2x180g",
+     "amt": "2 filets"
+    },
+    {
+     "item": "everyday-spinazie-roomsaus-450g",
+     "amt": "450 g"
+    },
+    {
+     "item": "boni-aardappelpuree-1kg",
+     "amt": "600 g"
+    },
+    {
+     "item": "boni-gratin-mix-geraspt-200g",
+     "amt": "75 g"
+    }
+   ],
+   "extra": [
+    "peper en zout"
+   ],
+   "steps": [
+    "Verwarm de oven voor op 200 °C.",
+    "Warm de spinazie op en de puree volgens de verpakking.",
+    "Snijd de zalm in blokjes en kruid met peper en zout.",
+    "Leg de spinazie in een ovenschaal en verdeel de zalm erover.",
+    "Spuit of schep de puree erop en strooi de kaas erover.",
+    "Bak 20 minuten tot de kaas goudbruin is en de vis gaar."
+   ]
+  },
+  {
+   "id": "vleesbrood",
+   "name": "Vleesbrood met erwtjes en puree",
+   "min": 60,
+   "pers": 4,
+   "tags": [
+    "oven",
+    "gehakt",
+    "belgisch"
+   ],
+   "q": "meatloaf mashed potatoes peas",
+   "ing": [
+    {
+     "item": "gehakt-varken-rund-500g",
+     "amt": "750 g"
+    },
+    {
+     "item": "everyday-scharrelei-m-12st",
+     "amt": "1"
+    },
+    {
+     "item": "everyday-paneermeel-400g",
+     "amt": "4 el"
+    },
+    {
+     "item": "rode-uien",
+     "amt": "1"
+    },
+    {
+     "item": "boni-doperwten-extra-fijn-340g",
+     "amt": "1 bokaal"
+    },
+    {
+     "item": "boni-aardappelpuree-1kg",
+     "amt": "800 g"
+    },
+    {
+     "item": "heinz-tomato-gezeefd-500ml",
+     "amt": "200 ml"
+    }
+   ],
+   "extra": [
+    "peper, zout, nootmuskaat"
+   ],
+   "steps": [
+    "Verwarm de oven voor op 180 °C.",
+    "Snipper de ui heel fijn.",
+    "Meng het gehakt met ei, paneermeel, ui, peper, zout en nootmuskaat.",
+    "Vorm een brood en leg het in een ingevette ovenschaal.",
+    "Giet de tomatensaus erover en bak 45 minuten; schep er halverwege de saus over.",
+    "Warm de puree en de erwtjes op.",
+    "Snijd het vleesbrood in sneden en serveer met erwtjes, puree en saus."
+   ]
+  },
+  {
+   "id": "spaghetti-carbonara",
+   "name": "Spaghetti carbonara",
+   "min": 20,
+   "pers": 3,
+   "tags": [
+    "snel",
+    "pasta"
+   ],
+   "q": "spaghetti carbonara",
+   "ing": [
+    {
+     "item": "spaghetti",
+     "amt": "350 g"
+    },
+    {
+     "item": "everyday-gerookte-spekblokjes-250g",
+     "amt": "200 g"
+    },
+    {
+     "item": "everyday-scharrelei-m-12st",
+     "amt": "3"
+    },
+    {
+     "item": "boni-spaghetti-mix-geraspt-200g",
+     "amt": "80 g"
+    }
+   ],
+   "extra": [
+    "zwarte peper"
+   ],
+   "steps": [
+    "Kook de spaghetti al dente in ruim gezouten water.",
+    "Bak ondertussen de spekblokjes krokant in een droge pan.",
+    "Klop de eieren los met de geraspte kaas en veel zwarte peper.",
+    "Houd een kopje kookwater apart en giet de pasta af.",
+    "Haal de pan met spek van het vuur en doe de spaghetti erbij.",
+    "Giet het eimengsel erover en roer snel, met een scheutje kookwater, tot een romige saus (niet meer op het vuur, anders stolt het ei).",
+    "Serveer meteen met extra kaas."
+   ]
+  }
+ ]
 }
