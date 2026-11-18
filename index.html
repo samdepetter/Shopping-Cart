@@ -558,7 +558,7 @@ function applyShared() {
   stLoaded = true;
   try {
     const get = (f) => fetch(`data/${f}.json`, {cache: "no-cache"}).then((r) => { if (!r.ok) throw new Error(f); return r.json(); });
-    const [cat, rec, hist] = await Promise.all([get("catalog"), get("recipes"), get("history")]);
+    const [cat, rec, hist] = await Promise.all([get("catalog"), get("recipes"), get("history").catch(() => ({}))]);
     CATL = (cat.items || []).slice(); CAT = Object.fromEntries(CATL.map((i) => [i.key, i])); META.pricedAt = cat.pricedAt;
     RECIPES = (rec.recipes || []).slice();
     HIST = hist.purchases || {}; META.lastTicket = hist.lastTicket;
