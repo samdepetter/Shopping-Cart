@@ -12,559 +12,406 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-<title>Boodschappen &amp; gerechten</title>
+<title>Boodschappen</title>
 <style>
 :root{
   --bg:#f7f5f1;--panel:#fff;--ink:#1f1d1a;--muted:#6b665e;--line:#e6e1d8;
-  --accent:#c2410c;--accent-soft:#fdeee5;--ok:#2f7d4f;--ok-soft:#e7f3ec;--warn:#b45309;--warn-soft:#fdf3e1;
+  --accent:#c2410c;--accent-soft:#fdeee5;--ok:#2f7d4f;--ok-soft:#e7f3ec;--promo:#b91c1c;--promo-soft:#fde8e8;
   --r:12px;--font:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#171614;--panel:#211f1c;--ink:#f2efe9;--muted:#a39d93;--line:#34312c;--accent:#f97316;--accent-soft:#3a2416;--ok:#5fbf86;--ok-soft:#1d3226;--warn:#f0a43a;--warn-soft:#3a2c14}
+  :root{--bg:#171614;--panel:#211f1c;--ink:#f2efe9;--muted:#a39d93;--line:#34312c;--accent:#f97316;--accent-soft:#3a2416;--ok:#5fbf86;--ok-soft:#1d3226;--promo:#f87171;--promo-soft:#3b1d1d}
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 var(--font);-webkit-text-size-adjust:100%}
-.wrap{max-width:860px;margin:0 auto;padding:calc(12px + env(safe-area-inset-top)) calc(14px + env(safe-area-inset-right)) calc(90px + env(safe-area-inset-bottom)) calc(14px + env(safe-area-inset-left))}
-header.top{display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:6px 2px 10px}
-header.top h1{font-size:20px;margin:0;font-weight:650}
-header.top .sub{color:var(--muted);font-size:13px}
-nav.tabs{position:sticky;top:0;z-index:10;background:var(--bg);display:flex;gap:4px;padding:6px 0 10px;overflow-x:auto}
-nav.tabs button{flex:1 0 auto;font:inherit;font-size:14px;font-weight:600;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:9px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}
-nav.tabs button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-nav.tabs .badge{display:inline-block;min-width:18px;padding:0 5px;margin-left:4px;border-radius:9px;background:var(--accent);color:#fff;font-size:11px;line-height:18px;text-align:center}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 var(--font);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+.wrap{max-width:720px;margin:0 auto;padding:calc(10px + env(safe-area-inset-top)) calc(14px + env(safe-area-inset-right)) calc(96px + env(safe-area-inset-bottom)) calc(14px + env(safe-area-inset-left))}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:4px 2px 8px}
+header h1{font-size:22px;margin:0;font-weight:700}
+header .sub{color:var(--muted);font-size:12.5px;text-align:right}
 section.view{display:none}section.view.on{display:block}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px;margin-bottom:12px}
-.card h2{font-size:16px;margin:0 0 4px}
-.card h3{font-size:14px;margin:12px 0 6px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.03em}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:4px 14px;margin-bottom:12px}
+.card.pad{padding:14px}
 .muted{color:var(--muted)}.small{font-size:13px}
-.row{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px solid var(--line)}
-.row:first-of-type{border-top:0}
+h2.grp{font-size:12.5px;margin:16px 4px 6px;color:var(--muted);font-weight:650;text-transform:uppercase;letter-spacing:.04em}
+.row{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line);min-height:56px}
+.row:first-child{border-top:0}
 .row .main{flex:1;min-width:0}
-.row .name{font-weight:550;overflow-wrap:anywhere}
-.row .meta{font-size:12.5px;color:var(--muted)}
+.row .name{font-weight:560;overflow-wrap:anywhere}
+.row .meta{font-size:13px;color:var(--muted)}
 .num{font-variant-numeric:tabular-nums;white-space:nowrap}
-.price{font-weight:600}
-.stepper{display:flex;align-items:center;gap:2px}
-.stepper button,.btn-ico{width:34px;height:34px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:600 17px var(--font);cursor:pointer;display:grid;place-items:center}
-.stepper .v{min-width:42px;text-align:center;font-variant-numeric:tabular-nums;font-weight:600}
-.btn{font:inherit;font-weight:600;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:9px 14px;cursor:pointer}
+.check{width:30px;height:30px;flex:none;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;color:transparent;font-weight:800;font-size:16px}
+.row.done .check{background:var(--ok);border-color:var(--ok);color:#fff}
+.row.done .name{text-decoration:line-through;color:var(--muted)}
+.row.done .bottom{display:none}
+.row.line{flex-direction:column;align-items:stretch;gap:8px}
+.line .top{display:flex;align-items:center;gap:10px}
+.line .bottom{display:flex;align-items:center;gap:10px;padding-left:42px}
+.line .bottom .hint{flex:1;margin:0}
+.tap{display:flex;align-items:center;gap:12px;flex:1;min-width:0;cursor:pointer;user-select:none}
+.stepper{display:flex;align-items:center;gap:2px;flex:none}
+.stepper button,.add{width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:600 19px var(--font);cursor:pointer;display:grid;place-items:center;padding:0}
+.add{background:var(--accent);border-color:var(--accent);color:#fff;flex:none}
+.add.in{background:var(--ok);border-color:var(--ok);font-size:14px;width:auto;padding:0 10px}
+.stepper .v{min-width:30px;text-align:center;font-variant-numeric:tabular-nums;font-weight:650}
+.price{font-weight:650;min-width:62px;text-align:right}
+.price s{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.hint{margin-top:5px;font-size:13px;background:var(--promo-soft);color:var(--promo);border-radius:8px;padding:5px 8px;display:flex;gap:8px;align-items:center;justify-content:space-between}
+.hint button{font:inherit;font-weight:700;font-size:12.5px;border:0;border-radius:6px;background:var(--promo);color:#fff;padding:4px 9px;cursor:pointer;white-space:nowrap}
+.hint.ok{background:var(--ok-soft);color:var(--ok)}
+.tag{display:inline-block;font-size:11.5px;font-weight:700;padding:1px 7px;border-radius:999px;background:var(--promo-soft);color:var(--promo);margin-left:4px;vertical-align:1px}
+.search{position:sticky;top:0;z-index:5;background:var(--bg);padding:2px 0 10px}
+.search input{width:100%;font:inherit;font-size:17px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--ink);outline:none}
+.search input:focus{border-color:var(--accent)}
+.sum{display:flex;justify-content:space-between;align-items:baseline;padding:12px 4px 4px;font-weight:700;font-size:18px}
+.sum .muted{font-weight:500;font-size:14px}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.btn{font:inherit;font-weight:600;font-size:14px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:9px 14px;cursor:pointer}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
-.btn.ghost{background:transparent}
-.btn:disabled{opacity:.5;cursor:default}
-.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-.pill{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--muted);margin-right:4px}
-.pill.low{background:var(--warn-soft);color:var(--warn);border-color:transparent}
-.pill.ok{background:var(--ok-soft);color:var(--ok);border-color:transparent}
-.pill.acc{background:var(--accent-soft);color:var(--accent);border-color:transparent}
-.bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden;margin-top:5px;max-width:220px}
-.bar i{display:block;height:100%;background:var(--ok)}
-.bar i.low{background:var(--warn)}
-.total{display:flex;justify-content:space-between;align-items:baseline;font-size:18px;font-weight:700;padding-top:10px;border-top:2px solid var(--ink);margin-top:6px}
-.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
-.chips button{font:inherit;font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:6px 12px;cursor:pointer}
-.chips button.on{background:var(--accent);border-color:var(--accent);color:#fff}
-.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
-.rcard{display:flex;flex-direction:column}
-.rcard .cost{display:flex;gap:14px;margin:8px 0}
-.rcard .cost div{font-size:12px;color:var(--muted)}
-.rcard .cost b{display:block;font-size:17px;color:var(--ink)}
-.ing{font-size:13.5px;margin:0;padding:0;list-style:none}
-.ing li{display:flex;justify-content:space-between;gap:8px;padding:3px 0;border-top:1px dashed var(--line)}
-.ing li:first-child{border-top:0}
-.ing .have{color:var(--ok)}.ing .need{color:var(--warn)}
-details summary{cursor:pointer;color:var(--muted);font-size:13px;margin-top:8px}
-details ol{padding-left:18px;margin:6px 0;font-size:13.5px}
-.day{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
-.day:first-of-type{border-top:0}
-.day .d{width:74px;flex:none;font-weight:600}
-.day .d small{display:block;font-weight:400;color:var(--muted);font-size:12px}
-.day select{flex:1;min-width:0;font:inherit;padding:8px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
-.notice{border-radius:10px;padding:10px 12px;background:var(--accent-soft);color:var(--ink);font-size:13.5px;margin:10px 0}
-.notice.ok{background:var(--ok-soft)}
-.search{width:100%;font:inherit;padding:9px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);margin-bottom:8px}
-.seg{display:flex;gap:6px;margin:4px 0 8px}
-.empty{color:var(--muted);font-size:14px;padding:6px 0}
-.loading{color:var(--muted);padding:30px 0;text-align:center}
-.dialog{position:fixed;inset:0;background:rgba(0,0,0,.4);display:none;align-items:flex-end;justify-content:center;z-index:50}
-.dialog.on{display:flex}
-.dialog .sheet{background:var(--panel);width:100%;max-width:520px;border-radius:16px 16px 0 0;padding:16px;max-height:85vh;overflow:auto}
-@media (min-width:640px){.dialog{align-items:center}.dialog .sheet{border-radius:16px}}
-a{color:var(--accent)}
-.toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 14px;border-radius:10px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:60}
+.empty{text-align:center;padding:28px 10px;color:var(--muted)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:8px}
+.chips button{flex:none;font:inherit;font-size:13.5px;font-weight:600;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:7px 12px;cursor:pointer}
+.chips button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.recipe summary{cursor:pointer;list-style:none;padding:12px 0;display:flex;justify-content:space-between;gap:10px;font-weight:600}
+.recipe summary::-webkit-details-marker{display:none}
+.recipe{border-top:1px solid var(--line)}.recipe:first-child{border-top:0}
+.recipe ul,.recipe ol{margin:0 0 8px;padding-left:20px;font-size:14px}
+nav.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--panel);border-top:1px solid var(--line);display:flex;justify-content:center;padding:6px 6px calc(6px + env(safe-area-inset-bottom))}
+nav.tabbar .in{display:flex;max-width:720px;width:100%}
+nav.tabbar button{flex:1;font:inherit;font-size:12px;font-weight:600;border:0;background:none;color:var(--muted);padding:4px 0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;position:relative}
+nav.tabbar button .ic{font-size:21px;line-height:1}
+nav.tabbar button.on{color:var(--accent)}
+nav.tabbar .badge{position:absolute;top:0;left:calc(50% + 6px);min-width:18px;padding:0 5px;border-radius:9px;background:var(--accent);color:#fff;font-size:11px;line-height:18px}
+.toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:10px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:30;max-width:90vw}
 .toast.on{opacity:1}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="top">
-    <h1>Boodschappen & gerechten</h1>
-    <span class="sub" id="pricedAt"></span>
+  <header>
+    <h1 id="title">Boodschappenlijst</h1>
+    <div class="sub" id="pricedAt"></div>
   </header>
-  <nav class="tabs" id="tabs" role="tablist">
-    <button data-v="kar" class="on" id="tab-kar">Winkelkar <span class="badge" id="karBadge" hidden>0</span></button>
-    <button data-v="voorraad" id="tab-voorraad">Voorraad</button>
-    <button data-v="gerechten" id="tab-gerechten">Gerechten</button>
-  </nav>
 
-  <div id="boot" class="loading">Gegevens laden…</div>
-
-  <!-- KAR -->
-  <section class="view on" id="kar">
-    <div class="card" id="karCard">
-      <h2>Winkelkar voor Collect&amp;Go</h2>
-      <p class="muted small" style="margin:0 0 6px">Producten die bijna op zijn en de ingrediënten van je geplande gerechten. Pas aantallen aan of voeg iets toe.</p>
-      <div id="karList"></div>
-      <div class="total"><span>Totaal (geschat)</span><span class="num" id="karTotal">€ 0,00</span></div>
-      <div class="btns">
-        <button class="btn primary" id="sendCart">Kar klaarzetten voor Collect&amp;Go</button>
-        <button class="btn" id="copyCart">Kopieer lijst</button>
-        <button class="btn ghost" id="addItem">+ Product</button>
-      </div>
-      <div id="sentNote"></div>
-    </div>
-    <div class="card" id="ontvangenCard">
-      <h2>Bestelling opgehaald?</h2>
-      <p class="muted small" style="margin:0">Tik hieronder als je de klaargezette bestelling hebt ontvangen. Dan tellen de producten mee in je voorraad.</p>
-      <div class="btns"><button class="btn" id="received" disabled>Bestelling ontvangen</button></div>
-    </div>
+  <!-- LIJST -->
+  <section class="view on" id="v-lijst">
+    <div id="listBody"></div>
   </section>
 
-  <!-- VOORRAAD -->
-  <section class="view" id="voorraad">
-    <div class="card">
-      <h2>Voorraad in frigo en diepvries</h2>
-      <p class="muted small" style="margin:0">Geschat uit je aankopen en hoe snel je iets opgebruikt. Klopt het niet? Zet het juiste aantal verpakkingen met − en +. Onder de grens gaat het product automatisch in je winkelkar.</p>
-      <div class="seg chips" id="locSeg" style="margin-top:10px">
-        <button data-l="frigo" class="on">Frigo</button>
-        <button data-l="diepvries">Diepvries</button>
-        <button data-l="kast">Voorraadkast</button>
-      </div>
-      <input class="search" id="stockSearch" placeholder="Zoek in voorraad…" type="search">
-      <div id="stockList"></div>
-      <details id="stockInactive"><summary>Niet meer recent gekocht</summary><div id="stockInactiveList"></div></details>
-    </div>
+  <!-- ZOEKEN -->
+  <section class="view" id="v-zoeken">
+    <div class="search"><input id="q" type="search" placeholder="Zoek een product…" autocomplete="off" enterkeyhint="search"></div>
+    <div id="cats" class="chips"></div>
+    <div id="results"></div>
+  </section>
+
+  <!-- PROMOTIES -->
+  <section class="view" id="v-promo">
+    <div id="promoBody"></div>
   </section>
 
   <!-- GERECHTEN -->
-  <section class="view" id="gerechten">
-    <div class="card" id="planCard">
-      <h2>Weekmenu</h2>
-      <p class="muted small" style="margin:0 0 4px">Kies per dag een gerecht. Ontbrekende ingrediënten gaan meteen in je winkelkar. Tik op ✓ als je het gekookt hebt; dan gaat het van je voorraad af.</p>
-      <div id="planList"></div>
-    </div>
-    <div class="card">
-      <h2>Gerechten voor 1 persoon</h2>
-      <div class="chips" id="filters">
-        <button data-t="snel" class="on">Snel (&lt; 30 min)</button>
-        <button data-t="budget">Budget</button>
-        <button data-t="belgisch">Belgisch</button>
-      </div>
-      <div class="seg chips" id="sortSeg">
-        <button data-s="kost" class="on">Goedkoopst</button>
-        <button data-s="tijd">Snelst</button>
-        <button data-s="voorraad">Meeste in huis</button>
-      </div>
-      <div class="btns" style="margin:0 0 12px" id="genWrap" hidden>
-        <button class="btn" id="genRecipe">✨ Nieuw gerecht laten bedenken</button>
-        <span class="muted small" id="genStatus" style="align-self:center"></span>
-      </div>
-      <div class="rgrid" id="recipeGrid"></div>
-      <p class="muted small" style="margin-top:12px">Kost per portie = wat je effectief opgebruikt. "Nu te kopen" = de volledige verpakkingen die je nog mist, met wat er volgens de schatting in huis is.</p>
-    </div>
+  <section class="view" id="v-gerechten">
+    <div class="card" id="recipeBody"></div>
   </section>
-
-  <p class="muted small" id="histInfo" style="margin:4px 2px"></p>
 </div>
 
-<div class="dialog" id="dlg"><div class="sheet" id="dlgBody"></div></div>
+<nav class="tabbar"><div class="in">
+  <button data-v="lijst" class="on"><span class="ic">🛒</span>Lijst<span class="badge" id="badge" hidden></span></button>
+  <button data-v="zoeken"><span class="ic">🔍</span>Zoeken</button>
+  <button data-v="promo"><span class="ic">🏷️</span>Promoties</button>
+  <button data-v="gerechten"><span class="ic">🍳</span>Gerechten</button>
+</div></nav>
 <div class="toast" id="toast"></div>
 
 <script>
 (() => {
 "use strict";
-const $ = (s, r = document) => r.querySelector(s);
-const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const $ = (s) => document.querySelector(s);
 const eur = new Intl.NumberFormat("nl-BE", {style: "currency", currency: "EUR"});
-const n1 = new Intl.NumberFormat("nl-BE", {maximumFractionDigits: 1});
-const DAY = 864e5;
-const DOW = ["zo", "ma", "di", "wo", "do", "vr", "za"];
 const MON = ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"];
+const KEY = "boodschappen-v2";
+const TITLES = {lijst: "Boodschappenlijst", zoeken: "Product zoeken", promo: "Promoties", gerechten: "Gerechten"};
 
-const STORE_KEY = "boodschappen-state-v1";
-let db = null, uid = null, sample = null;
-let CAT = {}, CATL = [], RECIPES = [], HIST = {}, META = {};
-let ST = {corr: {}, ev: [], plan: {}, extra: {}, qty: {}, skip: {}, mins: {}, custom: [], sent: null};
-let stLoaded = false, canWrite = true;
-const UI = {tab: "kar", loc: "frigo", tags: new Set(["snel"]), sort: "kost", q: ""};
+let CAT = {}, CATL = [], RECIPES = [], PROMOS = {}, PROMOL = [], META = {};
+let ST = {list: [], counts: {}};
+const UI = {view: "lijst", q: "", cat: ""};
 
 /* ---------- helpers ---------- */
-const el = (tag, attrs = {}, ...kids) => {
+function el(tag, attrs = {}, ...kids) {
   const e = document.createElement(tag);
   for (const [k, v] of Object.entries(attrs)) {
     if (v == null || v === false) continue;
-    if (k === "class") e.className = v; else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
-    else if (k === "text") e.textContent = v; else e.setAttribute(k, v === true ? "" : v);
+    if (k === "text") e.textContent = v;
+    else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
+    else e.setAttribute(k, v === true ? "" : v);
   }
-  for (const c of kids.flat()) if (c != null && c !== false) e.append(c.nodeType ? c : document.createTextNode(String(c)));
+  for (const k of kids.flat()) if (k != null && k !== false) e.append(k.nodeType ? k : document.createTextNode(k));
   return e;
-};
-const today0 = () => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; };
-const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-const parseDay = (s) => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d, 12); };
-const toast = (msg) => { const t = $("#toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove("on"), 2200); };
-const fmtQty = (it, packs) => {
-  if (it.unit === "st" && it.pack === 1) return n1.format(packs) + " st";
-  const amt = packs * it.pack;
-  if (it.unit === "g") return amt >= 1000 ? n1.format(amt / 1000) + " kg" : Math.round(amt) + " g";
-  if (it.unit === "ml") return amt >= 1000 ? n1.format(amt / 1000) + " L" : Math.round(amt) + " ml";
-  return n1.format(amt) + " " + it.unit;
-};
-const fmtUse = (it, use) => {
-  if (it.unit === "g") return use >= 1000 ? n1.format(use / 1000) + " kg" : Math.round(use) + " g";
-  if (it.unit === "ml") return Math.round(use) + " ml";
-  if (it.unit === "st" && it.pack === 1) return use === 0.25 ? "¼ st" : use === 0.5 ? "½ st" : n1.format(use) + " st";
-  return n1.format(use) + " " + it.unit;
-};
+}
+const norm = (s) => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const fmtDay = (iso) => { const d = new Date(iso); return isNaN(d) ? "" : `${d.getDate()} ${MON[d.getMonth()]}`; };
+const slug = (s) => "eigen-" + norm(s).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+function toast(msg) { const t = $("#toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove("on"), 2200); }
+function save() { try { localStorage.setItem(KEY, JSON.stringify(ST)); } catch { toast("Opslaan op dit toestel lukt niet."); } render(); }
 
-/* ---------- stock model ---------- */
-const median = (a) => { const s = [...a].sort((x, y) => x - y); const m = s.length >> 1; return s.length ? (s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2) : 0; };
-const rateCache = {};
-function rate(key) {
-  if (key in rateCache) return rateCache[key];
-  const p = (HIST[key] || []).slice().sort((a, b) => a[0] < b[0] ? -1 : 1);
-  let r = null;
-  if (p.length >= 2) {
-    const span = (parseDay(p[p.length - 1][0]) - parseDay(p[0][0])) / DAY;
-    const q = p.slice(0, -1).reduce((s, x) => s + x[1], 0);
-    if (span >= 7) r = q / span;
+/* ---------- promotions ----------
+   promo types (data/promos.json):
+     multi   {buy, pay}        e.g. 3 halen, 2 betalen
+     nth     {n, pct}          e.g. 2de aan -50%  -> n:2, pct:50
+     volume  {min, price}      stukprijs `price` vanaf `min` stuks
+     percent {pct, min?}       -pct% (vanaf min stuks)
+     price   {price}           tijdelijk lagere stukprijs            */
+function promoFor(key) {
+  const p = PROMOS[key];
+  if (!p) return null;
+  if (p.until && new Date(p.until + "T23:59:59") < new Date()) return null;
+  return p;
+}
+function threshold(p) { return p.type === "multi" ? p.buy : p.type === "nth" ? p.n : (p.min || 1); }
+function costFor(item, q) {
+  const price = item.price || 0, p = promoFor(item.key);
+  if (!p || q <= 0) return q * price;
+  switch (p.type) {
+    case "multi": return (Math.floor(q / p.buy) * p.pay + (q % p.buy)) * price;
+    case "nth": return q * price - Math.floor(q / p.n) * price * p.pct / 100;
+    case "volume": return q >= p.min ? q * p.price : q * price;
+    case "percent": return q >= (p.min || 1) ? q * price * (1 - p.pct / 100) : q * price;
+    case "price": return q * p.price;
   }
-  return (rateCache[key] = r);
+  return q * price;
 }
-function estimate(key, now = Date.now()) {
-  const r = rate(key) || 0;
-  const corr = ST.corr[key];
-  const t0 = corr ? corr.at : -Infinity;
-  const evs = [];
-  for (const [d, q] of HIST[key] || []) { const t = parseDay(d).getTime(); if (t > t0) evs.push([t, q]); }
-  for (const e of ST.ev) if (e.k === key && e.at > t0) evs.push([e.at, e.d]);
-  evs.sort((a, b) => a[0] - b[0]);
-  let s = corr ? corr.v : 0, t = corr ? corr.at : (evs.length ? evs[0][0] : now);
-  for (const [te, d] of evs) { s = Math.max(0, s - r * (te - t) / DAY) + d; t = te; }
-  if (now > t) s = Math.max(0, s - r * (now - t) / DAY);
-  return Math.round(s * 100) / 100;
-}
-function typicalQty(key) { const p = HIST[key] || []; return Math.max(1, Math.round(median(p.map((x) => x[1])) || 1)); }
-function minFor(key) { return ST.mins[key] ?? (rate(key) ? 0.25 : 0); }
-function isActive(key) {
-  if (ST.corr[key] || key in ST.mins || ST.ev.some((e) => e.k === key)) return true;
-  const p = HIST[key] || [];
-  if (p.length < 3) return false;
-  const last = p.reduce((m, x) => x[0] > m ? x[0] : m, "");
-  return (Date.now() - parseDay(last)) / DAY <= 120;
-}
-
-/* ---------- recipes ---------- */
-const allRecipes = () => RECIPES.concat(ST.custom || []);
-function recipeCost(r, stockMap) {
-  let portie = 0, buy = 0, have = 0;
-  const lines = r.ing.map((g) => {
-    const it = CAT[g.item]; if (!it) return null;
-    const need = g.use / it.pack;
-    const avail = stockMap ? stockMap[g.item] ?? estimate(g.item) : estimate(g.item);
-    const packs = Math.max(0, Math.ceil(need - avail - 1e-9));
-    portie += it.price * need; buy += packs * it.price; if (packs === 0) have++;
-    return {it, use: g.use, need, packs, cost: it.price * need};
-  }).filter(Boolean);
-  return {portie, buy, have, n: lines.length, lines};
-}
-
-/* ---------- cart ---------- */
-function upcomingPlan() {
-  const t = iso(today0());
-  return Object.entries(ST.plan || {}).filter(([d, rid]) => d >= t && rid).sort();
-}
-function buildCart() {
-  const lines = {};
-  const add = (key, qty, why) => {
-    if (!CAT[key] || qty <= 0) return;
-    const l = lines[key] || (lines[key] = {key, auto: 0, why: []});
-    l.auto = Math.max(l.auto, qty); if (!l.why.includes(why)) l.why.push(why);
-  };
-  const t = iso(today0());
-  for (const it of CATL) {
-    if (!isActive(it.key)) continue;
-    if (ST.skip[it.key] && ST.skip[it.key] >= t) continue;
-    const est = estimate(it.key);
-    if (est < minFor(it.key)) add(it.key, Math.max(1, Math.round(typicalQty(it.key) - est)), "bijna op");
+function dealText(p, item) {
+  switch (p.type) {
+    case "multi": return `${p.buy} halen, ${p.pay} betalen`;
+    case "nth": return `${p.n}de aan -${p.pct}%`;
+    case "volume": return `vanaf ${p.min} st. ${eur.format(p.price)}/st.`;
+    case "percent": return `-${p.pct}%` + (p.min > 1 ? ` vanaf ${p.min} st.` : "");
+    case "price": return `nu ${eur.format(p.price)}` + (item && item.price ? ` i.p.v. ${eur.format(item.price)}` : "");
   }
-  const need = {};
-  const recs = Object.fromEntries(allRecipes().map((r) => [r.id, r]));
-  for (const [, rid] of upcomingPlan()) {
-    const r = recs[rid]; if (!r) continue;
-    for (const g of r.ing) { const it = CAT[g.item]; if (it) need[g.item] = (need[g.item] || 0) + g.use / it.pack; }
-  }
-  for (const [k, nd] of Object.entries(need)) {
-    const packs = Math.ceil(nd - estimate(k) - 1e-9);
-    if (packs > 0) add(k, packs, "weekmenu");
-  }
-  for (const [k, q] of Object.entries(ST.extra || {})) if (q > 0) add(k, q, "zelf toegevoegd");
-  const out = Object.values(lines).map((l) => {
-    const qty = ST.qty[l.key] ?? l.auto;
-    return {...l, qty, it: CAT[l.key], cost: qty * CAT[l.key].price};
-  }).filter((l) => l.qty > 0 || ST.qty[l.key] === 0);
-  out.sort((a, b) => a.it.loc.localeCompare(b.it.loc) || a.it.name.localeCompare(b.it.name));
-  return out;
+  return p.label || "promo";
+}
+/* best per-unit price and the qty that unlocks it */
+function bestDeal(item) {
+  const p = promoFor(item.key);
+  if (!p) return null;
+  const t = threshold(p);
+  return {p, qty: t, unit: costFor(item, t) / t, save: (item.price || 0) - costFor(item, t) / t};
+}
+/* suggestion for a list line: buy `to` instead of `q` */
+function suggestion(item, q) {
+  const d = bestDeal(item);
+  if (!d || d.save <= 0.004) return null;
+  const t = d.qty;
+  if (q > 0 && q % t === 0) return {ok: true, d, unit: costFor(item, q) / q};
+  const to = Math.max(t, Math.ceil(q / t) * t);
+  return {ok: false, d, to, unit: costFor(item, to) / to};
 }
 
-/* ---------- saving ---------- */
-let saving = false, dirty = false;
-function save() {
-  if (!canWrite) { renderAll(); return; }
-  dirty = true; renderAll();
-  clearTimeout(save.h); save.h = setTimeout(flush, 400);
+/* ---------- list ops ---------- */
+const lineOf = (key) => ST.list.find((l) => l.key === key);
+function addItem(key, n = 1, name) {
+  let l = lineOf(key);
+  if (l) { l.qty += n; l.done = false; }
+  else { l = {key, qty: n, done: false}; if (!CAT[key]) l.name = name; ST.list.push(l); }
+  ST.counts[key] = (ST.counts[key] || 0) + 1;
+  save();
+  const it = itemOf(l);
+  const s = suggestion(it, l.qty);
+  toast(s && !s.ok ? `${it.name}: promo! Neem ${s.to} voor ${eur.format(s.unit)}/st.` : `${it.name} op je lijst`);
 }
-async function flush() {
-  if (saving || !dirty) return;
-  saving = true; dirty = false;
-  if (ST.ev.length > 400) ST.ev = ST.ev.slice(-400);
-  try { localStorage.setItem(STORE_KEY, JSON.stringify(ST)); }
-  catch (e) { toast("Opslaan op dit toestel lukt niet (privévenster of opslag vol)."); }
-  saving = false;
-  if (dirty) flush();
+function setQty(key, q) {
+  const l = lineOf(key); if (!l) return;
+  if (q <= 0) ST.list = ST.list.filter((x) => x !== l); else l.qty = q;
+  save();
+}
+const itemOf = (l) => CAT[l.key] || {key: l.key, name: l.name || l.key, cat: "Eigen items", price: 0};
+
+/* ---------- render ---------- */
+function render() {
+  const open = ST.list.filter((l) => !l.done).length;
+  const b = $("#badge"); b.hidden = !open; b.textContent = open;
+  if (UI.view === "lijst") renderList();
+  if (UI.view === "zoeken") renderSearch();
+  if (UI.view === "promo") renderPromos();
+  if (UI.view === "gerechten") renderRecipes();
 }
 
-/* ---------- render: kar ---------- */
-function stepper(val, onDec, onInc, label) {
+function stepper(l) {
   return el("div", {class: "stepper"},
-    el("button", {"aria-label": "Minder " + label, onclick: onDec, text: "−"}),
-    el("span", {class: "v", text: val}),
-    el("button", {"aria-label": "Meer " + label, onclick: onInc, text: "+"}));
+    el("button", {"aria-label": "minder", onclick: (e) => { e.stopPropagation(); setQty(l.key, l.qty - 1); }, text: "−"}),
+    el("span", {class: "v", text: l.qty}),
+    el("button", {"aria-label": "meer", onclick: (e) => { e.stopPropagation(); setQty(l.key, l.qty + 1); }, text: "+"}));
 }
-function renderKar() {
-  const cart = buildCart();
-  const box = $("#karList"); box.replaceChildren();
-  const active = cart.filter((l) => l.qty > 0);
-  $("#karBadge").hidden = !active.length; $("#karBadge").textContent = active.length;
-  if (!cart.length) box.append(el("p", {class: "empty", text: "Je kar is leeg. Alles is nog in voorraad en er staan geen gerechten gepland."}));
-  let lastLoc = null;
-  for (const l of cart) {
-    if (l.it.loc !== lastLoc) { lastLoc = l.it.loc; box.append(el("h3", {text: {frigo: "Frigo", diepvries: "Diepvries", kast: "Voorraadkast"}[lastLoc] || lastLoc})); }
-    const setQ = (q) => { ST.qty[l.key] = Math.max(0, q); save(); };
-    box.append(el("div", {class: "row", style: l.qty === 0 ? "opacity:.45" : null},
-      el("div", {class: "main"},
-        el("div", {class: "name", text: l.it.cg || l.it.name}),
-        el("div", {class: "meta"}, l.why.map((w) => el("span", {class: "pill " + (w === "bijna op" ? "low" : w === "weekmenu" ? "acc" : ""), text: w})), " ", eur.format(l.it.price) + " / verp.")),
-      stepper(l.qty, () => setQ(l.qty - 1), () => setQ(l.qty + 1), l.it.name),
-      el("div", {class: "num price", style: "width:68px;text-align:right", text: eur.format(l.cost)})));
-  }
-  const total = active.reduce((s, l) => s + l.cost, 0);
-  $("#karTotal").textContent = eur.format(total);
-  $("#sendCart").disabled = !active.length || !canWrite;
-  const sn = $("#sentNote"); sn.replaceChildren();
-  if (ST.sent && !ST.sent.done) {
-    const d = new Date(ST.sent.at);
-    sn.append(el("div", {class: "notice ok"},
-      el("b", {text: `Klaargezet op ${d.getDate()} ${MON[d.getMonth()]} om ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}: ${ST.sent.lines.length} producten, ${eur.format(ST.sent.total)}.`}),
-      el("br"), "Zeg nu in de chat met Claude: ", el("i", {text: "\"Vul mijn Collect&Go-kar\""}), ". Claude zet alles in je winkelwagen; bestellen en betalen doe je zelf."));
-  }
-  $("#received").disabled = !(ST.sent && !ST.sent.done) || !canWrite;
+function priceCell(it, q) {
+  if (!it.price) return el("div", {class: "price num muted", text: ""});
+  const full = it.price * q, real = costFor(it, q);
+  return el("div", {class: "price num"}, eur.format(real), real < full - 0.004 ? el("s", {text: eur.format(full)}) : null);
 }
 
-/* ---------- render: voorraad ---------- */
-function stockRow(it) {
-  const est = estimate(it.key), mn = minFor(it.key), r = rate(it.key);
-  const low = est < mn;
-  const full = Math.max(typicalQty(it.key), 1);
-  const days = r ? est / r : null;
-  const set = (v) => { ST.corr[it.key] = {v: Math.max(0, Math.round(v * 4) / 4), at: Date.now()}; delete ST.qty[it.key]; save(); };
-  const step = it.pack === 1 ? 1 : 0.25;
+function renderList() {
+  const box = $("#listBody"); box.replaceChildren();
+  if (!ST.list.length) {
+    box.append(el("div", {class: "card pad empty"},
+      el("p", {text: "Je lijst is leeg."}),
+      el("button", {class: "btn primary", onclick: () => go("zoeken"), text: "🔍 Product zoeken"})));
+    return;
+  }
+  const todo = ST.list.filter((l) => !l.done), done = ST.list.filter((l) => l.done);
+  const groups = {};
+  for (const l of todo) (groups[itemOf(l).cat || "Overige"] ||= []).push(l);
+  for (const cat of Object.keys(groups).sort((a, b) => a.localeCompare(b))) {
+    box.append(el("h2", {class: "grp", text: cat}));
+    const card = el("div", {class: "card"});
+    for (const l of groups[cat].sort((a, b) => itemOf(a).name.localeCompare(itemOf(b).name))) card.append(lineRow(l));
+    box.append(card);
+  }
+  if (done.length) {
+    box.append(el("h2", {class: "grp", text: `In je kar (${done.length})`}));
+    const card = el("div", {class: "card"});
+    for (const l of done) card.append(lineRow(l));
+    box.append(card);
+  }
+  const total = ST.list.reduce((s, l) => s + costFor(itemOf(l), l.qty), 0);
+  const left = todo.reduce((s, l) => s + costFor(itemOf(l), l.qty), 0);
+  const saved = ST.list.reduce((s, l) => s + (itemOf(l).price || 0) * l.qty - costFor(itemOf(l), l.qty), 0);
+  box.append(el("div", {class: "sum"}, el("span", {}, "Totaal ", el("span", {class: "muted", text: done.length ? `nog ${eur.format(left)}` : ""})), el("span", {class: "num", text: eur.format(total)})));
+  if (saved > 0.004) box.append(el("p", {class: "small", style: "margin:0 4px;color:var(--promo)", text: `Je bespaart ${eur.format(saved)} met promoties.`}));
+  box.append(el("div", {class: "btns"},
+    done.length ? el("button", {class: "btn", onclick: () => { ST.list = todo; save(); }, text: "Afgevinkte wissen"}) : null,
+    el("button", {class: "btn", onclick: () => { if (confirm("Hele lijst leegmaken?")) { ST.list = []; save(); } }, text: "Lijst leegmaken"})));
+  box.append(el("p", {class: "small muted", style: "margin:4px", text: "Tik op een product als het in je winkelkar ligt."}));
+}
+function lineRow(l) {
+  const it = itemOf(l), s = suggestion(it, l.qty);
+  const hint = !s ? null : s.ok
+    ? el("div", {class: "hint ok", text: `✓ ${dealText(s.d.p, it)}: ${eur.format(s.unit)}/st.`})
+    : el("div", {class: "hint"}, el("span", {text: `${dealText(s.d.p, it)}: neem ${s.to} voor ${eur.format(s.unit)}/st.`}),
+        el("button", {onclick: () => { setQty(l.key, s.to); toast(`${s.to}× ${it.name}`); }, text: `Neem ${s.to}`}));
+  return el("div", {class: "row line" + (l.done ? " done" : "")},
+    el("div", {class: "top"},
+      el("div", {class: "tap", role: "button", "aria-pressed": l.done ? "true" : "false", onclick: () => { l.done = !l.done; save(); }},
+        el("span", {class: "check", text: "✓"}),
+        el("div", {class: "main"},
+          el("div", {class: "name"}, it.name, promoFor(it.key) ? el("span", {class: "tag", text: "promo"}) : null),
+          it.price ? el("div", {class: "meta", text: `${eur.format(it.price)}/st.`}) : null)),
+      priceCell(it, l.qty)),
+    el("div", {class: "bottom"}, stepper(l), hint));
+}
+
+function resultRow(it) {
+  const l = lineOf(it.key), d = bestDeal(it);
   return el("div", {class: "row"},
     el("div", {class: "main"},
-      el("div", {class: "name", text: it.name}),
-      el("div", {class: "meta"},
-        low ? el("span", {class: "pill low", text: "bijna op"}) : el("span", {class: "pill ok", text: "in huis"}),
-        " ≈ " + fmtQty(it, est) + (days != null && est > 0 ? ` · nog ± ${Math.max(1, Math.round(days))} d` : "") + (ST.corr[it.key] ? " · door jou ingesteld" : "")),
-      el("div", {class: "bar"}, el("i", {class: low ? "low" : "", style: `width:${Math.min(100, est / full * 100)}%`}))),
-    stepper(n1.format(est), () => set(est - step), () => set(est + step), it.name));
+      el("div", {class: "name"}, it.name, d && d.save > 0.004 ? el("span", {class: "tag", text: dealText(d.p, it)}) : null),
+      el("div", {class: "meta"}, it.price ? `${eur.format(it.price)}/st.` : "", d && d.save > 0.004 ? ` · promo ${eur.format(d.unit)}/st. bij ${d.qty}` : "")),
+    el("button", {class: "add" + (l ? " in" : ""), "aria-label": "toevoegen", onclick: () => addItem(it.key, 1, it.name), text: l ? `${l.qty} ✓ +` : "+"}));
 }
-function renderVoorraad() {
-  const q = UI.q.trim().toLowerCase();
-  const items = CATL.filter((it) => it.loc === UI.loc && (!q || it.name.toLowerCase().includes(q)));
-  const act = items.filter((it) => isActive(it.key)), inact = items.filter((it) => !isActive(it.key));
-  act.sort((a, b) => (estimate(a.key) < minFor(a.key) ? 0 : 1) - (estimate(b.key) < minFor(b.key) ? 0 : 1) || a.name.localeCompare(b.name));
-  const box = $("#stockList"); box.replaceChildren(...act.map(stockRow));
-  if (!act.length) box.append(el("p", {class: "empty", text: "Geen producten die je hier geregeld koopt."}));
-  $("#stockInactiveList").replaceChildren(...inact.map(stockRow));
-  $("#stockInactive").hidden = !inact.length;
-}
-
-/* ---------- render: gerechten ---------- */
-function renderPlan() {
-  const box = $("#planList"); box.replaceChildren();
-  const recs = allRecipes().slice().sort((a, b) => a.name.localeCompare(b.name));
-  const t0 = today0();
-  for (let i = 0; i < 7; i++) {
-    const d = new Date(t0.getTime() + i * DAY + 12 * 36e5); const key = iso(d);
-    const cur = ST.plan[key] || "";
-    const sel = el("select", {"aria-label": "Gerecht voor " + key, onchange: (e) => { if (e.target.value) ST.plan[key] = e.target.value; else delete ST.plan[key]; save(); }},
-      el("option", {value: "", text: "— geen —"}), recs.map((r) => el("option", {value: r.id, selected: r.id === cur, text: r.name})));
-    const r = recs.find((x) => x.id === cur);
-    box.append(el("div", {class: "day"},
-      el("div", {class: "d"}, i === 0 ? "Vandaag" : i === 1 ? "Morgen" : DOW[d.getDay()], el("small", {text: `${d.getDate()} ${MON[d.getMonth()]}`})),
-      sel,
-      r ? el("button", {class: "btn-ico", title: "Gekookt", "aria-label": "Gekookt: " + r.name, onclick: () => cooked(key, r), text: "✓"}) : el("span", {style: "width:34px"})));
+function renderSearch() {
+  const cats = [...new Set(CATL.map((i) => i.cat))].sort((a, b) => a.localeCompare(b));
+  const chips = $("#cats");
+  if (chips.childElementCount !== cats.length + 1) {
+    chips.replaceChildren(...["", ...cats].map((c) => el("button", {"data-c": c, onclick: () => { UI.cat = UI.cat === c ? "" : c; render(); }, text: c || "Alles"})));
+  }
+  for (const b of chips.children) b.classList.toggle("on", b.dataset.c === UI.cat);
+  const box = $("#results"); box.replaceChildren();
+  const terms = norm(UI.q).split(/\s+/).filter(Boolean);
+  let hits = CATL.filter((i) => (!UI.cat || i.cat === UI.cat) && terms.every((t) => norm(i.name + " " + i.cat).includes(t)));
+  hits.sort((a, b) => (ST.counts[b.key] || 0) - (ST.counts[a.key] || 0) || a.name.localeCompare(b.name));
+  if (!terms.length && !UI.cat) {
+    const fav = hits.filter((i) => ST.counts[i.key]).slice(0, 12);
+    if (fav.length) { box.append(el("h2", {class: "grp", text: "Vaak gekocht"})); box.append(el("div", {class: "card"}, fav.map(resultRow))); }
+    box.append(el("h2", {class: "grp", text: `Alle producten (${hits.length})`}));
+  }
+  if (hits.length) box.append(el("div", {class: "card"}, hits.slice(0, 150).map(resultRow)));
+  if (terms.length) {
+    const name = UI.q.trim();
+    box.append(el("div", {class: "card pad"},
+      hits.length ? null : el("p", {class: "muted", style: "margin:0 0 8px", text: "Niet gevonden in de productlijst."}),
+      el("button", {class: "btn primary", onclick: () => { addItem(slug(name), 1, name); }, text: `+ "${name}" toevoegen als eigen item`})));
   }
 }
-function cooked(day, r) {
-  const at = Date.now();
-  for (const g of r.ing) { const it = CAT[g.item]; if (it) ST.ev.push({k: g.item, d: -(g.use / it.pack), at}); }
-  delete ST.plan[day];
-  save(); toast(`${r.name} afgevinkt — voorraad bijgewerkt.`);
-}
-function renderRecipes() {
-  const grid = $("#recipeGrid"); grid.replaceChildren();
-  let list = allRecipes().filter((r) => [...UI.tags].every((t) => r.tags.includes(t)));
-  const withCost = list.map((r) => ({r, c: recipeCost(r)}));
-  if (UI.sort === "kost") withCost.sort((a, b) => a.c.portie - b.c.portie);
-  else if (UI.sort === "tijd") withCost.sort((a, b) => a.r.min - b.r.min || a.c.portie - b.c.portie);
-  else withCost.sort((a, b) => b.c.have / b.c.n - a.c.have / a.c.n || a.c.buy - b.c.buy);
-  if (!withCost.length) grid.append(el("p", {class: "empty", text: "Geen gerechten met deze combinatie. Zet een filter uit."}));
-  for (const {r, c} of withCost) {
-    const planned = Object.entries(ST.plan).filter(([d, id]) => id === r.id && d >= iso(today0())).length;
-    grid.append(el("div", {class: "card rcard", id: "r-" + r.id, style: "margin:0"},
-      el("h2", {text: r.name}),
-      el("div", {}, el("span", {class: "pill", text: `⏱ ${r.min} min`}), r.tags.filter((t) => t !== "snel").map((t) => el("span", {class: "pill", text: t})), r.custom ? el("span", {class: "pill acc", text: "nieuw"}) : null),
-      el("div", {class: "cost"},
-        el("div", {}, "Kost per portie", el("b", {class: "num", text: eur.format(c.portie)})),
-        el("div", {}, "Nu te kopen", el("b", {class: "num", text: c.buy ? eur.format(c.buy) : "niets"})),
-        el("div", {}, "In huis", el("b", {class: "num", text: `${c.have}/${c.n}`}))),
-      el("ul", {class: "ing"}, c.lines.map((l) => el("li", {},
-        el("span", {}, el("span", {class: l.packs ? "need" : "have", text: l.packs ? "✗ " : "✓ "}), `${fmtUse(l.it, l.use)} ${shortName(l.it)}`),
-        el("span", {class: "num muted", text: l.packs ? `koop ${l.packs}× ${eur.format(l.it.price)}` : eur.format(l.cost)})))),
-      el("details", {}, el("summary", {text: "Bereiding"}), el("ol", {}, r.steps.map((s) => el("li", {text: s})))),
-      el("div", {class: "btns", style: "margin-top:auto;padding-top:10px"},
-        el("button", {class: "btn primary", onclick: () => planToday(r), text: planned ? `Gepland (${planned}×) · nog eens` : "Plan in"}),
-        r.custom ? el("button", {class: "btn ghost", onclick: () => { ST.custom = ST.custom.filter((x) => x.id !== r.id); for (const [d, id] of Object.entries(ST.plan)) if (id === r.id) delete ST.plan[d]; save(); }, text: "Verwijder"}) : null)));
+
+function renderPromos() {
+  const box = $("#promoBody"); box.replaceChildren();
+  const items = PROMOL.map((k) => CAT[k]).filter((it) => it && promoFor(it.key));
+  if (!items.length) {
+    box.append(el("div", {class: "card pad empty"},
+      el("p", {text: "Er zijn op dit moment geen promoties bekend."}),
+      el("p", {class: "small", text: META.promosAt ? `Laatst bijgewerkt ${fmtDay(META.promosAt)}.` : "Promoties worden toegevoegd in data/promos.json."})));
+    return;
   }
-}
-const shortName = (it) => it.name.replace(/^(EVERYDAY|BONI|BH|SOUBRY|IGLO|Mccain)\s+/i, "").replace(/\s+[\d,]+\s*(x\s*\d+\s*)?(g|kg|ml|L|st|cl)\b.*$/i, "").replace(/\s*±.*$/, "").toLowerCase();
-function planToday(r) {
-  const t0 = today0();
-  for (let i = 0; i < 7; i++) { const k = iso(new Date(t0.getTime() + i * DAY + 12 * 36e5)); if (!ST.plan[k]) { ST.plan[k] = r.id; save(); toast(`${r.name} gepland voor ${i === 0 ? "vandaag" : i === 1 ? "morgen" : k.slice(8) + "/" + k.slice(5, 7)}.`); return; } }
-  toast("Je weekmenu is vol. Maak een dag vrij in het weekmenu.");
-}
-
-function renderAll() {
-  if (!CATL.length) return;
-  renderKar(); renderVoorraad(); renderPlan(); renderRecipes();
-}
-
-/* ---------- actions ---------- */
-function cartText(lines) {
-  return lines.map((l) => `${l.qty}× ${l.it.cg || l.it.name} (${eur.format(l.cost)})`).join("\n") + `\nTotaal: ${eur.format(lines.reduce((s, l) => s + l.cost, 0))}`;
-}
-$("#sendCart").addEventListener("click", () => {
-  const lines = buildCart().filter((l) => l.qty > 0);
-  if (!lines.length) return;
-  ST.sent = {at: Date.now(), done: false, total: Math.round(lines.reduce((s, l) => s + l.cost, 0) * 100) / 100,
-    lines: lines.map((l) => ({key: l.key, name: l.it.cg || l.it.name, search: l.it.search, qty: l.qty, price: l.it.price}))};
-  save(); toast("Lijst klaargezet voor Claude.");
-});
-$("#copyCart").addEventListener("click", async () => {
-  const lines = buildCart().filter((l) => l.qty > 0);
-  try { await navigator.clipboard.writeText(cartText(lines)); toast("Lijst gekopieerd."); }
-  catch { openDialog(el("div", {}, el("h2", {text: "Boodschappenlijst"}), el("textarea", {style: "width:100%;height:50vh;font:inherit", readonly: true}, cartText(lines)), el("div", {class: "btns"}, el("button", {class: "btn", onclick: closeDialog, text: "Sluiten"})))); }
-});
-$("#received").addEventListener("click", () => {
-  if (!ST.sent) return;
-  const at = Date.now();
-  for (const l of ST.sent.lines) ST.ev.push({k: l.key, d: l.qty, at});
-  ST.sent.done = true; ST.extra = {}; ST.qty = {};
-  save(); toast("Voorraad bijgewerkt met je bestelling.");
-});
-$("#addItem").addEventListener("click", () => {
-  const input = el("input", {class: "search", placeholder: "Zoek een product…", type: "search"});
-  const list = el("div");
-  const draw = () => {
-    const q = input.value.trim().toLowerCase();
-    list.replaceChildren(...CATL.filter((it) => !q || it.name.toLowerCase().includes(q)).slice(0, 40).map((it) =>
-      el("div", {class: "row"}, el("div", {class: "main"}, el("div", {class: "name", text: it.cg || it.name}), el("div", {class: "meta", text: eur.format(it.price)})),
-        el("button", {class: "btn", onclick: () => { ST.extra[it.key] = (ST.extra[it.key] || 0) + 1; delete ST.qty[it.key]; save(); toast("Toegevoegd."); }, text: "+ 1"}))));
+  const mine = (it) => !!(lineOf(it.key) || ST.counts[it.key]);
+  const sorted = items.sort((a, b) => mine(b) - mine(a) || bestDeal(b).save / (b.price || 1) - bestDeal(a).save / (a.price || 1));
+  const yours = sorted.filter(mine), rest = sorted.filter((i) => !mine(i));
+  const block = (title, list) => {
+    if (!list.length) return;
+    box.append(el("h2", {class: "grp", text: title}));
+    box.append(el("div", {class: "card"}, list.map((it) => {
+      const d = bestDeal(it), p = d.p, l = lineOf(it.key);
+      const pct = it.price ? Math.round(d.save / it.price * 100) : 0;
+      return el("div", {class: "row"},
+        el("div", {class: "main"},
+          el("div", {class: "name"}, it.name, el("span", {class: "tag", text: pct > 0 ? `-${pct}%` : "promo"})),
+          el("div", {class: "meta", text: `${dealText(p, it)} · ${eur.format(d.unit)}/st.` + (it.price ? ` i.p.v. ${eur.format(it.price)}` : "") + (p.until ? ` · t/m ${fmtDay(p.until)}` : "")}),
+          p.note ? el("div", {class: "meta", text: p.note}) : null),
+        el("button", {class: "add" + (l ? " in" : ""), onclick: () => { if (l && l.qty < d.qty) setQty(it.key, d.qty); else addItem(it.key, l ? 1 : d.qty, it.name); }, text: l ? `${l.qty} ✓ +` : `+${d.qty}`}));
+    })));
   };
-  input.addEventListener("input", draw); draw();
-  openDialog(el("div", {}, el("h2", {text: "Product toevoegen"}), input, list, el("div", {class: "btns"}, el("button", {class: "btn", onclick: closeDialog, text: "Klaar"}))));
-  setTimeout(() => input.focus(), 50);
-});
-function openDialog(content) { $("#dlgBody").replaceChildren(content); $("#dlg").classList.add("on"); }
-function closeDialog() { $("#dlg").classList.remove("on"); }
-$("#dlg").addEventListener("click", (e) => { if (e.target.id === "dlg") closeDialog(); });
+  block("Voor jou", yours);
+  block(yours.length ? "Andere promoties" : "Alle promoties", rest);
+  if (META.promosAt) box.append(el("p", {class: "small muted", style: "margin:8px 4px", text: `Promoties bijgewerkt ${fmtDay(META.promosAt)}.`}));
+}
 
-$("#tabs").addEventListener("click", (e) => {
-  const b = e.target.closest("button"); if (!b) return;
-  UI.tab = b.dataset.v;
-  $$("#tabs button").forEach((x) => x.classList.toggle("on", x === b));
-  $$("section.view").forEach((s) => s.classList.toggle("on", s.id === UI.tab));
-  try { history.replaceState(null, "", "#" + UI.tab); } catch {}
-});
-$("#locSeg").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; UI.loc = b.dataset.l; $$("#locSeg button").forEach((x) => x.classList.toggle("on", x === b)); renderVoorraad(); });
-$("#stockSearch").addEventListener("input", (e) => { UI.q = e.target.value; renderVoorraad(); });
-$("#filters").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; const t = b.dataset.t; UI.tags.has(t) ? UI.tags.delete(t) : UI.tags.add(t); b.classList.toggle("on", UI.tags.has(t)); renderRecipes(); });
-$("#sortSeg").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; UI.sort = b.dataset.s; $$("#sortSeg button").forEach((x) => x.classList.toggle("on", x === b)); renderRecipes(); });
-const h = (location.hash || "").slice(1);
-if (["kar", "voorraad", "gerechten"].includes(h)) $("#tab-" + h).click();
-
-/* ---------- new recipe via Claude ---------- */
-$("#genRecipe").addEventListener("click", async () => {
-  if (!sample) return;
-  const btn = $("#genRecipe"), st = $("#genStatus");
-  btn.disabled = true; st.textContent = "Claude bedenkt een gerecht…";
-  const cat = CATL.map((it) => `${it.key} | ${it.cg || it.name} | verpakking ${it.pack} ${it.unit} | ${it.price.toFixed(2)} EUR`).join("\n");
-  const existing = allRecipes().map((r) => r.name).join(", ");
-  const prefs = [...UI.tags].join(", ") || "snel, budget, belgisch";
-  const prompt = `Bedenk één nieuw avondgerecht voor 1 persoon. Voorkeuren: ${prefs} (snel = klaar in max 30 minuten). Niet een van deze: ${existing}.
-Gebruik ALLEEN producten uit deze lijst (sleutel | naam | verpakking | prijs). Peper, zout, olie en kruiden mag je veronderstellen zonder ze op te nemen.
-${cat}
-
-Antwoord met enkel JSON, zonder uitleg: {"name": "...", "min": 20, "tags": ["snel","budget","belgisch"], "ing": [{"item": "<sleutel>", "use": <hoeveelheid in de eenheid van de verpakking>}], "steps": ["...", "..."]}
-"use" is in dezelfde eenheid als de verpakking (g, ml, st, sneden, zakjes). Tags: alleen de woorden snel, budget, belgisch die echt passen. Schrijf in het Nederlands (Vlaams).`;
-  try {
-    const out = await sample.json(prompt, {modelTier: "default"});
-    const ing = (out.ing || []).filter((g) => CAT[g.item] && +g.use > 0).map((g) => ({item: g.item, use: +g.use}));
-    if (!out.name || !ing.length || !Array.isArray(out.steps)) throw new Error("onvolledig");
-    const r = {id: "c" + Date.now().toString(36), name: String(out.name).slice(0, 80), min: Math.min(180, Math.max(5, +out.min || 30)),
-      tags: (out.tags || []).filter((t) => ["snel", "budget", "belgisch"].includes(t)), ing, steps: out.steps.map(String).slice(0, 10), custom: true};
-    if (r.min <= 30 && !r.tags.includes("snel")) r.tags.push("snel");
-    ST.custom = (ST.custom || []).concat(r).slice(-30);
-    save(); st.textContent = "Nieuw: " + r.name;
-    setTimeout(() => { const c = document.getElementById("r-" + r.id); if (c) c.scrollIntoView({behavior: "smooth", block: "center"}); }, 100);
-  } catch (e) {
-    st.textContent = e && e.code === "rate_limited" ? "Even te veel aanvragen, probeer straks opnieuw." : e && e.code === "not_granted" ? "" : "Dat lukte niet, probeer opnieuw.";
-    if (e && e.code === "not_granted") $("#genWrap").hidden = true;
+function renderRecipes() {
+  const box = $("#recipeBody"); box.replaceChildren();
+  for (const r of RECIPES) {
+    const ings = r.ing.map((g) => CAT[g.item]).filter(Boolean);
+    box.append(el("details", {class: "recipe"},
+      el("summary", {}, el("span", {text: r.name}), el("span", {class: "muted small num", text: r.min ? `${r.min} min` : ""})),
+      el("ul", {}, ings.map((it) => el("li", {text: it.name}))),
+      r.steps && r.steps.length ? el("ol", {}, r.steps.map((s) => el("li", {text: s}))) : null,
+      el("div", {class: "btns"}, el("button", {class: "btn primary", onclick: () => {
+        for (const it of ings) if (!lineOf(it.key)) ST.list.push({key: it.key, qty: 1, done: false});
+        save(); toast(`Ingrediënten voor ${r.name} op je lijst`);
+      }, text: "Ingrediënten op lijst"}))));
   }
-  btn.disabled = false;
-});
+  if (!RECIPES.length) box.append(el("p", {class: "empty", text: "Geen gerechten."}));
+}
+
+/* ---------- nav ---------- */
+function go(v) {
+  UI.view = v;
+  for (const b of document.querySelectorAll("nav.tabbar button")) b.classList.toggle("on", b.dataset.v === v);
+  for (const s of document.querySelectorAll("section.view")) s.classList.toggle("on", s.id === "v-" + v);
+  $("#title").textContent = TITLES[v];
+  history.replaceState(null, "", "#" + v);
+  render(); window.scrollTo(0, 0);
+  if (v === "zoeken") setTimeout(() => $("#q").focus(), 50);
+}
+for (const b of document.querySelectorAll("nav.tabbar button")) b.addEventListener("click", () => go(b.dataset.v));
+$("#q").addEventListener("input", (e) => { UI.q = e.target.value; render(); });
 
 /* ---------- boot ---------- */
-function applyShared() {
-  if (!CATL.length || !RECIPES.length) return;
-  for (const k in rateCache) delete rateCache[k];
-  $("#boot").hidden = true;
-  if (META.pricedAt) { const d = parseDay(META.pricedAt); $("#pricedAt").textContent = `Prijzen Collect&Go ${d.getDate()} ${MON[d.getMonth()]}`; }
-  if (META.lastTicket) { const d = parseDay(META.lastTicket); $("#histInfo").textContent = `Voorraadschatting gebaseerd op je kastickets tot ${d.getDate()} ${MON[d.getMonth()]} ${d.getFullYear()}. `; }
-  renderAll();
-}
 (async () => {
-  try { const raw = localStorage.getItem(STORE_KEY); if (raw) ST = Object.assign(ST, JSON.parse(raw)); } catch {}
-  stLoaded = true;
-  try {
-    const get = (f) => fetch(`data/${f}.json`, {cache: "no-cache"}).then((r) => { if (!r.ok) throw new Error(f); return r.json(); });
-    const [cat, rec, hist] = await Promise.all([get("catalog"), get("recipes"), get("history").catch(() => ({}))]);
-    CATL = (cat.items || []).slice(); CAT = Object.fromEntries(CATL.map((i) => [i.key, i])); META.pricedAt = cat.pricedAt;
-    RECIPES = (rec.recipes || []).slice();
-    HIST = hist.purchases || {}; META.lastTicket = hist.lastTicket;
-    applyShared();
-  } catch (e) { $("#boot").textContent = "De gegevens konden niet geladen worden. Controleer je verbinding."; }
+  try { const raw = localStorage.getItem(KEY); if (raw) ST = Object.assign(ST, JSON.parse(raw)); } catch {}
+  const get = (f) => fetch(`data/${f}.json`, {cache: "no-cache"}).then((r) => r.ok ? r.json() : {}).catch(() => ({}));
+  const [cat, rec, promo] = await Promise.all([get("catalog"), get("recipes"), get("promos")]);
+  CATL = (cat.items || []).map((i) => ({...i, cat: i.cat || "Overige"}));
+  for (const p of promo.promos || []) {           // promo for a product not in the catalog
+    if (!p.key) continue;
+    if (!CATL.some((i) => i.key === p.key) && p.name) CATL.push({key: p.key, name: p.name, cat: p.cat || "Promoties", price: p.regular || 0});
+  }
+  CAT = Object.fromEntries(CATL.map((i) => [i.key, i]));
+  PROMOS = Object.fromEntries((promo.promos || []).filter((p) => p.key).map((p) => [p.key, p]));
+  PROMOL = Object.keys(PROMOS);
+  RECIPES = rec.recipes || [];
+  META.promosAt = promo.updatedAt;
+  if (cat.pricedAt) $("#pricedAt").textContent = `Prijzen ${fmtDay(cat.pricedAt)}`;
+  if (!CATL.length) toast("Productlijst kon niet geladen worden.");
+  const h = location.hash.slice(1);
+  go(TITLES[h] ? h : "lijst");
 })();
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 })();
 </script>
 </body>
