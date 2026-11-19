@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to La Lorraine Bakery Group</title>
+<style>
+:root{
+    /* La Lorraine Bakery Group palette */
+    --llbg-red:#B5121B;        /* brand red */
+    --llbg-red-dark:#7E0C13;   /* deep burgundy */
+    --llbg-gold:#C99A45;       /* wheat / crust gold */
+    --llbg-cream:#FAF5EC;      /* flour cream */
+    --llbg-brown:#3A2A1F;      /* dark crust */
+    --muted:#7A6A5D;
+    --line:#EADFCF;
+    --card:#FFFFFF;
+    --ok:#2E7D32;
+    --ok-bg:#EAF4EA;
+    --busy:#B7791F;
+    --busy-bg:#FDF3E1;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:'Segoe UI',Tahoma,Arial,sans-serif;
+    background:var(--llbg-cream);
+    background-image:radial-gradient(circle at 10% 0%,rgba(201,154,69,.18),transparent 40%),
+                     radial-gradient(circle at 100% 100%,rgba(181,18,27,.08),transparent 45%);
+    color:var(--llbg-brown);
+    min-height:100vh;
+    padding:32px 16px;
+    line-height:1.5;
+}
+.container{
+    max-width:1040px;margin:0 auto;background:var(--card);
+    border-radius:20px;overflow:hidden;
+    box-shadow:0 18px 50px rgba(58,42,31,.15);
+    border:1px solid var(--line);
+}
+/* ---------- Header ---------- */
+.hero{
+    position:relative;
+    background:linear-gradient(135deg,var(--llbg-red) 0%,var(--llbg-red-dark) 100%);
+    color:#fff;padding:32px 40px 36px;overflow:hidden;
+}
+.hero:after{ /* subtle wheat stripe */
+    content:'';position:absolute;left:0;right:0;bottom:0;height:6px;
+    background:linear-gradient(90deg,var(--llbg-gold),#E8C88A,var(--llbg-gold));
+}
+.hero img.logo{width:220px;height:auto;display:block;margin-bottom:18px}
+.wordmark{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:2rem;font-weight:700;margin-bottom:18px;letter-spacing:.5px}
+.wordmark span{display:block;font-family:'Segoe UI',Arial,sans-serif;font-style:normal;font-size:.75rem;font-weight:600;letter-spacing:.35em;text-transform:uppercase;color:#E8C88A}
+.hero h1{font-size:2.1rem;font-weight:600;margin-bottom:6px}
+.hero p{font-size:1.1rem;color:#F7E3D6;max-width:720px}
+/* ---------- Content ---------- */
+.content{padding:36px 40px}
+h2.section{
+    font-size:1.25rem;color:var(--llbg-red-dark);margin:0 0 16px;
+    display:flex;align-items:center;gap:10px;
+}
+h2.section:after{content:'';flex:1;height:1px;background:var(--line)}
+.banner{
+    display:flex;gap:14px;align-items:flex-start;
+    padding:16px 18px;border-radius:12px;margin-bottom:28px;
+    background:var(--busy-bg);border-left:5px solid var(--busy);
+}
+.banner .icon{font-size:24px;line-height:1}
+.banner strong{display:block}
+.spinner{
+    width:20px;height:20px;border-radius:50%;flex:none;margin-top:2px;
+    border:3px solid rgba(183,121,31,.25);border-top-color:var(--busy);
+    animation:spin 1s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-bottom:32px}
+.card{
+    background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;
+    transition:transform .2s,box-shadow .2s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(58,42,31,.10)}
+.card h3{color:var(--llbg-red);font-size:1.05rem;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.card p{color:var(--muted);font-size:.95rem}
+.pill{
+    display:inline-block;font-size:.75rem;font-weight:600;padding:3px 10px;border-radius:999px;margin-top:12px;
+}
+.pill.ok{background:var(--ok-bg);color:var(--ok)}
+.pill.busy{background:var(--busy-bg);color:var(--busy)}
+.checks{list-style:none;margin-top:10px}
+.checks li{padding:6px 0;border-bottom:1px dashed var(--line);display:flex;justify-content:space-between;gap:12px;font-size:.95rem}
+.checks li:last-child{border-bottom:none}
+.checks .ok{color:var(--ok);font-weight:600;white-space:nowrap}
+.apps{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.apps span{background:var(--llbg-cream);border:1px solid var(--line);border-radius:8px;padding:4px 10px;font-size:.85rem}
+/* ---------- Actions ---------- */
+.actions{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:32px}
+.action{
+    display:flex;gap:14px;align-items:center;text-decoration:none;color:inherit;
+    padding:18px;border-radius:14px;border:1px solid var(--line);background:#fff;
+    transition:border-color .2s,box-shadow .2s;
+}
+.action:hover{border-color:var(--llbg-red);box-shadow:0 8px 20px rgba(181,18,27,.12)}
+.action .ic{
+    width:46px;height:46px;border-radius:12px;flex:none;display:grid;place-items:center;font-size:22px;
+    background:linear-gradient(135deg,var(--llbg-red),var(--llbg-red-dark));color:#fff;
+}
+.action.gold .ic{background:linear-gradient(135deg,var(--llbg-gold),#A8792C)}
+.action strong{display:block}
+.action small{color:var(--muted)}
+/* ---------- Device info ---------- */
+.device{background:var(--llbg-cream);border-radius:14px;padding:22px;margin-bottom:32px;border:1px solid var(--line)}
+.device table{width:100%;border-collapse:collapse}
+.device td{padding:8px 6px;border-bottom:1px solid var(--line);font-size:.95rem}
+.device tr:last-child td{border-bottom:none}
+.device .label{color:var(--muted);width:200px}
+/* ---------- News ---------- */
+.news{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.news a{text-decoration:none;color:inherit}
+.news-item{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;height:100%;display:flex;flex-direction:column;transition:box-shadow .2s}
+.news-item:hover{box-shadow:0 10px 24px rgba(58,42,31,.12)}
+.news-img{height:130px;background:linear-gradient(135deg,var(--llbg-gold),var(--llbg-red));background-size:cover;background-position:center}
+.news-body{padding:16px;flex:1}
+.news-date{font-size:.8rem;color:var(--llbg-gold);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.news-body h4{margin:4px 0 6px;font-size:1rem;color:var(--llbg-brown)}
+.news-body p{font-size:.9rem;color:var(--muted)}
+.more{display:inline-block;margin-top:18px;color:var(--llbg-red);font-weight:600;text-decoration:none}
+.more:hover{text-decoration:underline}
+/* ---------- Footer ---------- */
+.footer{
+    background:var(--llbg-brown);color:#E9DCCB;padding:20px 40px;font-size:.88rem;
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;
+}
+.footer a{color:#F2C97A}
+@media (max-width:640px){
+    .hero,.content,.footer{padding-left:20px;padding-right:20px}
+    .hero h1{font-size:1.6rem}
+    .device .label{width:auto}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+    <!-- ===== Header ===== -->
+    <div class="hero">
+        <!-- Replace with the official LLBG logo: <img class="logo" src="data:image/png;base64,..."> -->
+        <div class="wordmark">La Lorraine<span>Bakery Group</span></div>
+        <h1>Welcome, %USER%!</h1>
+        <p>Your new Windows 11 device has been prepared for you. Below you'll find everything you need to get started.</p>
+    </div>
+
+    <div class="content">
+
+        <!-- ===== Live status ===== -->
+        <div class="banner">
+            <div class="spinner" aria-hidden="true"></div>
+            <div>
+                <strong>Applications are still installing in the background</strong>
+                You can already start working. Additional apps assigned to you will appear in the Start menu over the next 30&ndash;60 minutes. Please keep your device switched on and connected to the internet.
+            </div>
+        </div>
+
+        <!-- ===== Device status ===== -->
+        <h2 class="section">&#129366; Your device status</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>&#9729;&#65039; Microsoft 365</h3>
+                <p>Your Microsoft 365 applications are installed and ready. Sign in with your company account.</p>
+                <div class="apps">
+                    <span>Outlook</span><span>Teams</span><span>Word</span><span>Excel</span>
+                    <span>PowerPoint</span><span>OneDrive</span><span>Edge</span>
+                </div>
+                <span class="pill ok">&#10004; Installed</span>
+            </div>
+
+            <div class="card">
+                <h3>&#128274; Security &amp; compliance</h3>
+                <p>Your device meets the La Lorraine security requirements.</p>
+                <ul class="checks">
+                    <li>CrowdStrike Falcon protection <span class="ok">&#10004; Active</span></li>
+                    <li>BitLocker disk encryption <span class="ok">&#10004; Enabled</span></li>
+                    <li>Windows Hello for Business <span class="ok">&#10004; Configured</span></li>
+                    <li>Windows Firewall &amp; updates <span class="ok">&#10004; Managed</span></li>
+                    <li>Intune compliance policy <span class="ok">&#10004; Compliant</span></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>&#128230; Other applications</h3>
+                <p>Department-specific software is being deployed automatically. Need something extra? Install it yourself from the Company Portal &ndash; no admin rights needed.</p>
+                <span class="pill busy">&#8635; In progress</span>
+            </div>
+        </div>
+
+        <!-- ===== Quick actions ===== -->
+        <h2 class="section">&#128640; Get started</h2>
+        <div class="actions">
+            <a class="action" href="companyportal:">
+                <div class="ic">&#128230;</div>
+                <div><strong>Company Portal</strong><small>Install available applications</small></div>
+            </a>
+            <a class="action" href="https://llbg.service-now.com/sp" target="_blank">
+                <div class="ic">&#128736;&#65039;</div>
+                <div><strong>IT Service Portal</strong><small>Report an issue or make a request</small></div>
+            </a>
+            <a class="action gold" href="ms-teams:">
+                <div class="ic">&#128172;</div>
+                <div><strong>Microsoft Teams</strong><small>Chat &amp; meet with colleagues</small></div>
+            </a>
+            <a class="action gold" href="https://llbgroup.sharepoint.com/sites/intranet/" target="_blank">
+                <div class="ic">&#127838;</div>
+                <div><strong>Intranet</strong><small>News &amp; info from LLBG</small></div>
+            </a>
+        </div>
+
+        <!-- ===== Device info ===== -->
+        <h2 class="section">&#128187; Device information</h2>
+        <div class="device">
+            <table>
+                <tr><td class="label">Computer name</td><td>%COMPUTERNAME%</td></tr>
+                <tr><td class="label">Serial number</td><td>%SERIALNUMBER%</td></tr>
+                <tr><td class="label">Primary user</td><td>%USERNAME%</td></tr>
+                <tr><td class="label">Windows version</td><td>%WINDOWSVERSION%</td></tr>
+                <tr><td class="label">Provisioned on</td><td>%DATE%</td></tr>
+            </table>
+        </div>
+
+        <!-- ===== Intranet news ===== -->
+        <h2 class="section">&#128240; Latest news from our intranet</h2>
+        <div class="news" id="news"></div>
+        <a class="more" href="https://llbgroup.sharepoint.com/sites/intranet/_layouts/15/news.aspx" target="_blank">View all news on the intranet &rarr;</a>
+
+    </div>
+
+    <div class="footer">
+        <span>IT issues or questions? Visit the <a href="https://llbg.service-now.com/sp" target="_blank">IT Service Portal</a>.</span>
+        <span>&copy; La Lorraine Bakery Group</span>
+    </div>
+</div>
+
+<!--
+    Intranet news: the provisioning script replaces %NEWS_JSON% with a JSON array, e.g.
+    [{"title":"...","description":"...","url":"https://...","image":"https://...","date":"2026-11-18"}]
+    If it is not replaced, a link card to the intranet is shown instead.
+-->
+<script type="application/json" id="news-data">%NEWS_JSON%</script>
+<script>
+(function(){
+    var box = document.getElementById('news');
+    var items = [];
+    try { items = JSON.parse(document.getElementById('news-data').textContent) || []; } catch(e) { items = []; }
+
+    function esc(s){ var d=document.createElement('div'); d.textContent = s || ''; return d.innerHTML; }
+
+    if (!items.length) {
+        items = [{
+            title: 'Discover what’s happening at La Lorraine',
+            description: 'Read the latest company news, announcements and stories on our intranet.',
+            url: 'https://llbgroup.sharepoint.com/sites/intranet/'
+        }];
+    }
+
+    box.innerHTML = items.slice(0, 3).map(function(n){
+        var date = n.date ? new Date(n.date).toLocaleDateString(undefined,{day:'numeric',month:'long',year:'numeric'}) : 'Intranet';
+        var img  = n.image ? ' style="background-image:url(\'' + encodeURI(n.image) + '\')"' : '';
+        return '<a href="' + encodeURI(n.url || 'https://llbgroup.sharepoint.com/sites/intranet/') + '" target="_blank">' +
+               '<div class="news-item"><div class="news-img"' + img + '></div>' +
+               '<div class="news-body"><div class="news-date">' + esc(date) + '</div>' +
+               '<h4>' + esc(n.title) + '</h4><p>' + esc(n.description) + '</p></div></div></a>';
+    }).join('');
+})();
+</script>
+</body>
+</html>
